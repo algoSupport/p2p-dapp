@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <Link to={`${process.env.PUBLIC_URL}/dashboard`} className="logo-link">
+    <Link to={`${process.env.PUBLIC_URL}/`} className="logo-link">
       <img className="logo-light logo-img h-8" src={LogoLight2x} alt="logo" />
       <img className="logo-dark logo-img h-8" src={LogoDark2x} alt="logo" />
     </Link>

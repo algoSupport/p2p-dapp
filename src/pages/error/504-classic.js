@@ -14,7 +14,7 @@ const Error504Classic = () => {
             We are very sorry for inconvenience. It looks like you’re try to access a page that either has been deleted
             or never existed.
           </p>
-          <Link to={`${process.env.PUBLIC_URL}/dashboard`}>
+          <Link to={`${process.env.PUBLIC_URL}/`}>
             <Button color="primary" size="lg" className="mt-2">
               Dashboard
             </Button>
