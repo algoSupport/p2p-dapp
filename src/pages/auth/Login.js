@@ -31,9 +31,9 @@ const Login = () => {
       localStorage.setItem("accessToken", "token");
       setTimeout(() => {
         window.history.pushState(
-          `${process.env.PUBLIC_URL ? process.env.PUBLIC_URL : "/dashboard"}`,
+          `${process.env.PUBLIC_URL ? process.env.PUBLIC_URL : "/"}`,
           "auth-login",
-          `${process.env.PUBLIC_URL ? process.env.PUBLIC_URL : "/dashboard"}`
+          `${process.env.PUBLIC_URL ? process.env.PUBLIC_URL : "/"}`
         );
         window.location.reload();
       }, 2000);

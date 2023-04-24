@@ -3,7 +3,7 @@ const menu = [
   {
     icon: "layout-alt-fill",
     text: "Dashboard",
-    link: "/dashboard",
+    link: "/",
   },
 
   {
