@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../images/logo.png";
-import LogoDark from "../../images/logo-dark.png";
+import Logo from "../../images/logo2x.svg";
+import LogoDark from "../../images/logo-dark2x.png";
 import PageContainer from "../../layout/page-container/PageContainer";
 import Head from "../../layout/head/Head";
 import AuthFooter from "./AuthFooter";
