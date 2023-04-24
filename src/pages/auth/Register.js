@@ -43,7 +43,7 @@ const Register = ({ history }) => {
               <BlockContent>
                 <BlockTitle tag="h4">Register</BlockTitle>
                 <BlockDes>
-                  <p>Create New Dashlite Account</p>
+                  <p>Create a new Account</p>
                 </BlockDes>
               </BlockContent>
             </BlockHead>
