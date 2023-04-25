@@ -82,7 +82,7 @@ const EmailTemplate = () => {
                   <p className="mt-4">
                     ---- <br /> Regards
                     <br />
-                    Abu Bin Ishtiyak
+                    Marcus Cilistia
                   </p>
                 </EmailBodyContent>
               </EmailBody>

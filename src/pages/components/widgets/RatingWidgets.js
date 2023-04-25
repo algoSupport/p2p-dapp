@@ -54,11 +54,11 @@ const RatingWidgets = () => {
                 <PreviewAltCard className="h-100">
                   <div className="team">
                     <div className="user-card user-card-s2">
-                      <UserAvatar theme="purple" className="md" text={findUpper("Abu Bin")}>
+                      <UserAvatar theme="purple" className="md" text={findUpper("Marcus Cilistia")}>
                         <div className="status dot dot-lg dot-success"></div>
                       </UserAvatar>
                       <div className="user-info">
-                        <h6>Abu Bin Ishtiak</h6>
+                        <h6>Marcus Cilistia</h6>
                         <span className="sub-text">@ishtyak</span>
                       </div>
                       <ul className="rating mt-1">
@@ -442,7 +442,9 @@ const RatingWidgets = () => {
                           <span>Fulltime</span>
                         </li>
                       </ul>
-                      <Badge className="badge-dim badge-sm" pill color="outline-info">$1550.00</Badge>
+                      <Badge className="badge-dim badge-sm" pill color="outline-info">
+                        $1550.00
+                      </Badge>
                     </div>
                     <Collapse isOpen={collapse}>
                       <div className="divider"></div>
@@ -534,7 +536,9 @@ const RatingWidgets = () => {
                           <span>Fulltime</span>
                         </li>
                       </ul>
-                      <Badge className="badge-dim badge-sm" pill color="outline-info">$1550.00</Badge>
+                      <Badge className="badge-dim badge-sm" pill color="outline-info">
+                        $1550.00
+                      </Badge>
                     </div>
                     <Collapse isOpen={collapse2}>
                       <div className="divider"></div>
@@ -1426,8 +1430,10 @@ const RatingWidgets = () => {
                       </div>
                       <div className="fake-class">
                         <h6 className="mt-0 d-flex align-center">
-                          <span>Abu Bin Ishiyak</span>
-                          <Badge className="badge-dim ms-2" color="outline-info">Author</Badge>
+                          <span>Marcus Cilistia Ishiyak</span>
+                          <Badge className="badge-dim ms-2" color="outline-info">
+                            Author
+                          </Badge>
                         </h6>
                         <p className="text-soft">
                           Time zone depend on your server time as we use that by default. So you need to change that

@@ -465,7 +465,7 @@ const Avatar = () => {
                   <UserAvatar icon="user-alt" theme="primary"></UserAvatar>
                   <div className="user-info">
                     <div className="user-status text-primary">Administrator</div>
-                    <div className="user-name dropdown-indicator">Abu Bin Ishityak</div>
+                    <div className="user-name dropdown-indicator">Marcus Cilistia Ishityak</div>
                   </div>
                 </div>
               </Col>
@@ -484,7 +484,7 @@ const Avatar = () => {
                 <div className="user-card">
                   <UserAvatar text="AB" theme="purple" className="sm"></UserAvatar>
                   <div className="user-name">
-                    <span className="tb-lead">Abu Bin Ishtiyak</span>
+                    <span className="tb-lead">Marcus Cilistia</span>
                   </div>
                 </div>
               </Col>
@@ -496,7 +496,7 @@ const Avatar = () => {
     <UserAvatar icon="user-alt" theme="primary"></UserAvatar>
     <div className="user-info">
       <div className="user-status text-primary">Administrator</div>
-      <div className="user-name dropdown-indicator">Abu Bin Ishityak</div>
+      <div className="user-name dropdown-indicator">Marcus Cilistia Ishityak</div>
     </div>
   </div>`}
           </CodeBlock>
@@ -516,7 +516,7 @@ const Avatar = () => {
     <div className="user-card">
       <UserAvatar text="AB" theme="purple" className="sm"></UserAvatar>
       <div className="user-name">
-        <span className="tb-lead">Abu Bin Ishtiyak</span>
+        <span className="tb-lead">Marcus Cilistia</span>
       </div>
     </div>
             `}

@@ -10,8 +10,8 @@ const Profile = () => {
   const [modalTab, setModalTab] = useState("1");
   const [userInfo, setUserInfo] = useState(userData[0]);
   const [formData, setFormData] = useState({
-    name: "Abu Bin Ishtiak",
-    displayName: "Ishtiak",
+    name: "Marcus Cilistia",
+    displayName: "Marcus",
     phone: "818474958",
     dob: "1980-08-10",
     address: "2337 Kildeer Drive",

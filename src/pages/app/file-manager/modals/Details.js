@@ -83,7 +83,7 @@ const Details = ({ file, toggle, toggleShare }) => {
           </div>
           <div className="nk-file-details-row">
             <div className="nk-file-details-col">Modified</div>
-            <div className="nk-file-details-col">Feb 19, 2020 by Abu Bit Istiyak</div>
+            <div className="nk-file-details-col">Feb 19, 2020 by Marcus Bit Istiyak</div>
           </div>
           <div className="nk-file-details-row">
             <div className="nk-file-details-col">Opened</div>

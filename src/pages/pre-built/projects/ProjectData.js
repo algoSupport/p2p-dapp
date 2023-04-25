@@ -12,15 +12,15 @@ export const projectData = [
     title: "Dashlite Development",
     subtitle: "Softnio",
     desc: "Design and develop the DashLite template for Envato Marketplace",
-    lead: "Abu Bin",
+    lead: "Marcus Cilistia",
     tasks: "3",
     totalTask: "93",
     checked: false,
     deadline: setDeadline(20), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: null,
         theme: "purple",
       },
@@ -41,8 +41,8 @@ export const projectData = [
     deadline: setDeadline(5), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -62,13 +62,13 @@ export const projectData = [
     desc: "Improve SEO keyword research, A/B testing, Local market improvement",
     tasks: "2",
     totalTask: "15",
-    lead: "Abu Bin",
+    lead: "Marcus Cilistia",
     checked: false,
     deadline: setDeadline(1), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg3,
         theme: "purple",
       },
@@ -92,8 +92,8 @@ export const projectData = [
         theme: "purple",
       },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -113,8 +113,8 @@ export const projectData = [
     team: [
       { value: "Joshua Wilson", label: "Joshua Wilson", theme: "pink" },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg4,
         theme: "purple",
       },
@@ -136,8 +136,8 @@ export const projectData = [
       { value: "Milagros Betts", label: "Milagros Betts", theme: "purple" },
       { value: "Ryu Duke", label: "Ryu Duke", theme: "orange" },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         theme: "purple",
       },
       { value: "Aliah Pitts", label: "Aliah Pitts", theme: "blue" },
@@ -161,8 +161,8 @@ export const projectData = [
         theme: "purple",
       },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -181,8 +181,8 @@ export const projectData = [
     deadline: setDeadline(25), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -215,8 +215,8 @@ export const projectData = [
     deadline: setDeadline(45), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg4,
         theme: "purple",
       },
@@ -241,13 +241,13 @@ export const projectData = [
     desc: "Design the websites for Runnergy main website including their user dashboard logos.",
     tasks: "14",
     totalTask: "15",
-    lead: "Abu Bin",
+    lead: "Marcus Cilistia",
     checked: false,
     deadline: setDeadline(10), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -271,8 +271,8 @@ export const projectData = [
         theme: "purple",
       },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg,
         theme: "purple",
       },
@@ -311,8 +311,8 @@ export const projectData = [
     team: [
       { value: "Ryu Duke", label: "Ryu Duke", theme: "orange" },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg3,
         theme: "purple",
       },
@@ -326,7 +326,7 @@ export const projectData = [
     desc: "Improve SEO keyword research, A/B testing, Local market improvement.",
     tasks: "8",
     totalTask: "100",
-    lead: "Abu Bin",
+    lead: "Marcus Cilistia",
     checked: false,
     deadline: setDeadline(11), // Format ** mm/dd/yyyy
     team: [
@@ -337,8 +337,8 @@ export const projectData = [
         theme: "purple",
       },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg4,
         theme: "purple",
       },
@@ -357,8 +357,8 @@ export const projectData = [
     deadline: setDeadline(15), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         theme: "purple",
       },
       {
@@ -389,8 +389,8 @@ export const projectData = [
     team: [
       { value: "Joshua Wilson", label: "Joshua Wilson", theme: "pink" },
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -409,8 +409,8 @@ export const projectData = [
     deadline: setDeadline(25), // Format ** mm/dd/yyyy
     team: [
       {
-        value: "Abu Bin",
-        label: "Abu Bin",
+        value: "Marcus Cilistia",
+        label: "Marcus Cilistia",
         image: TeamImg2,
         theme: "purple",
       },
@@ -438,7 +438,7 @@ export const projectData = [
 ];
 
 export const teamList = [
-  { value: "Abu Bin", label: "Abu Bin", theme: "purple" },
+  { value: "Marcus Cilistia", label: "Marcus Cilistia", theme: "purple" },
   { value: "Newman John", label: "Newman John", theme: "primary" },
   { value: "Milagros Betts", label: "Milagros Betts", theme: "purple" },
   { value: "Joshua Wilson", label: "Joshua Wilson", theme: "pink" },

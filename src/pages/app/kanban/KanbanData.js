@@ -233,7 +233,7 @@ export const tagSet = [
 ];
 
 export const teamList = [
-  { value: "Abu Bin", label: "Abu Bin", theme: "purple" },
+  { value: "Marcus Cilistia", label: "Marcus Cilistia", theme: "purple" },
   { value: "Newman John", label: "Newman John", theme: "primary" },
   { value: "Milagros Betts", label: "Milagros Betts", theme: "purple" },
   { value: "Joshua Wilson", label: "Joshua Wilson", theme: "pink" },

@@ -22,8 +22,8 @@ const SettingsPreview = ({ toggleScreenLg }) => {
   const [tabs, setTab] = useState("General");
   const [modal, setModal] = useState(false);
   const [formData, setFormData] = useState({
-    name: "Abu Bin Ishtiak",
-    displayName: "Ishtiak",
+    name: "Marcus Cilistia",
+    displayName: "Marcus",
     email: "info@softnio.com",
     phone: "",
     dob: "1980-08-10",

@@ -54,7 +54,7 @@ export const data = [
     title: "A",
     contacts: [
       {
-        name: "Abu Bin Ishtiak",
+        name: "Marcus Cilistia",
         theme: "pruple",
       },
       {

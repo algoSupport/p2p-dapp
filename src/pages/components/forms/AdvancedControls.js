@@ -860,7 +860,7 @@ const AdvancedControls = () => {
                         <span className="user-card">
                           <UserAvatar theme="pink" text="AB" className="sm"></UserAvatar>
                           <span className="user-info">
-                            <span className="lead-text">Abu Bin Ishtiyak</span>
+                            <span className="lead-text">Marcus Cilistia</span>
                             <span className="sub-text">Senior Developer</span>
                           </span>
                         </span>
@@ -908,7 +908,7 @@ const AdvancedControls = () => {
                       <label className="custom-control-label" htmlFor="user-choose-s2">
                         <span className="user-card">
                           <UserAvatar theme="pink" text="AB" className="sm"></UserAvatar>
-                          <span className="user-name">Abu Bin Ishtiyak</span>
+                          <span className="user-name">Marcus Cilistia</span>
                         </span>
                       </label>
                     </div>

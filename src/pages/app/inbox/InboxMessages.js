@@ -299,7 +299,7 @@ const InboxMessages = ({
                         <ul className="link-list-opt no-bdr">
                           <li>
                             <DropdownItem tag="a" href="#item" onClick={(ev) => ev.preventDefault()}>
-                              <Icon name="reply-fill"></Icon> <span>Reply to Abu Bin Ishtiyak</span>
+                              <Icon name="reply-fill"></Icon> <span>Reply to Marcus Cilistia</span>
                             </DropdownItem>
                           </li>
                           <li>

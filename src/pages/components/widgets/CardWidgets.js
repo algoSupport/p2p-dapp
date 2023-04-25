@@ -30,7 +30,17 @@ import {
   Progress,
 } from "../../../components/Component";
 import { findUpper } from "../../../utils/Utils";
-import { Card, Row, Col, Button, UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle, Badge } from "reactstrap";
+import {
+  Card,
+  Row,
+  Col,
+  Button,
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownItem,
+  DropdownToggle,
+  Badge,
+} from "reactstrap";
 
 const CardWidgets = () => {
   const [heart, setHeart] = useState(false);
@@ -245,11 +255,11 @@ const CardWidgets = () => {
                       </UncontrolledDropdown>
                     </div>
                     <div className="user-card user-card-s2">
-                      <UserAvatar theme="purple" className="md" text={findUpper("Abu Bin")}>
+                      <UserAvatar theme="purple" className="md" text={findUpper("Marcus Cilistia")}>
                         <div className="status dot dot-lg dot-success"></div>
                       </UserAvatar>
                       <div className="user-info">
-                        <h6>Abu Bin Ishtiak</h6>
+                        <h6>Marcus Cilistia</h6>
                         <span className="sub-text">@ishtyak</span>
                       </div>
                     </div>
@@ -326,11 +336,11 @@ const CardWidgets = () => {
         </UncontrolledDropdown>
     </div>
     <div className="user-card user-card-s2">
-        <UserAvatar theme="purple" className="md" text={findUpper("Abu Bin")}>
+        <UserAvatar theme="purple" className="md" text={findUpper("Marcus Cilistia")}>
             <div className="status dot dot-lg dot-success"></div>
         </UserAvatar>
         <div className="user-info">
-            <h6>Abu Bin Ishtiak</h6>
+            <h6>Marcus Cilistia</h6>
             <span className="sub-text">@ishtyak</span>
         </div>
     </div>
@@ -416,11 +426,11 @@ const CardWidgets = () => {
                       </UncontrolledDropdown>
                     </div>
                     <div className="user-card user-card-s2">
-                      <UserAvatar theme="primary" className="lg" text={findUpper("Abu Bin")}>
+                      <UserAvatar theme="primary" className="lg" text={findUpper("Marcus Cilistia")}>
                         <div className="status dot dot-lg dot-success"></div>
                       </UserAvatar>
                       <div className="user-info">
-                        <h6>Abu Bin Ishtiak</h6>
+                        <h6>Marcus Cilistia</h6>
                       </div>
                     </div>
                     <div className="team-details">
@@ -491,11 +501,11 @@ const CardWidgets = () => {
       </UncontrolledDropdown>
     </div>
     <div className="user-card user-card-s2">
-      <UserAvatar theme="primary" className="lg" text={findUpper("Abu Bin")}>
+      <UserAvatar theme="primary" className="lg" text={findUpper("Marcus Cilistia")}>
         <div className="status dot dot-lg dot-success"></div>
       </UserAvatar>
       <div className="user-info">
-        <h6>Abu Bin Ishtiak</h6>
+        <h6>Marcus Cilistia</h6>
       </div>
     </div>
     <div className="team-details">
@@ -1007,7 +1017,7 @@ const InvestOverview = () => {
                   <div className="project-meta">
                     <ul className="project-users g-1">
                       <li>
-                        <UserAvatar className="sm" text={findUpper("Abu")} theme="primary" />
+                        <UserAvatar className="sm" text={findUpper("Marcus")} theme="primary" />
                       </li>
                       <li>
                         <UserAvatar className="sm" text={findUpper("Desnis")} theme="blue" />
@@ -1091,7 +1101,7 @@ const InvestOverview = () => {
   <div className="project-meta">
     <ul className="project-users g-1">
       <li>
-        <UserAvatar className="sm" text={findUpper("Abu")} theme="primary" />
+        <UserAvatar className="sm" text={findUpper("Marcus")} theme="primary" />
       </li>
       <li>
         <UserAvatar className="sm" text={findUpper("Desnis")} theme="blue" />

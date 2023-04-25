@@ -5,7 +5,7 @@ import User3 from "../../../images/avatar/d-sm.jpg";
 export const messageData = [
   {
     id: 1,
-    name: "Abu Ibn Ishtiak",
+    name: "Marcus Ibn Marcus",
     theme: "primary",
     date: "12 Jan",
     attactchment: true,
