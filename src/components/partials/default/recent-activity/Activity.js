@@ -32,7 +32,7 @@ const RecentActivity = () => {
                     text={item.initial}
                   ></UserAvatar>
                   <div className="nk-activity-data">
-                    <div className="label">{item.name + " " + item.activity}</div>
+                    <div className="label">{item.name}</div>
                     <span className="time">{item.time}</span>
                   </div>
                 </li>
@@ -48,7 +48,7 @@ const RecentActivity = () => {
                     text={item.initial}
                   ></UserAvatar>
                   <div className="nk-activity-data">
-                    <div className="label">{item.name + " " + item.activity}</div>
+                    <div className="label">{item.name}</div>
                     <span className="time">{item.time}</span>
                   </div>
                 </li>

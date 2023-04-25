@@ -67,7 +67,7 @@ const OrderActivity = () => {
           </div>
         </div>
       </div>
-      <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders">
+      <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
           <DataTableRow className="nk-tb-orders-type">
             <span>Type</span>

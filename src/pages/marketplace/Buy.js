@@ -266,7 +266,7 @@ const BuyPage = () => {
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
                     <li>
-                      <Button className="dropdown-toggle btn btn-primary btn-dim">
+                      <Button className="dropdown-toggle btn btn-primary">
                         <Icon name="plus"></Icon>
                         <span>Create an offer</span>
                       </Button>

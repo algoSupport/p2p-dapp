@@ -40,17 +40,11 @@ const Homepage = () => {
             </BlockHeadContent>
             <BlockHeadContent>
               <div className="toggle-wrap nk-block-tools-toggle">
-                <Button
-                  className={`btn-icon btn-trigger toggle-expand me-n1 ${sm ? "active" : ""}`}
-                  onClick={() => updateSm(!sm)}
-                >
-                  <Icon name="more-v" />
-                </Button>
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
                     <li>
                       <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-primary btn-dim">
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
                           <Icon className="d-none d-sm-inline" name="calender-date" />
                           <span>
                             <span className="d-none d-md-inline">Last</span> 30 Days
@@ -94,6 +88,13 @@ const Homepage = () => {
                           </ul>
                         </DropdownMenu>
                       </UncontrolledDropdown>
+                    </li>
+                    <li>
+                      <button tag="a" className="dropdown-toggle btn btn-primary">
+                        <Icon name="users-fill" />
+                        <span>Marketplace</span>
+                        <Icon name="chevron-right" />
+                      </button>
                     </li>
                   </ul>
                 </div>
