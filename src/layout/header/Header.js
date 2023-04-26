@@ -6,8 +6,11 @@ import Notification from "./dropdown/notification/Notification";
 import Messages from "./dropdown/messages/Messages";
 import Toggle from "../sidebar/Toggle";
 import { Link } from "react-router-dom";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
 
 const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...props }) => {
+  const { address, isConnecting, isDisconnected } = useAccount();
   const [onHover, setOnHover] = useState(false);
   const headerClass = classNames({
     "nk-header": true,
@@ -125,20 +128,26 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
             </ul>
           </div>
           <div className="nk-header-tools">
-            <ul className="nk-quick-nav">
-              <li className="notification-dropdown" onClick={() => setVisibility(false)}>
-                <Messages />
-              </li>
-              <li className="notification-dropdown" onClick={() => setVisibility(false)}>
-                <Notification />
-              </li>
-              <li className="user-dropdown" onClick={() => setVisibility(false)}>
-                <User />
-              </li>
-              <li className="d-lg-none">
-                <Toggle icon="menu" className="toggle nk-quick-nav-icon me-n1" click={sidebarToggle} />
-              </li>
-            </ul>
+            {address ? (
+              <ul className="nk-quick-nav">
+                <li className="notification-dropdown" onClick={() => setVisibility(false)}>
+                  <Messages />
+                </li>
+                <li className="notification-dropdown" onClick={() => setVisibility(false)}>
+                  <Notification />
+                </li>
+                <li className="user-dropdown" onClick={() => setVisibility(false)}>
+                  <User />
+                </li>
+                <li className="d-lg-none">
+                  <Toggle icon="menu" className="toggle nk-quick-nav-icon me-n1" click={sidebarToggle} />
+                </li>
+              </ul>
+            ) : (
+              <ul className="nk-quick-nav">
+                <ConnectButton />
+              </ul>
+            )}
           </div>
         </div>
       </div>

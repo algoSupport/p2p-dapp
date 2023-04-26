@@ -3,13 +3,15 @@ import UserAvatar from "../../../../components/user/UserAvatar";
 import { DropdownToggle, DropdownMenu, Dropdown } from "reactstrap";
 import { Icon } from "../../../../components/Component";
 import { LinkList, LinkItem } from "../../../../components/links/Links";
+import { useDisconnect } from 'wagmi'
 
 const User = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen((prevState) => !prevState);
+  const { disconnect } = useDisconnect()
 
   const handleSignout = () => {
-    localStorage.removeItem("accessToken");
+    disconnect()
   };
 
   return (
@@ -52,7 +54,7 @@ const User = () => {
         </div>
         <div className="dropdown-inner">
           <LinkList>
-            <a href={`${process.env.PUBLIC_URL}/auth-login`} onClick={handleSignout}>
+            <a href='#' onClick={handleSignout}>
               <Icon name="unlink"></Icon>
               <span>Disconnect</span>
             </a>
