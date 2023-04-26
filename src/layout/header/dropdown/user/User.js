@@ -3,12 +3,15 @@ import UserAvatar from "../../../../components/user/UserAvatar";
 import { DropdownToggle, DropdownMenu, Dropdown } from "reactstrap";
 import { Icon } from "../../../../components/Component";
 import { LinkList, LinkItem } from "../../../../components/links/Links";
-import { useDisconnect } from 'wagmi'
+import { useDisconnect, useAccount, useNetwork } from 'wagmi'
+import { shortenAddress } from "../../../../utils/Utils";
 
 const User = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen((prevState) => !prevState);
   const { disconnect } = useDisconnect()
+  const { address, isConnecting, isDisconnected } = useAccount();
+  const { chain, chains } = useNetwork()
 
   const handleSignout = () => {
     disconnect()
@@ -36,9 +39,9 @@ const User = () => {
             </div>
             <div className="user-info">
               {/* Display network here */}
-              <span className="lead-text">Arbitrum</span>
+              <span className="lead-text">{chain.name}</span>
               {/* Display wallet address here */}
-              <span className="sub-text">0x33..592e</span>
+              <span className="sub-text">{shortenAddress(address)}</span>
             </div>
           </div>
         </div>

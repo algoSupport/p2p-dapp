@@ -128,7 +128,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
             </ul>
           </div>
           <div className="nk-header-tools">
-            {address ? (
+            {address && !isDisconnected ? (
               <ul className="nk-quick-nav">
                 <li className="notification-dropdown" onClick={() => setVisibility(false)}>
                   <Messages />
