@@ -43,7 +43,11 @@ const CardsPage = ({ ...props }) => {
                   from "reactstrap"
                 </code>
                 . Visit the{" "}
-                <a href={"https://reactstrap.github.io/?path=/docs/components-card--card"} target="_blank" rel="noreferrer">
+                <a
+                  href={"https://reactstrap.github.io/?path=/docs/components-card--card"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Reactstrap
                 </a>{" "}
                 library for detailed instructions.
@@ -148,8 +152,8 @@ const CardsPage = ({ ...props }) => {
       Some quick example text to build on the card title and make up
       the bulk of the card's content.
     </CardText>
-    <CardLink href="#">Card Link</CardLink>
-    <CardLink href="#">Another Link</CardLink>
+    <CardLink to="">Card Link</CardLink>
+    <CardLink to="">Another Link</CardLink>
   </CardBody>
 </Card>`}
           </CodeBlock>
@@ -238,7 +242,7 @@ const CardsPage = ({ ...props }) => {
                 </Card>
               </Col>
               <Col sm="6">
-               <Card className="card-bordered" inverse color="gray">
+                <Card className="card-bordered" inverse color="gray">
                   <CardHeader>Header</CardHeader>
                   <CardBody className="card-inner">
                     <CardTitle tag="h5">Dark card title</CardTitle>

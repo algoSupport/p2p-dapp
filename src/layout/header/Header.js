@@ -42,7 +42,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
           <div className="nk-header-menu">
             <ul className="nk-menu nk-menu-main">
               <li
-                className={`nk-menu-item has-sub  ${
+                className={`nk-menu-item has-sub ${
                   currentUrl.includes(process.env.PUBLIC_URL + "/marketplace") ? "active" : ""
                 }`}
                 onMouseEnter={onMouseEnter}
@@ -100,24 +100,24 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                 {onHover && (
                   <ul className="nk-menu-sub">
                     <li className="nk-menu-item">
-                      <a href="#" className="nk-menu-link">
+                      <Link to="" className="nk-menu-link">
                         <span className="nk-menu-text">Discord</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nk-menu-item">
-                      <a href="#" className="nk-menu-link">
+                      <Link to="" className="nk-menu-link">
                         <span className="nk-menu-text">Twitter</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nk-menu-item">
-                      <a href="#" className="nk-menu-link">
+                      <Link to="" className="nk-menu-link">
                         <span className="nk-menu-text">Github</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nk-menu-item">
-                      <a href="#" className="nk-menu-link">
+                      <Link to="" className="nk-menu-link">
                         <span className="nk-menu-text">Website</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 )}

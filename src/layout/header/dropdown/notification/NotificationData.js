@@ -5,7 +5,7 @@ const data = {
       id: "note106",
       icon: "curve-down-right",
       iconStyle: "bg-warning-dim",
-      text: "You have requested to Widthdrawl",
+      text: "You have requested to Withdrawal",
       time: "2 hrs ago",
     },
     {
@@ -19,7 +19,7 @@ const data = {
       id: "note104",
       icon: "curve-down-right",
       iconStyle: "bg-warning-dim",
-      text: "You have requested to Widthdrawl",
+      text: "You have requested to Withdrawal",
       time: "7 hrs ago",
     },
     {
@@ -33,7 +33,7 @@ const data = {
       id: "note102",
       icon: "curve-down-right",
       iconStyle: "bg-warning-dim",
-      text: "You have requested to Widthdrawl",
+      text: "You have requested to Withdrawal",
       time: "11 hrs ago",
     },
     {

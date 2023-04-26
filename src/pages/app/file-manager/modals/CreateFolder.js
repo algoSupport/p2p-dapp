@@ -48,7 +48,7 @@ const CreateFolder = ({ toggle }) => {
             <ul className="btn-toolbar g-4 align-center justify-end">
               <li>
                 <a
-                  href="#"
+                  to=""
                   onClick={(ev) => {
                     ev.preventDefault();
                     toggle();

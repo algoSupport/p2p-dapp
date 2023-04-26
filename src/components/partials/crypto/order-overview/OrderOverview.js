@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Icon from "../../../icon/Icon";
-import { UncontrolledDropdown, CardTitle, DropdownMenu, DropdownItem, DropdownToggle } from "reactstrap";
 import { DoubleBar } from "../../charts/default/Charts";
 import { Row, Col } from "../../../grid/Grid";
-import { Link } from "react-router-dom";
 
 const OrderOverview = () => {
-  const [orderOverview, setOverview] = useState("");
+  const [orderOverview] = useState("");
   return (
     <React.Fragment>
       <div className="nk-order-ovwg">
