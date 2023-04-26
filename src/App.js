@@ -43,7 +43,16 @@ const wagmiClient = createClient({
 const App = () => {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains} theme={darkTheme()}>
+      <RainbowKitProvider
+        chains={chains}
+        theme={darkTheme({
+          accentColor: "#6576fe",
+          accentColorForeground: "white",
+          borderRadius: "small",
+          fontStack: "system",
+          overlayBlur: "small",
+        })}
+      >
         <Switch>
           {/* Auth Pages */}
           <Route exact path={`${process.env.PUBLIC_URL}/auth-success`} component={Success}></Route>
