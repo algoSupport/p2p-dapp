@@ -44,14 +44,16 @@ const App = () => {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
+        modalSize="compact"
         chains={chains}
         theme={darkTheme({
           accentColor: "#6576fe",
           accentColorForeground: "white",
           borderRadius: "small",
-          fontStack: "system",
+          fontStack: "rounded",
           overlayBlur: "small",
         })}
+        coolMode
       >
         <Switch>
           {/* Auth Pages */}
