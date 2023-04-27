@@ -25,7 +25,7 @@ const OrderActivity = () => {
         <div className="card-title-group">
           <CardTitle>
             <h6 className="title">
-              <span className="me-2">Recent Transactions</span>{" "}
+              <span className="me-2">Recent Trades</span>{" "}
               <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
                 View all
               </Link>

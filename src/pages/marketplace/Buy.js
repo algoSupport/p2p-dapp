@@ -288,7 +288,7 @@ const BuyPage = () => {
                       <RSelect
                         options={bulkActionOptions}
                         className="w-130px"
-                        placeholder="Coin"
+                        placeholder="Currency"
                         onChange={(e) => onActionText(e)}
                       />
                     </div>
@@ -541,31 +541,20 @@ const BuyPage = () => {
             </div>
             <DataTableBody>
               <DataTableHead>
-                <DataTableRow className="nk-tb-col-check">
-                  <div className="custom-control custom-control-sm custom-checkbox notext">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      onChange={(e) => selectorCheck(e)}
-                      id="uid"
-                    />
-                    <label className="custom-control-label" htmlFor="uid"></label>
-                  </div>
-                </DataTableRow>
                 <DataTableRow>
                   <span className="sub-text">User</span>
                 </DataTableRow>
                 <DataTableRow size="mb">
-                  <span className="sub-text">Balance</span>
+                  <span className="sub-text">Available</span>
                 </DataTableRow>
                 <DataTableRow size="md">
-                  <span className="sub-text">Phone</span>
+                  <span className="sub-text">Min</span>
                 </DataTableRow>
                 <DataTableRow size="lg">
-                  <span className="sub-text">Verified</span>
+                  <span className="sub-text">Trade Volume</span>
                 </DataTableRow>
                 <DataTableRow size="lg">
-                  <span className="sub-text">Last Login</span>
+                  <span className="sub-text">Reviews</span>
                 </DataTableRow>
                 <DataTableRow size="md">
                   <span className="sub-text">Status</span>
@@ -622,19 +611,6 @@ const BuyPage = () => {
                 ? currentItems.map((item) => {
                     return (
                       <DataTableItem key={item.id}>
-                        <DataTableRow className="nk-tb-col-check">
-                          <div className="custom-control custom-control-sm custom-checkbox notext">
-                            <input
-                              type="checkbox"
-                              className="custom-control-input"
-                              defaultChecked={item.checked}
-                              id={item.id + "uid1"}
-                              key={Math.random()}
-                              onChange={(e) => onSelectChange(e, item.id)}
-                            />
-                            <label className="custom-control-label" htmlFor={item.id + "uid1"}></label>
-                          </div>
-                        </DataTableRow>
                         <DataTableRow>
                           <Link to={`${process.env.PUBLIC_URL}/user-details-regular/${item.id}`}>
                             <div className="user-card">
