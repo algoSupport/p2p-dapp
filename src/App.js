@@ -24,6 +24,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { arbitrumGoerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import merge from "lodash.merge";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
@@ -46,13 +47,20 @@ const App = () => {
       <RainbowKitProvider
         modalSize="compact"
         chains={chains}
-        theme={darkTheme({
-          accentColor: "#6576fe",
-          accentColorForeground: "white",
-          borderRadius: "small",
-          fontStack: "rounded",
-          overlayBlur: "small",
-        })}
+        theme={merge(
+          darkTheme({
+            accentColor: "#6576fe",
+            accentColorForeground: "white",
+            borderRadius: "small",
+            fontStack: "rounded",
+            overlayBlur: "small",
+          }),
+          {
+            colors: {
+              modalBackground: "#18212d",
+            },
+          }
+        )}
         coolMode
       >
         <Switch>
