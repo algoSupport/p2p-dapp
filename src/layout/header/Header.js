@@ -7,10 +7,12 @@ import Messages from "./dropdown/messages/Messages";
 import Toggle from "../sidebar/Toggle";
 import { Link } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { useAccount } from "wagmi";
+import { useAccount, useNetwork } from "wagmi";
+import ConnectWalletButton from "../../components/button/ConnectWalletButton";
 
 const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...props }) => {
   const { address, isConnecting, isDisconnected } = useAccount();
+  const { chain, chains } = useNetwork()
   const [onHover, setOnHover] = useState(false);
   const headerClass = classNames({
     "nk-header": true,
@@ -128,7 +130,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
             </ul>
           </div>
           <div className="nk-header-tools">
-            {address && !isDisconnected ? (
+            {address && chain ? (
               <ul className="nk-quick-nav">
                 <li className="notification-dropdown" onClick={() => setVisibility(false)}>
                   <Messages />
@@ -145,7 +147,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
               </ul>
             ) : (
               <ul className="nk-quick-nav">
-                <ConnectButton />
+                <ConnectWalletButton />
               </ul>
             )}
           </div>
