@@ -1,5 +1,5 @@
 const menu = [
-  { heading: "Main nav" },
+  { heading: "Account" },
   {
     icon: "layout-alt-fill",
     text: "Dashboard",
@@ -38,21 +38,7 @@ const menu = [
   {
     heading: "Trade",
   },
-  {
-    icon: "repeat-fill",
-    text: "Exchange",
-    active: false,
-    subMenu: [
-      {
-        text: "Swap",
-        link: "/project-card",
-      },
-      {
-        text: "History",
-        link: "/project-list",
-      },
-    ],
-  },
+
   {
     icon: "users-fill",
     text: "Marketplace",
@@ -73,6 +59,21 @@ const menu = [
       {
         text: "My Offers",
         link: "/marketplace/user-profile-regular",
+      },
+    ],
+  },
+  {
+    icon: "repeat-fill",
+    text: "Exchange",
+    active: false,
+    subMenu: [
+      {
+        text: "Swap",
+        link: "/project-card",
+      },
+      {
+        text: "History",
+        link: "/project-list",
       },
     ],
   },

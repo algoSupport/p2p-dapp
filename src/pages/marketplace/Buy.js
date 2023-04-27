@@ -380,7 +380,7 @@ const BuyPage = () => {
                                           <input type="checkbox" className="custom-control-input" id="hasBalance" />
                                           <label className="custom-control-label" htmlFor="hasBalance">
                                             {" "}
-                                            Have Balance
+                                            $CIL Staked
                                           </label>
                                         </div>
                                       </Col>
@@ -389,7 +389,7 @@ const BuyPage = () => {
                                           <input type="checkbox" className="custom-control-input" id="hasKYC" />
                                           <label className="custom-control-label" htmlFor="hasKYC">
                                             {" "}
-                                            KYC Verified
+                                            10+ Reviews
                                           </label>
                                         </div>
                                       </Col>
@@ -528,7 +528,7 @@ const BuyPage = () => {
                     <input
                       type="text"
                       className="border-transparent form-focus-none form-control"
-                      placeholder="Search by user or email"
+                      placeholder="Search for users or offers..."
                       value={onSearchText}
                       onChange={(e) => onFilterChange(e)}
                     />
