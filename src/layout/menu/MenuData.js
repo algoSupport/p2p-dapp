@@ -64,22 +64,12 @@ const menu = [
   },
   {
     icon: "repeat-fill",
-    text: "Exchange",
-    active: false,
-    subMenu: [
-      {
-        text: "Swap",
-        link: "/project-card",
-      },
-      {
-        text: "History",
-        link: "/project-list",
-      },
-    ],
+    text: "Express",
+    link: "/project-card",
   },
   {
     icon: "list-fill",
-    text: "Transactions",
+    text: "History",
     link: "/history-payment",
   },
   {
