@@ -287,8 +287,8 @@ const BuyPage = () => {
                     <div className="form-wrap">
                       <RSelect
                         options={bulkActionOptions}
-                        className="w-130px"
-                        placeholder="Currency"
+                        className="w-150px"
+                        placeholder="Filter by asset"
                         onChange={(e) => onActionText(e)}
                       />
                     </div>
