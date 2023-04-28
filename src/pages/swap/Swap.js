@@ -4,6 +4,7 @@ import classNames from "classnames";
 import TokenInput from "../../components/swap/TokenInput";
 import styles from "./swap.module.scss";
 import { Currencies, TokenList } from "../../components/swap/TokenSelect";
+import { BlockDes, BlockHead, BlockHeadContent, BlockTitle } from "../../components/Component";
 
 const SwapPage = () => {
   const [activeTab, setActiveTab] = useState("swap");
@@ -36,63 +37,76 @@ const SwapPage = () => {
   }, [tokenClicked, token1, token2]);
 
   return (
-    <div className=" d-flex align-items-center justify-content-center h-100">
-      <Card className="card-bordered w-550px">
-        <CardBody className="card-inner">
-          <CardTitle tag="h5">
-            <Nav tabs>
-              <NavItem>
-                <NavLink
-                  tag="a"
-                  href="#swap"
-                  className={classNames({ active: activeTab === "swap" })}
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                    toggle("swap");
-                  }}
-                >
-                  Swap
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  tag="a"
-                  href="#buy"
-                  className={classNames({ active: activeTab === "buy" })}
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                    toggle("buy");
-                  }}
-                >
-                  Buy
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </CardTitle>
-          <TabContent activeTab={activeTab}>
-            <TabPane tabId="swap">
-              <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
-                <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
-                <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
-                <div className={styles.switch} onClick={() => onSwitch()}>
-                  <img src="/images/switch.svg" alt="switch"></img>
+    <div className="h-100">
+      <BlockHead>
+        <BlockHeadContent>
+          <BlockTitle page tag="h3">
+            Swap
+          </BlockTitle>
+          <BlockDes>You can swap and buy tokens.</BlockDes>
+        </BlockHeadContent>
+      </BlockHead>
+      <div
+        className="d-flex align-items-center justify-content-center flex-column"
+        style={{ height: "calc(100vh - 200px)" }}
+      >
+        <Card className="card-bordered w-550px">
+          <CardBody className="card-inner">
+            <CardTitle tag="h5">
+              <Nav tabs>
+                <NavItem>
+                  <NavLink
+                    tag="a"
+                    href="#swap"
+                    className={classNames({ active: activeTab === "swap" })}
+                    onClick={(ev) => {
+                      ev.preventDefault();
+                      toggle("swap");
+                    }}
+                  >
+                    Swap
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    tag="a"
+                    href="#buy"
+                    className={classNames({ active: activeTab === "buy" })}
+                    onClick={(ev) => {
+                      ev.preventDefault();
+                      toggle("buy");
+                    }}
+                  >
+                    Buy
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </CardTitle>
+            <TabContent activeTab={activeTab}>
+              <TabPane tabId="swap">
+                <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
+                  <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
+                  <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
+                  <div className={styles.switch} onClick={() => onSwitch()}>
+                    <img src="/images/switch.svg" alt="switch"></img>
+                  </div>
                 </div>
-              </div>
-            </TabPane>
-            <TabPane tabId="buy">
-              <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
-                <TokenInput
-                  token={buyToken1}
-                  setToken={setBuyToken1}
-                  setTokenClicked={() => setTokenClicked(1)}
-                  isBuy={true}
-                />
-                <TokenInput token={buyToken2} setToken={setBuyToken2} setTokenClicked={() => setTokenClicked(2)} />
-              </div>
-            </TabPane>
-          </TabContent>
-        </CardBody>
-      </Card>
+              </TabPane>
+              <TabPane tabId="buy">
+                <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
+                  <TokenInput
+                    token={buyToken1}
+                    setToken={setBuyToken1}
+                    setTokenClicked={() => setTokenClicked(1)}
+                    isBuy={true}
+                  />
+                  <TokenInput token={buyToken2} setToken={setBuyToken2} setTokenClicked={() => setTokenClicked(2)} />
+                </div>
+              </TabPane>
+            </TabContent>
+          </CardBody>
+        </Card>
+      </div>
     </div>
   );
 };
