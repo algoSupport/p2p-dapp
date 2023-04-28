@@ -97,6 +97,7 @@ import QuillPreview from "../pages/components/forms/rich-editor/QuillPreview";
 import TinymcePreview from "../pages/components/forms/rich-editor/TinymcePreview";
 import KnobPreview from "../pages/components/charts/KnobPreview";
 import { FileManagerContextProvider } from "../pages/app/file-manager/FileManagerContext";
+import SwapPage from "../pages/swap/Swap";
 
 const Pages = () => {
   useLayoutEffect(() => {
@@ -112,6 +113,7 @@ const Pages = () => {
 
         {/*Pre-built Pages*/}
         <Route exact path={`${process.env.PUBLIC_URL}/project-card`} component={ProjectCardPage}></Route>
+        <Route exact path={`${process.env.PUBLIC_URL}/swap`} component={SwapPage}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/project-list`} component={ProjectListPage}></Route>
         <Route //Context Api added
           exact

@@ -68,6 +68,11 @@ const menu = [
     link: "/project-card",
   },
   {
+    icon: "repeat-fill",
+    text: "Swap",
+    link: "/swap",
+  },
+  {
     icon: "list-fill",
     text: "History",
     link: "/history-payment",
