@@ -21,7 +21,7 @@
   }
 
   .dropItem {
-    background: #6576fe;
+    background: #253141;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -33,6 +33,7 @@
     font-size: 14px;
     column-gap: 3px;
     width: 100px;
+    border: 1px solid #203247;
   }
   .selectedItem {
     width: 100%;
@@ -45,6 +46,7 @@
     padding: 5px 8px;
     border-radius: 5px;
     width: 100px;
+    border: 1px solid #203247;
   }
 }
 .dropdownBody {
@@ -56,6 +58,7 @@
   width: 100px;
   border-radius: 5px;
   top: 40px;
+  border: 1px solid #203247;
 
   .item {
     display: flex;
