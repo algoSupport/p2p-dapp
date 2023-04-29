@@ -53,87 +53,85 @@ const SwapPage = () => {
     <React.Fragment>
       <Head title="Express" />
       <Content>
-        <div className="h-100">
-          <BlockHead>
-            <BlockHeadContent>
-              <BlockTitle page tag="h3">
-                Express
-              </BlockTitle>
-              <BlockDes>Swap, buy and sell tokens instantly. </BlockDes>
-            </BlockHeadContent>
-          </BlockHead>
-          <Row className="g-gs">
-            <Col size="6">
-              <Card className="card-bordered">
-                <CardBody className="card-inner pt-2">
-                  <CardTitle tag="h5">
-                    <Nav tabs>
-                      <NavItem>
-                        <NavLink
-                          tag="a"
-                          href="#swap"
-                          className={classNames({ active: activeTab === "swap" })}
-                          onClick={(ev) => {
-                            ev.preventDefault();
-                            toggle("swap");
-                          }}
-                        >
-                          Swap
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          tag="a"
-                          href="#buy"
-                          className={classNames({ active: activeTab === "buy" })}
-                          onClick={(ev) => {
-                            ev.preventDefault();
-                            toggle("buy");
-                          }}
-                        >
-                          Buy
-                        </NavLink>
-                      </NavItem>
-                    </Nav>
-                  </CardTitle>
-                  <TabContent activeTab={activeTab}>
-                    <TabPane tabId="swap">
-                      <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
-                        <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
-                        <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
-                        <div className={styles.switch} onClick={() => onSwitch()}>
-                          <img src="/images/switch.svg" alt="switch"></img>
-                        </div>
+        <BlockHead>
+          <BlockHeadContent>
+            <BlockTitle page tag="h3">
+              Express
+            </BlockTitle>
+            <BlockDes>Swap, buy and sell tokens instantly. </BlockDes>
+          </BlockHeadContent>
+        </BlockHead>
+        <Row className="g-gs">
+          <Col size="6">
+            <Card className="card-bordered">
+              <CardBody className="card-inner pt-2">
+                <CardTitle tag="h5">
+                  <Nav tabs>
+                    <NavItem>
+                      <NavLink
+                        tag="a"
+                        href="#swap"
+                        className={classNames({ active: activeTab === "swap" })}
+                        onClick={(ev) => {
+                          ev.preventDefault();
+                          toggle("swap");
+                        }}
+                      >
+                        Swap
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        tag="a"
+                        href="#buy"
+                        className={classNames({ active: activeTab === "buy" })}
+                        onClick={(ev) => {
+                          ev.preventDefault();
+                          toggle("buy");
+                        }}
+                      >
+                        Buy
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardTitle>
+                <TabContent activeTab={activeTab}>
+                  <TabPane tabId="swap">
+                    <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
+                      <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
+                      <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
+                      <div className={styles.switch} onClick={() => onSwitch()}>
+                        <img src="/images/switch.svg" alt="switch"></img>
                       </div>
-                    </TabPane>
-                    <TabPane tabId="buy">
-                      <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
-                        <TokenInput
-                          token={buyToken1}
-                          setToken={setBuyToken1}
-                          setTokenClicked={() => setTokenClicked(1)}
-                          isBuy={true}
-                        />
-                        <TokenInput
-                          token={buyToken2}
-                          setToken={setBuyToken2}
-                          setTokenClicked={() => setTokenClicked(2)}
-                        />
-                      </div>
-                    </TabPane>
-                  </TabContent>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col size="6">
-              <Block>
-                <PreviewAltCard>
-                  <SalesOverview />
-                </PreviewAltCard>
-              </Block>
-            </Col>
-          </Row>
-        </div>
+                    </div>
+                  </TabPane>
+                  <TabPane tabId="buy">
+                    <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
+                      <TokenInput
+                        token={buyToken1}
+                        setToken={setBuyToken1}
+                        setTokenClicked={() => setTokenClicked(1)}
+                        isBuy={true}
+                      />
+                      <TokenInput
+                        token={buyToken2}
+                        setToken={setBuyToken2}
+                        setTokenClicked={() => setTokenClicked(2)}
+                      />
+                    </div>
+                  </TabPane>
+                </TabContent>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col size="6">
+            <Block>
+              <PreviewAltCard>
+                <SalesOverview />
+              </PreviewAltCard>
+            </Block>
+          </Col>
+        </Row>
       </Content>
     </React.Fragment>
   );

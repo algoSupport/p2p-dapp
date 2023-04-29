@@ -64,7 +64,7 @@ const menu = [
   },
   {
     icon: "repeat-fill",
-    text: "Swap",
+    text: "Express",
     link: "/swap",
   },
   {
