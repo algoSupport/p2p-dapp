@@ -16,6 +16,9 @@ import {
   PreviewAltCard,
   Block,
   Row,
+  Button,
+  BlockBetween,
+  Icon,
 } from "../../components/Component";
 import SalesOverview from "../../components/partials/default/sales-overview/SalesOverview";
 
@@ -53,14 +56,28 @@ const SwapPage = () => {
     <React.Fragment>
       <Head title="Express" />
       <Content>
-        <BlockHead>
-          <BlockHeadContent>
-            <BlockTitle page tag="h3">
-              Express
-            </BlockTitle>
-            <BlockDes>Swap, buy and sell tokens instantly. </BlockDes>
-          </BlockHeadContent>
+        <BlockHead size="sm">
+          <BlockBetween>
+            <BlockHeadContent>
+              <BlockTitle page>Express</BlockTitle>
+              <BlockDes className="text-soft">
+                <p>Swap, Buy and Sell tokens instantly.</p>
+              </BlockDes>
+            </BlockHeadContent>
+            <BlockHeadContent>
+              <ul className="nk-block-tools g-3">
+                <li>
+                  <button tag="a" className="dropdown-toggle btn btn-primary">
+                    <Icon name="list-fill" />
+                    <span>History</span>
+                    <Icon name="chevron-right" />
+                  </button>
+                </li>
+              </ul>
+            </BlockHeadContent>
+          </BlockBetween>
         </BlockHead>
+
         <Row className="g-gs">
           <Col size="6">
             <Card className="card-bordered">
