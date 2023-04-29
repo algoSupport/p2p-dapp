@@ -267,7 +267,7 @@ const BuyPage = () => {
                   <ul className="nk-block-tools g-3">
                     <li>
                       <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-white btn-dim btn-outline-light">
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
                           <Icon name="filter-alt" className="d-none d-sm-inline"></Icon>
                           <span>Filters</span>
                           <Icon name="chevron-right" className="dd-indc"></Icon>

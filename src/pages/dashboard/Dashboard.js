@@ -44,7 +44,7 @@ const Homepage = () => {
                   <ul className="nk-block-tools g-3">
                     <li>
                       <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-white btn-dim btn-outline-light">
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
                           <Icon className="d-none d-sm-inline" name="calender-date" />
                           <span>Last 30 Days</span>
                         </DropdownToggle>
