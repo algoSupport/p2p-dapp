@@ -79,7 +79,7 @@ const SwapPage = () => {
         </BlockHead>
 
         <Row className="g-gs">
-          <Col size="6">
+          <Col md={6}>
             <Card className="card-bordered">
               <CardBody className="card-inner pt-2">
                 <CardTitle tag="h5">
@@ -141,7 +141,7 @@ const SwapPage = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col size="6">
+          <Col md={6}>
             <Block>
               <PreviewAltCard>
                 <SalesOverview />
