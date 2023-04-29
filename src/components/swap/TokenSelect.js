@@ -53,7 +53,7 @@ const TokenSelect = ({ selectedToken, setSelectedToken, setTokenClicked, isBuy }
         </div>
       ) : (
         <div className={styles.dropItem} onClick={() => setIsDropdown(!isDropdown)} ref={dropdownRef}>
-          Select
+          Token
           <img src="/images/arrow-up.png" className={`${styles["arrow-icon"]}`} alt="arrow"></img>
         </div>
       )}

@@ -14,8 +14,8 @@
   font-weight: bold;
 
   .arrow-icon {
-    width: 12px;
-    height: 8px;
+    width: 9px;
+    height: 5px;
     transform: rotate(180deg);
     margin-left: 5px;
   }
@@ -26,9 +26,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 8px;
+    padding: 5px 20px;
     border-radius: 5px;
     color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    column-gap: 3px;
   }
   .selectedItem {
     width: 100%;
@@ -49,7 +52,7 @@
   cursor: pointer;
   background: #253141;
   padding: 4px 6px;
-  width: 80%;
+  width: 100px;
   border-radius: 5px;
   top: 40px;
 
