@@ -57,7 +57,7 @@ const App = () => {
           }),
           {
             colors: {
-              modalBackground: "#18212d",
+              modalBackground: "#101924",
             },
           }
         )}
