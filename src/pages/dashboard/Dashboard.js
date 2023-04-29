@@ -46,9 +46,7 @@ const Homepage = () => {
                       <UncontrolledDropdown>
                         <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
                           <Icon className="d-none d-sm-inline" name="calender-date" />
-                          <span>
-                            <span className="d-none d-md-inline">Last</span> 30 Days
-                          </span>
+                          <span>Last 30 Days</span>
                         </DropdownToggle>
                         <DropdownMenu end>
                           <ul className="link-list-opt no-bdr">

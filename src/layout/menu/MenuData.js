@@ -64,11 +64,6 @@ const menu = [
   },
   {
     icon: "repeat-fill",
-    text: "Express",
-    link: "/project-card",
-  },
-  {
-    icon: "repeat-fill",
     text: "Swap",
     link: "/swap",
   },
