@@ -4,7 +4,7 @@ const TokenInput = ({ token, setToken, setTokenClicked, isBuy }) => {
   return (
     <div className={styles.container}>
       <div className="d-flex justify-content-between align-items-center">
-        <input type="number" className="form-control" />
+        <input type="number" className="form-control" placeholder="0.0000000" />
         <TokenSelect
           selectedToken={token}
           setSelectedToken={setToken}

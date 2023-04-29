@@ -1,7 +1,7 @@
 .container {
   background: #1b2634;
-  border-radius: 15px;
-  padding: 40px 20px;
+  border-radius: 5px;
+  padding: 20px 10px;
 }
 .dropdown {
   border-radius: 5px;
@@ -21,13 +21,14 @@
   }
 
   .dropItem {
-    background: #4a74bc;
+    background: #6576fe;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 8px;
-    border-radius: 20px;
+    border-radius: 5px;
+    color: #fff;
   }
   .selectedItem {
     width: 100%;
@@ -38,7 +39,7 @@
     cursor: pointer;
     background-color: #253141;
     padding: 5px 8px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100px;
   }
 }
@@ -48,18 +49,17 @@
   cursor: pointer;
   background: #253141;
   padding: 4px 6px;
-  width: 100%;
-  border-radius: 15px;
+  width: 80%;
+  border-radius: 5px;
   top: 40px;
 
   .item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 1px 0;
     padding: 2px 5px;
     &:hover {
-      background-color: #37475e;
+      color: #fff;
     }
   }
 }
