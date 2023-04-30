@@ -278,10 +278,7 @@ const UserListCompact = () => {
                       </a>
                     </li>
                     <li className="nk-block-tools-opt">
-                      <Button
-                        className="dropdown-toggle btn btn-primary btn-dim"
-                        onClick={() => setModal({ add: true })}
-                      >
+                      <Button className="dropdown-toggle btn btn-primary" onClick={() => setModal({ add: true })}>
                         <Icon name="plus"></Icon>
                       </Button>
                     </li>
