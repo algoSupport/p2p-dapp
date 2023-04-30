@@ -27,7 +27,7 @@ $menu-sub-link-gap-x: $menu-link-gap-x !default;
 // Link color
 $menu-link-color-base: lighten($base-text, 12%) !default;
 $menu-link-color-sub: lighten($base-text, 12%) !default;
-$menu-link-color-hover: lighten($accent-color, 5%) !default;
+$menu-link-color-hover: #c7d5ee !default;
 $menu-border-color: $border-color !default;
 $menu-border-dark-color: rgba($white, 0.12) !default;
 
@@ -239,7 +239,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
       }
     }
     .nk-menu-main .nk-menu-sub & {
-      color: $accent-500;
+      color: #c7d5ee;
       background: $accent-100;
     }
   }
@@ -294,7 +294,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
     }
     .nk-menu-link {
       &:hover {
-        color: $accent-color;
+        color: #c7d5ee;
         @if ($menu_dark_theme_option==true) {
           .is-theme & {
             color: $white;
@@ -303,7 +303,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
       }
     }
     .active > .nk-menu-link {
-      color: $accent-color;
+      color: #c7d5ee;
       @if ($menu_dark_theme_option==true) {
         .is-theme & {
           color: $white;
@@ -354,7 +354,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
   }
   &-icon-colored {
     .nk-menu-icon {
-      color: $menu-icon-color-hover;
+      color: #5664d9;
     }
   }
   &-tooltip {
@@ -715,9 +715,9 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
       .nk-menu-main {
         > li {
           > .nk-menu-link {
-            color: lighten($base-light, 10%);
+            color: #c7d5ee;
             &.nk-menu-toggle:after {
-              color: rgba($base-light, 0.7);
+              color: #c7d5ee;
             }
           }
           &:hover > .nk-menu-link,
@@ -735,16 +735,16 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
       .nk-menu-main {
         > li {
           > .nk-menu-link {
-            color: $accent-light;
+            color: #c7d5ee;
             &.nk-menu-toggle:after {
-              color: rgba($accent-light, 0.7);
+              color: #c7d5ee;
             }
           }
           &:hover > .nk-menu-link,
           &.active > .nk-menu-link,
           &.current-menu > .nk-menu-link,
           & > .nk-menu-link:hover {
-            color: $white;
+            color: #c7d5ee;
           }
         }
       }

@@ -655,7 +655,7 @@ body.dark-mode {
   .link-list a {
     color: $base-400;
     &:hover {
-      color: $accent-color;
+      color: #c8d5ee;
     }
   }
   .nk-menu-badge {
@@ -680,7 +680,7 @@ body.dark-mode {
   .is-theme .nk-menu-sub .nk-menu-link:hover,
   .is-theme .nk-menu-sub .active > .nk-menu-link,
   .page-link:hover {
-    color: $accent-color !important;
+    color: #c8d5ee !important;
   }
   .nk-menu-hr,
   .nk-menu-main .nk-menu-sub,
