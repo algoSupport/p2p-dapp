@@ -596,7 +596,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
           left: 0;
           right: 0;
           height: 1px;
-          background: $menu-link-color-hover;
+          background: #6576fe;
           border-radius: 0px;
           opacity: 0;
         }
@@ -735,16 +735,16 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
       .nk-menu-main {
         > li {
           > .nk-menu-link {
-            color: #c7d5ee;
+            color: #6576fe;
             &.nk-menu-toggle:after {
-              color: #c7d5ee;
+              color: #6576fe;
             }
           }
           &:hover > .nk-menu-link,
           &.active > .nk-menu-link,
           &.current-menu > .nk-menu-link,
           & > .nk-menu-link:hover {
-            color: #c7d5ee;
+            color: #6576fe;
           }
         }
       }
