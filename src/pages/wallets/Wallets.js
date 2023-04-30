@@ -47,7 +47,7 @@ const Wallets = () => {
                   <ul className="nk-block-tools g-3">
                     <li>
                       <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-primary">
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-primary btn-dim">
                           <Icon className="d-none d-sm-inline" name="setting" />
                           <span>Actions</span>
                         </DropdownToggle>

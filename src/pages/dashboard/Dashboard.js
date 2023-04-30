@@ -88,7 +88,7 @@ const Homepage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li>
-                      <button tag="a" className="dropdown-toggle btn btn-primary">
+                      <button tag="a" className="dropdown-toggle btn btn-primary btn-dim">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
                         <Icon name="chevron-right" />
@@ -102,12 +102,12 @@ const Homepage = () => {
         </BlockHead>
         <Block>
           <Row className="g-gs">
-            <Col sm="6">
+            <Col md="6">
               <PreviewAltCard>
                 <ActiveSubscription />
               </PreviewAltCard>
             </Col>
-            <Col sm="6">
+            <Col md="6">
               <PreviewAltCard>
                 <AvgSubscription />
               </PreviewAltCard>

@@ -33,7 +33,7 @@ const Layout = () => {
   }, [visibility]);
 
   useEffect(() => {
-    document.body.className = `nk-body bg-white npc-default has-aside no-touch nk-nio-theme ${
+    document.body.className = `nk-body bg-dark npc-default has-aside no-touch nk-nio-theme ${
       themeState.skin === "dark" ? "dark-mode" : " "
     }`;
   }, [window.location.pathname]); // eslint-disable-line react-hooks/exhaustive-deps
