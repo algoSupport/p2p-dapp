@@ -689,10 +689,10 @@ body.dark-mode {
     border-color: $dark-border-color;
   }
   .nk-menu-main .nk-menu-sub {
-    background: lighten($sidebar-bg-dark-color, 3%);
+    background: #101c28;
   }
   .nk-menu-main .nk-menu-sub .nk-menu-item:hover > a {
-    background-color: $sidebar-bg-dark-color;
+    background-color: #233a53;
   }
   .table .table-light th,
   .page-item.disabled .page-link,
@@ -752,7 +752,7 @@ body.dark-mode {
   }
 
   .dropdown-menu {
-    background-color: lighten($dark-card-bg, 2%);
+    background-color: #101c28;
     border-color: lighten($dark-card-bg, 10%);
     box-shadow: 0 3px 20px 1px rgba($black, 0.4);
     &-s1 {
@@ -917,7 +917,7 @@ body.dark-mode {
   }
   .nk-header {
     border-color: $sidebar-border-dark-color !important;
-    background: #101924 !important;
+    background: #101c28 !important;
   }
 
   .nk-aside,
