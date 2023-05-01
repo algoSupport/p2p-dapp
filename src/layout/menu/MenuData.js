@@ -1,36 +1,44 @@
 const menu = [
-  { heading: "Account" },
+  { heading: "Account", requireConnect: true },
   {
     icon: "layout-alt-fill",
     text: "Dashboard",
     link: "/dashboard",
+    requireConnect: true,
   },
 
   {
     icon: "wallet-fill",
     text: "Wallets",
     link: "/wallets",
+    requireConnect: true,
   },
   {
     icon: "user-fill",
     text: "Profile",
+    link: "/profile/details",
     active: false,
+    requireConnect: true,
     subMenu: [
       {
         text: "Details",
         link: "/profile/details",
+        requireConnect: true,
       },
       {
         text: "Notifications",
         link: "/profile/notifications",
+        requireConnect: true,
       },
       {
         text: "Security Settings",
         link: "/profile/settings",
+        requireConnect: true,
       },
       {
         text: "Banking Details",
         link: "/profile/banking",
+        requireConnect: true,
       },
     ],
   },
@@ -42,6 +50,7 @@ const menu = [
   {
     icon: "users-fill",
     text: "Marketplace",
+    link: "/marketplace/buy",
     active: false,
     subMenu: [
       {
@@ -78,6 +87,7 @@ const menu = [
   {
     icon: "pie-fill",
     text: "Staking",
+    link: "/pricing-table",
     active: false,
     subMenu: [
       {

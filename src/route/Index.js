@@ -150,46 +150,46 @@ const Pages = () => {
         <PrivateRoute path={`${process.env.PUBLIC_URL}/_blank`} component={Blank}></PrivateRoute>
 
         {/*Pre-built Pages*/}
-        <PrivateRoute path={`${process.env.PUBLIC_URL}/project-card`}>
-          <ProjectCardPage />
-        </PrivateRoute>
-        <PrivateRoute path={`${process.env.PUBLIC_URL}/swap`}>
-          <SwapPage />
-        </PrivateRoute>
-        <PrivateRoute path={`${process.env.PUBLIC_URL}/project-list`}>
-          <ProjectListPage />
-        </PrivateRoute>
-        <PrivateRoute //Context Api added
+        <Route exact path={`${process.env.PUBLIC_URL}/project-card`} component={ProjectCardPage}></Route>
+        <Route exact path={`${process.env.PUBLIC_URL}/swap`} component={SwapPage}></Route>
+        <Route exact path={`${process.env.PUBLIC_URL}/project-list`} component={ProjectListPage}></Route>
+        <Route
+          exact
           path={`${process.env.PUBLIC_URL}/marketplace/buy`}
-        >
-          {" "}
-          <UserContextProvider>
-            <BuyPage />
-          </UserContextProvider>
-        </PrivateRoute>
-        <PrivateRoute //Context Api added
+          render={() => (
+            <UserContextProvider>
+              <BuyPage />
+            </UserContextProvider>
+          )}
+        ></Route>
+        <Route
+          exact
           path={`${process.env.PUBLIC_URL}/marketplace/sell`}
-        >
-          {" "}
-          <UserContextProvider>
-            <SellPage />
-          </UserContextProvider>
-        </PrivateRoute>
-        <PrivateRoute //Context Api added
+          render={() => (
+            <UserContextProvider>
+              <SellPage />
+            </UserContextProvider>
+          )}
+        ></Route>
+        <Route
+          exact
           path={`${process.env.PUBLIC_URL}/marketplace/user-list-compact`}
           render={() => (
             <UserContextProvider>
               <UserListCompact />
             </UserContextProvider>
           )}
-        ></PrivateRoute>
-        <PrivateRoute //Context Api added
-          path={`${process.env.PUBLIC_URL}/user-details-regular/:id`}
-        >
-          <UserContextProvider>
-            <UserDetailsPage />
-          </UserContextProvider>
-        </PrivateRoute>
+        ></Route>
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/marketplace/user-details-regular/:id`}
+          render={(props) => (
+            <UserContextProvider>
+              <UserDetailsPage {...props} />
+            </UserContextProvider>
+          )}
+        ></Route>
+
         <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/details`}>
           <UserProfileLayout />
         </PrivateRoute>

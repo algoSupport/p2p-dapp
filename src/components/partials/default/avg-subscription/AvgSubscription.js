@@ -32,7 +32,9 @@ const AvgSubscription = () => {
             since last week
           </span>
         </div>
-        <div className="nk-sales-ck">{/* <BarChart /> */}</div>
+        <div className="nk-sales-ck">
+          <BarChart />
+        </div>
       </div>
     </React.Fragment>
   );
