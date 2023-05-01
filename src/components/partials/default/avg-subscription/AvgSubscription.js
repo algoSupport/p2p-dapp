@@ -23,18 +23,16 @@ const AvgSubscription = () => {
       </div>
       <div className="align-end flex-sm-wrap g-4 flex-md-nowrap">
         <div className="nk-sale-data">
-          <span className="amount">$34,986.26</span>
+          <span className="amount">$0</span>
           <span className="sub-title">
             <span className="change up text-success">
               <Icon name="arrow-long-up" />
-              2.45%
+              0%
             </span>
             since last week
           </span>
         </div>
-        <div className="nk-sales-ck">
-          <BarChart />
-        </div>
+        <div className="nk-sales-ck">{/* <BarChart /> */}</div>
       </div>
     </React.Fragment>
   );
