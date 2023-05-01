@@ -4,6 +4,7 @@ import Icon from "../../components/icon/Icon";
 import classNames from "classnames";
 import { NavLink, Link } from "react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import { useAccount } from "wagmi";
 
 const MenuHeading = ({ heading }) => {
   return (
@@ -267,6 +268,7 @@ const checkMenuUrl = (data) => {
 
 const Menu = ({ sidebarToggle, mobileView }) => {
   const [data, setMenuData] = useState(menu);
+  const { isConnected } = useAccount();
 
   useEffect(() => {
     data.forEach((item) => {
@@ -289,37 +291,26 @@ const Menu = ({ sidebarToggle, mobileView }) => {
 
   return (
     <ul className="nk-menu" id="main-menu">
-      {data.map((item, index) =>
-        item.heading ? (
-          <MenuHeading heading={item.heading} key={item.heading} />
-        ) : item.panel ? (
-          <PanelItem
-            key={item.text}
-            link={item.link}
-            icon={item.icon}
-            text={item.text}
-            index={index}
-            panel={item.panel}
-            subPanel={item.subPanel}
-            data={data}
-            setMenuData={setMenuData}
-            sidebarToggle={sidebarToggle}
-            mobileView={mobileView}
-          />
-        ) : mobileView ? (
-          <MenuItem
-            key={item.text}
-            link={item.link}
-            icon={item.icon}
-            text={item.text}
-            sub={item.subMenu}
-            child={item.child}
-            badge={item.badge}
-            sidebarToggle={sidebarToggle}
-            mobileView={mobileView}
-          />
-        ) : (
-          item.text !== "Applications" && (
+      {data
+        .filter((item) => (item.requireConnect ? isConnected : true))
+        .map((item, index) =>
+          item.heading ? (
+            <MenuHeading heading={item.heading} key={item.heading} />
+          ) : item.panel ? (
+            <PanelItem
+              key={item.text}
+              link={item.link}
+              icon={item.icon}
+              text={item.text}
+              index={index}
+              panel={item.panel}
+              subPanel={item.subPanel}
+              data={data}
+              setMenuData={setMenuData}
+              sidebarToggle={sidebarToggle}
+              mobileView={mobileView}
+            />
+          ) : mobileView ? (
             <MenuItem
               key={item.text}
               link={item.link}
@@ -331,9 +322,22 @@ const Menu = ({ sidebarToggle, mobileView }) => {
               sidebarToggle={sidebarToggle}
               mobileView={mobileView}
             />
+          ) : (
+            item.text !== "Applications" && (
+              <MenuItem
+                key={item.text}
+                link={item.link}
+                icon={item.icon}
+                text={item.text}
+                sub={item.subMenu}
+                child={item.child}
+                badge={item.badge}
+                sidebarToggle={sidebarToggle}
+                mobileView={mobileView}
+              />
+            )
           )
-        )
-      )}
+        )}
     </ul>
   );
 };
