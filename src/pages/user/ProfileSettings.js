@@ -33,6 +33,13 @@ const Profile = () => {
 
       <Block>
         <div className="nk-data data-list data-list-s2 is-compact">
+          <div className="data-item">
+            <div className="data-col">
+              <span className="data-label">Name</span>
+              <span className="data-value">{userInfo.name}</span>
+            </div>
+            <div className="data-col data-col-end"></div>
+          </div>
           <div className="data-item" onClick={() => setModal(true)}>
             <div className="data-col">
               <span className="data-label">Display Name</span>
@@ -77,7 +84,7 @@ const Profile = () => {
               </a>
             </div>
           </div>
-          <div className="data-item">
+          {/* <div className="data-item">
             <div className="data-col">
               <span className="data-label">Date Format</span>
               <span className="data-value">MM/DD/YYYY</span>
@@ -93,7 +100,7 @@ const Profile = () => {
                 Change
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Timezone</span>
