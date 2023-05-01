@@ -22,7 +22,7 @@ const ActiveSubscription = () => {
       </div>
       <div className="align-end flex-sm-wrap g-4 flex-md-nowrap">
         <div className="nk-sale-data">
-          <span className="amount">0</span>
+          <span className="amount">0K</span>
           <span className="sub-title">
             <span className="change down text-danger">
               <Icon name="arrow-long-down" />
@@ -31,7 +31,9 @@ const ActiveSubscription = () => {
             since last month
           </span>
         </div>
-        <div className="nk-sales-ck">{/* <BarChart /> */}</div>
+        <div className="nk-sales-ck">
+          <BarChart />
+        </div>
       </div>
     </React.Fragment>
   );

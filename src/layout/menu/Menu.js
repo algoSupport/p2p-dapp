@@ -3,6 +3,7 @@ import menu from "./MenuData";
 import Icon from "../../components/icon/Icon";
 import classNames from "classnames";
 import { NavLink, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 const MenuHeading = ({ heading }) => {
   return (
@@ -68,6 +69,7 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
     });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  let history = useHistory();
   const menuToggle = (e) => {
     e.preventDefault();
     var self = e.target.closest(".nk-menu-toggle");
@@ -133,6 +135,8 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
       }
       subMenu.style.height = 0;
     }
+
+    history.push(link);
   };
 
   const menuItemClass = classNames({

@@ -14,6 +14,7 @@ const menu = [
   {
     icon: "user-fill",
     text: "Profile",
+    link: "/profile/details",
     active: false,
     subMenu: [
       {
@@ -42,6 +43,7 @@ const menu = [
   {
     icon: "users-fill",
     text: "Marketplace",
+    link: "/marketplace/buy",
     active: false,
     subMenu: [
       {
@@ -78,6 +80,7 @@ const menu = [
   {
     icon: "pie-fill",
     text: "Staking",
+    link: "/pricing-table",
     active: false,
     subMenu: [
       {

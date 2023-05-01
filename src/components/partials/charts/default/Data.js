@@ -34,8 +34,8 @@ export const activeSubscription = {
   datasets: [
     {
       label: "Active User",
-      barPercentage: 0.7,
-      categoryPercentage: 0.7,
+      // barPercentage: 0.7,
+      // categoryPercentage: 0.7,
       backgroundColor: [
         "rgba(101,118,255,0.2)",
         "rgba(101,118,255,0.2)",
@@ -44,7 +44,8 @@ export const activeSubscription = {
         "rgba(101,118,255,0.2)",
         "rgba(101,118,255,1)",
       ],
-      data: [8200, 7800, 9500, 5500, 9200, 9690],
+      data: [0, 0, 0, 0, 0, 0],
+      minBarLength: 7,
     },
   ],
 };

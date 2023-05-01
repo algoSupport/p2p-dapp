@@ -29,6 +29,11 @@ export const BarChart = ({ sales }) => {
         scales: {
           yAxes: [
             {
+              ticks: {
+                beginAtZero: true,
+              },
+              min: 0,
+              max: 1,
               display: false,
             },
           ],
