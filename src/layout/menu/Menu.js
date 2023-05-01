@@ -164,7 +164,15 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
         >
           {icon ? (
             <span className="nk-menu-icon">
-              <Icon name={icon} style={{ color: currentUrl === process.env.PUBLIC_URL + link ? "#6576fe" : "" }} />
+              <Icon
+                name={icon}
+                style={{
+                  color:
+                    currentUrl === process.env.PUBLIC_URL + link || (sub && currentUrl.includes(text.toLowerCase()))
+                      ? "#6576fe"
+                      : "",
+                }}
+              />
             </span>
           ) : null}
           <span className="nk-menu-text">{text}</span>
