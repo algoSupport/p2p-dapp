@@ -1,5 +1,5 @@
 import React, { Suspense, useLayoutEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { ProductContextProvider } from "../pages/pre-built/products/ProductContext";
 import { UserContextProvider } from "../pages/user/UserContext";
 import { RedirectAs404 } from "../utils/Utils";
@@ -99,7 +99,29 @@ import KnobPreview from "../pages/components/charts/KnobPreview";
 import { FileManagerContextProvider } from "../pages/app/file-manager/FileManagerContext";
 import SwapPage from "../pages/swap/Swap";
 import SellPage from "../pages/marketplace/Sell";
+import { useAccount } from "wagmi";
 
+function PrivateRoute({ children, ...rest }) {
+  const { isConnected } = useAccount();
+
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        isConnected ? (
+          children
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/",
+              state: { from: location },
+            }}
+          />
+        )
+      }
+    />
+  );
+}
 const Pages = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -108,55 +130,81 @@ const Pages = () => {
   return (
     <Suspense fallback={<div />}>
       <Switch>
-        {/*Dashboards*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/wallets`} component={Wallets}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/_blank`} component={Blank}></Route>
-
-        {/*Pre-built Pages*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/project-card`} component={ProjectCardPage}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/swap`} component={SwapPage}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/project-list`} component={ProjectListPage}></Route>
         <Route //Context Api added
           exact
-          path={`${process.env.PUBLIC_URL}/marketplace/buy`}
+          path={`${process.env.PUBLIC_URL}/`}
           render={() => (
             <UserContextProvider>
               <BuyPage />
             </UserContextProvider>
           )}
         ></Route>
-        <Route //Context Api added
-          exact
+        {/*Dashboards*/}
+
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/dashboard`}>
+          <Homepage />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/wallets`}>
+          <Wallets />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/_blank`} component={Blank}></PrivateRoute>
+
+        {/*Pre-built Pages*/}
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/project-card`}>
+          <ProjectCardPage />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/swap`}>
+          <SwapPage />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/project-list`}>
+          <ProjectListPage />
+        </PrivateRoute>
+        <PrivateRoute //Context Api added
+          path={`${process.env.PUBLIC_URL}/marketplace/buy`}
+        >
+          {" "}
+          <UserContextProvider>
+            <BuyPage />
+          </UserContextProvider>
+        </PrivateRoute>
+        <PrivateRoute //Context Api added
           path={`${process.env.PUBLIC_URL}/marketplace/sell`}
-          render={() => (
-            <UserContextProvider>
-              <SellPage />
-            </UserContextProvider>
-          )}
-        ></Route>
-        <Route //Context Api added
-          exact
+        >
+          {" "}
+          <UserContextProvider>
+            <SellPage />
+          </UserContextProvider>
+        </PrivateRoute>
+        <PrivateRoute //Context Api added
           path={`${process.env.PUBLIC_URL}/marketplace/user-list-compact`}
           render={() => (
             <UserContextProvider>
               <UserListCompact />
             </UserContextProvider>
           )}
-        ></Route>
-        <Route //Context Api added
-          exact
+        ></PrivateRoute>
+        <PrivateRoute //Context Api added
           path={`${process.env.PUBLIC_URL}/user-details-regular/:id`}
-          render={(props) => (
-            <UserContextProvider>
-              <UserDetailsPage {...props} />
-            </UserContextProvider>
-          )}
-        ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/profile/details`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/profile/notifications`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/profile/activity`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/profile/settings/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/profile/banking/`} component={UserProfileLayout}></Route>
+        >
+          <UserContextProvider>
+            <UserDetailsPage />
+          </UserContextProvider>
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/details`}>
+          <UserProfileLayout />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/notifications`}>
+          <UserProfileLayout />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/activity`}>
+          <UserProfileLayout />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/settings/`}>
+          <UserProfileLayout />
+        </PrivateRoute>
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/profile/banking/`}>
+          <UserProfileLayout />
+        </PrivateRoute>
         <Route //Context api added
           exact
           path={`${process.env.PUBLIC_URL}/user-contact-card`}
@@ -343,7 +391,7 @@ const Pages = () => {
         <Route exact path={`${process.env.PUBLIC_URL}/email-template`} component={EmailTemplate}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/nioicon`} component={NioIconPage}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/svg-icons`} component={SVGIconPage}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}`} component={Homepage}></Route>
+
         <Route component={RedirectAs404}></Route>
       </Switch>
     </Suspense>

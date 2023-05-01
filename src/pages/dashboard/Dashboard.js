@@ -20,9 +20,12 @@ import {
   BlockBetween,
 } from "../../components/Component";
 import OrderActivity from "../../components/partials/order-activity/OrderActivity";
+import { useAccount } from "wagmi";
+import { shortenAddress } from "../../utils/Utils";
 
 const Homepage = () => {
   const [sm, updateSm] = useState(false);
+  const { address } = useAccount();
   return (
     <React.Fragment>
       <Head title="Dashboard"></Head>
@@ -35,7 +38,7 @@ const Homepage = () => {
               </BlockTitle>
               <BlockDes className="text-soft">
                 {/* Wallet Address here */}
-                <p>Welcome back 0x33..592e</p>
+                <p>{`Welcome back ${shortenAddress(address)}`}</p>
               </BlockDes>
             </BlockHeadContent>
             <BlockHeadContent>

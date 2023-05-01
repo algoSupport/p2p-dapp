@@ -5,6 +5,7 @@ import Head from "./head/Head";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import classNames from "classnames";
+import { useAccount } from "wagmi";
 
 const Layout = () => {
   //Sidebar
@@ -15,6 +16,7 @@ const Layout = () => {
     header: "white",
     skin: "dark",
   });
+  const { isConnected } = useAccount();
 
   useEffect(() => {
     viewChange();
@@ -80,14 +82,17 @@ const Layout = () => {
             <div className="nk-content">
               <div className="container wide-xl">
                 <div className="nk-content-inner">
-                  <Sidebar
-                    sidebarToggle={toggleSidebar}
-                    visibility={visibility}
-                    mobileView={mobileView}
-                    fixed
-                    theme="light"
-                    className={sidebarClass}
-                  />
+                  {isConnected && (
+                    <Sidebar
+                      sidebarToggle={toggleSidebar}
+                      visibility={visibility}
+                      mobileView={mobileView}
+                      fixed
+                      theme="light"
+                      className={sidebarClass}
+                    />
+                  )}
+
                   {visibility && mobileView && <div className="toggle-overlay" onClick={(e) => toggleSidebar(e)} />}
                   <div className="nk-content-body">
                     <Pages />

@@ -3,18 +3,18 @@ import UserAvatar from "../../../../components/user/UserAvatar";
 import { DropdownToggle, DropdownMenu, Dropdown } from "reactstrap";
 import { Icon } from "../../../../components/Component";
 import { LinkList, LinkItem } from "../../../../components/links/Links";
-import { useDisconnect, useAccount, useNetwork } from 'wagmi'
+import { useDisconnect, useAccount, useNetwork } from "wagmi";
 import { shortenAddress } from "../../../../utils/Utils";
 
 const User = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen((prevState) => !prevState);
-  const { disconnect } = useDisconnect()
+  const { disconnect } = useDisconnect();
   const { address, isConnecting, isDisconnected } = useAccount();
-  const { chain, chains } = useNetwork()
+  const { chain, chains } = useNetwork();
 
   const handleSignout = () => {
-    disconnect()
+    disconnect();
   };
 
   return (
@@ -39,9 +39,9 @@ const User = () => {
             </div>
             <div className="user-info">
               {/* Display network here */}
-              <span className="lead-text">{chain.name}</span>
+              <span className="lead-text">{chain?.name}</span>
               {/* Display wallet address here */}
-              <span className="sub-text">{shortenAddress(address)}</span>
+              <span className="sub-text">{address && shortenAddress(address)}</span>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const User = () => {
         </div>
         <div className="dropdown-inner">
           <LinkList>
-            <a href='#' onClick={handleSignout}>
+            <a href="#" onClick={handleSignout}>
               <Icon name="unlink"></Icon>
               <span>Disconnect</span>
             </a>
