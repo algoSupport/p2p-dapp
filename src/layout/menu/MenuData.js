@@ -50,7 +50,7 @@ const menu = [
       },
       {
         text: "Sell",
-        link: "/marketplace/user-list-regular",
+        link: "/marketplace/sell",
       },
       {
         text: "Create",
