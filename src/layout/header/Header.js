@@ -12,7 +12,7 @@ import ConnectWalletButton from "../../components/button/ConnectWalletButton";
 
 const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...props }) => {
   const { address, isConnecting, isDisconnected } = useAccount();
-  const { chain, chains } = useNetwork()
+  const { chain, chains } = useNetwork();
   const [onHover, setOnHover] = useState(false);
   const headerClass = classNames({
     "nk-header": true,
@@ -69,7 +69,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                     </li>
                     <li className="nk-menu-item">
                       <Link
-                        to={`${process.env.PUBLIC_URL}/marketplace/user-list-regular`}
+                        to={`${process.env.PUBLIC_URL}/marketplace/sell`}
                         onClick={() => setOnHover(false)}
                         className="nk-menu-link"
                       >

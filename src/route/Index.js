@@ -98,6 +98,7 @@ import TinymcePreview from "../pages/components/forms/rich-editor/TinymcePreview
 import KnobPreview from "../pages/components/charts/KnobPreview";
 import { FileManagerContextProvider } from "../pages/app/file-manager/FileManagerContext";
 import SwapPage from "../pages/swap/Swap";
+import SellPage from "../pages/marketplace/Sell";
 
 const Pages = () => {
   useLayoutEffect(() => {
@@ -121,6 +122,15 @@ const Pages = () => {
           render={() => (
             <UserContextProvider>
               <BuyPage />
+            </UserContextProvider>
+          )}
+        ></Route>
+        <Route //Context Api added
+          exact
+          path={`${process.env.PUBLIC_URL}/marketplace/sell`}
+          render={() => (
+            <UserContextProvider>
+              <SellPage />
             </UserContextProvider>
           )}
         ></Route>
