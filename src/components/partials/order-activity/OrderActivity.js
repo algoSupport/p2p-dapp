@@ -122,9 +122,7 @@ const OrderActivity = () => {
                 </span>
               </DataTableRow>
               <DataTableRow className="text-end">
-                <span className="tb-sub tb-amount ">
-                  {item.amount} <span>BTC</span>
-                </span>
+                <span className="tb-sub tb-amount ">{item.amount}</span>
               </DataTableRow>
             </DataTableItem>
           );

@@ -8,7 +8,7 @@ export const orderActivityData = [
     time: "11:37 PM",
     ref: "RE2309232",
     usd: "4,565.75",
-    amount: "+ 0.2040",
+    amount: "+ 0.1628797",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const orderActivityData = [
     time: "10:37 PM",
     ref: "RE2309232",
     usd: "2,039.39",
-    amount: "+ 0.12600",
+    amount: "+ 1.08600",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const orderActivityData = [
     time: "10:45 PM",
     ref: "RE2309232",
     usd: "9,285.71 ",
-    amount: "+ 0.94750",
+    amount: "- 0.54750",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const orderActivityData = [
     time: "10:25 PM",
     ref: "RE2309232",
     usd: "12,596.75",
-    amount: "+ 1.02050",
+    amount: "- 6.02050",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const orderActivityData = [
     time: "10:12 PM",
     ref: "RE2309232",
     usd: "400.00",
-    amount: "+ 0.00056",
+    amount: "+ 0.00556",
   },
   {
     id: 6,
@@ -65,6 +65,6 @@ export const orderActivityData = [
     time: "05:15 PM",
     ref: "RE2309232",
     usd: "6,246.50",
-    amount: "+ 0.02575",
+    amount: "- 3.02575",
   },
 ];
