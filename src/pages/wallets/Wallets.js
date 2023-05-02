@@ -46,49 +46,10 @@ const Wallets = () => {
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
                     <li>
-                      <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-primary">
-                          <Icon className="d-none d-sm-inline" name="setting" />
-                          <span>Actions</span>
-                        </DropdownToggle>
-                        <DropdownMenu end>
-                          <ul className="link-list-opt no-bdr">
-                            <li>
-                              <DropdownItem
-                                tag="a"
-                                onClick={(ev) => {
-                                  ev.preventDefault();
-                                }}
-                                href="#!"
-                              >
-                                <span>Deposit</span>
-                              </DropdownItem>
-                            </li>
-                            <li>
-                              <DropdownItem
-                                tag="a"
-                                onClick={(ev) => {
-                                  ev.preventDefault();
-                                }}
-                                href="#dropdownitem"
-                              >
-                                <span>Withdraw</span>
-                              </DropdownItem>
-                            </li>
-                            <li>
-                              <DropdownItem
-                                tag="a"
-                                onClick={(ev) => {
-                                  ev.preventDefault();
-                                }}
-                                href="#dropdownitem"
-                              >
-                                <span>Add Wallet</span>
-                              </DropdownItem>
-                            </li>
-                          </ul>
-                        </DropdownMenu>
-                      </UncontrolledDropdown>
+                      <button tag="a" className="dropdown-toggle btn btn-primary">
+                        <Icon className="d-none d-sm-inline" name="plus" />
+                        <span>Add a wallet</span>
+                      </button>
                     </li>
                   </ul>
                 </div>
