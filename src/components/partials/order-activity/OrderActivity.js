@@ -99,7 +99,7 @@ const OrderActivity = () => {
           </DataTableRow>
           <DataTableRow size="xl">
             <span>Deposit</span>
-            <span className="ms-1" style={{ color: "gray", fontSize: "10px" }}>
+            <span className="ms-1" style={{ color: "white", fontSize: "10px" }}>
               APR
             </span>
           </DataTableRow>
@@ -120,8 +120,8 @@ const OrderActivity = () => {
               </DataTableRow>
               <DataTableRow>
                 <div className="d-flex align-center">
-                  <span className="tb-lead">{item.total}</span>
-                  <span className="tb-lead ms-1" style={{ color: "gray", fontSize: "10px" }}>
+                  <span className="tb-sub">{item.total}</span>
+                  <span className="tb-sub ms-1" style={{ color: "white", fontSize: "10px" }}>
                     {item.symbol}
                   </span>
                 </div>
