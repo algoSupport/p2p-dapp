@@ -134,8 +134,10 @@ const OrderActivity = () => {
               </DataTableRow>
 
               <DataTableRow className="text-end me-2">
-                <Button color="primary">Deposit</Button>
-                <Button color="primary" className={"ms-3"}>
+                <Button color="primary" size="sm">
+                  Deposit
+                </Button>
+                <Button color="primary" size="sm" className="ms-3 btn-dim">
                   Withdraw
                 </Button>
               </DataTableRow>
