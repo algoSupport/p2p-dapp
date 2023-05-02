@@ -13,7 +13,6 @@ const NotificationItem = (props) => {
       </div>
       <div className="nk-notification-content">
         <div className="nk-notification-text">{text}</div>
-        <div className="nk-notification-time">{time}</div>
       </div>
     </div>
   );
@@ -44,7 +43,6 @@ const Notification = () => {
                   icon={item.icon}
                   iconStyle={item.iconStyle}
                   text={item.text}
-                  time={item.time}
                 />
               );
             })}
