@@ -33,7 +33,7 @@ export const activeSubscription = {
   stacked: true,
   datasets: [
     {
-      label: "Active User",
+      label: "Trades",
       // barPercentage: 0.7,
       // categoryPercentage: 0.7,
       backgroundColor: [

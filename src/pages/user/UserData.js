@@ -13,7 +13,7 @@ export const userData = [
     role: "Customer",
     checked: false,
     balance: "35,040.34",
-    phone: "818474958",
+    phone: "$500",
     emailStatus: "success",
     kycStatus: "success",
     lastLogin: "10 Feb 2020",
