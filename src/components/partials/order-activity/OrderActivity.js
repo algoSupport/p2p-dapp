@@ -103,7 +103,7 @@ const OrderActivity = () => {
               APR
             </span>
           </DataTableRow>
-          <DataTableRow size="xxl"></DataTableRow>
+          <DataTableRow size=""></DataTableRow>
         </DataTableHead>
         {orderData.map((item) => {
           return (
