@@ -117,9 +117,6 @@ const SwapPage = () => {
                     <div className="d-flex flex-column" style={{ gap: "3px", position: "relative" }}>
                       <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
                       <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
-                      <div className={styles.switch} onClick={() => onSwitch()}>
-                        <img src="/images/switch.svg" alt="switch"></img>
-                      </div>
                     </div>
                   </TabPane>
                   <TabPane tabId="buy">

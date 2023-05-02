@@ -1,5 +1,5 @@
 .container {
-  background: #172737;
+  background: #101c28;
   border-radius: 5px;
   padding: 20px 20px;
 }
@@ -21,7 +21,7 @@
   }
 
   .dropItem {
-    background: #253141;
+    background: #1d2f45;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     font-size: 14px;
     column-gap: 3px;
     width: 100px;
-    border: 1px solid #1b2634;
+    border: 1px solid #1d2f45;
   }
   .selectedItem {
     width: 100%;
@@ -42,23 +42,23 @@
     align-items: center;
     column-gap: 3px;
     cursor: pointer;
-    background-color: #253141;
+    background-color: #1d2f45;
     padding: 5px 8px;
     border-radius: 5px;
     width: 100px;
-    border: 1px solid #1b2634;
+    border: 1px solid #1d2f45;
   }
 }
 .dropdownBody {
   position: absolute;
   z-index: 999;
   cursor: pointer;
-  background: #253141;
+  background: #1d2f45;
   padding: 4px 6px;
   width: 100px;
   border-radius: 5px;
   top: 40px;
-  border: 1px solid #1b2634;
+  border: 1px solid #1d2f45;
 
   .item {
     display: flex;
