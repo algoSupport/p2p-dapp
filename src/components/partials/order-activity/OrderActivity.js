@@ -27,17 +27,17 @@ const orderActivityData = [
 const OrderActivity = () => {
   const [orderData, setOrderData] = useState(orderActivityData);
   const [orderActivity, setActivity] = useState("");
-  useEffect(() => {
-    let data;
-    if (orderActivity === "Buy") {
-      data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Buy");
-    } else if (orderActivity === "Sell") {
-      data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Sell");
-    } else {
-      data = orderActivityData;
-    }
-    setOrderData(data);
-  }, [orderActivity]);
+  // useEffect(() => {
+  //   let data;
+  //   if (orderActivity === "Buy") {
+  //     data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Buy");
+  //   } else if (orderActivity === "Sell") {
+  //     data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Sell");
+  //   } else {
+  //     data = orderActivityData;
+  //   }
+  //   setOrderData(data);
+  // }, [orderActivity]);
   return (
     <React.Fragment>
       <div className="card-inner">
@@ -45,12 +45,12 @@ const OrderActivity = () => {
           <CardTitle>
             <h6 className="title">
               <span className="me-2">Wallets</span>{" "}
-              <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
+              {/* <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
                 View all
-              </Link>
+              </Link> */}
             </h6>
           </CardTitle>
-          <div className="card-tools">
+          {/* <div className="card-tools">
             <ul className="card-tools-nav">
               <li className={orderActivity === "Buy" ? "active" : ""} onClick={() => setActivity("Buy")}>
                 <a
@@ -83,7 +83,7 @@ const OrderActivity = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
