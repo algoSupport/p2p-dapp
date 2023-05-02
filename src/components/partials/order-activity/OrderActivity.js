@@ -1,9 +1,28 @@
 import React, { useEffect, useState } from "react";
 import Icon from "../../icon/Icon";
-import { orderActivityData } from "./OrderData";
 import { CardTitle } from "reactstrap";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Link } from "react-router-dom";
+import { Button } from "../../Component";
+
+const orderActivityData = [
+  {
+    id: 1,
+    icon: "sign-btc bg-btc-dim icon-circle",
+    symbol: "BTC",
+    total: "342,000",
+    value: "$30,000",
+    deposit: "3.50%",
+  },
+  {
+    id: 2,
+    icon: "sign-eth bg-eth-dim icon-circle",
+    symbol: "ETH",
+    total: "12342,000",
+    value: "$1,830",
+    deposit: "6.50%",
+  },
+];
 
 const OrderActivity = () => {
   const [orderData, setOrderData] = useState(orderActivityData);
@@ -25,7 +44,7 @@ const OrderActivity = () => {
         <div className="card-title-group">
           <CardTitle>
             <h6 className="title">
-              <span className="me-2">Recent Trades</span>{" "}
+              <span className="me-2">Wallets</span>{" "}
               <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
                 View all
               </Link>
@@ -70,59 +89,55 @@ const OrderActivity = () => {
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
           <DataTableRow className="nk-tb-orders-type">
-            <span>Type</span>
+            <span>Asset</span>
           </DataTableRow>
           <DataTableRow>
-            <span>Desc</span>
+            <span>Total</span>
           </DataTableRow>
           <DataTableRow size="sm">
-            <span>Date</span>
+            <span>Value</span>
           </DataTableRow>
           <DataTableRow size="xl">
-            <span>Time</span>
+            <span>Deposit</span>
+            <span className="ms-1" style={{ color: "gray", fontSize: "10px" }}>
+              APR
+            </span>
           </DataTableRow>
-          <DataTableRow size="xxl">
-            <span>Ref</span>
-          </DataTableRow>
-          <DataTableRow size="sm" className="text-end">
-            <span>USD Amount</span>
-          </DataTableRow>
-          <DataTableRow className="text-end">
-            <span>Amount</span>
-          </DataTableRow>
+          <DataTableRow size="xxl"></DataTableRow>
         </DataTableHead>
         {orderData.map((item) => {
           return (
             <DataTableItem key={item.id}>
               <DataTableRow className="nk-tb-orders-type">
-                <ul className="icon-overlap">
+                <ul className="d-flex align-center  ">
                   <li>
-                    <Icon name={item.icon1}></Icon>
+                    <Icon name={item.icon}></Icon>
                   </li>
                   <li>
-                    <Icon name={item.icon2}></Icon>
+                    <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
                   </li>
                 </ul>
               </DataTableRow>
               <DataTableRow>
-                <span className="tb-lead">{item.desc}</span>
+                <div className="d-flex align-center">
+                  <span className="tb-lead">{item.total}</span>
+                  <span className="tb-lead ms-1" style={{ color: "gray", fontSize: "10px" }}>
+                    {item.symbol}
+                  </span>
+                </div>
               </DataTableRow>
               <DataTableRow size="sm">
-                <span className="tb-sub">{item.date}</span>
+                <span className="tb-sub">{item.value}</span>
               </DataTableRow>
               <DataTableRow size="xl">
-                <span className="tb-sub">{item.time}</span>
+                <span className="tb-sub">{item.deposit}</span>
               </DataTableRow>
-              <DataTableRow size="xxl">
-                <span className="tb-sub text-primary">{item.ref}</span>
-              </DataTableRow>
-              <DataTableRow size="sm" className="text-end">
-                <span className="tb-sub tb-amount">
-                  {item.usd} <span>USD</span>
-                </span>
-              </DataTableRow>
-              <DataTableRow className="text-end">
-                <span className="tb-sub tb-amount ">{item.amount}</span>
+
+              <DataTableRow className="text-end me-2">
+                <Button color="primary">Deposit</Button>
+                <Button color="primary" className={"ms-3"}>
+                  Withdraw
+                </Button>
               </DataTableRow>
             </DataTableItem>
           );
