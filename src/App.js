@@ -31,7 +31,7 @@ const { chains, provider } = configureChains(
   [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
 );
 const { connectors } = getDefaultWallets({
-  appName: "Cillistia",
+  appName: "Cilistia",
   // projectId: "YOUR_PROJECT_ID",
   chains,
 });
