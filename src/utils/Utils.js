@@ -1,5 +1,5 @@
 import { Redirect } from "react-router-dom";
-import { getAddress } from '@ethersproject/address'
+import { getAddress } from "@ethersproject/address";
 
 //url for production
 export var url = "";
@@ -160,9 +160,10 @@ export const monthNames = [
 // shorten the checksummed version of the input address to have 0x + 4 characters at start and end
 export function shortenAddress(address, chars = 4) {
   try {
-    const parsed = getAddress(address)
-    return `${parsed.substring(0, chars + 2)}...${parsed.substring(42 - chars)}`
+    if (!address) return;
+    const parsed = getAddress(address);
+    return `${parsed.substring(0, chars + 2)}...${parsed.substring(42 - chars)}`;
   } catch (error) {
-    throw Error(`Invalid 'address' parameter '${address}'.`)
+    throw Error(`Invalid 'address' parameter '${address}'.`);
   }
 }

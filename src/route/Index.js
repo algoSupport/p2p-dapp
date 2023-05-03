@@ -133,11 +133,7 @@ const Pages = () => {
         <Route //Context Api added
           exact
           path={`${process.env.PUBLIC_URL}/`}
-          render={() => (
-            <UserContextProvider>
-              <BuyPage />
-            </UserContextProvider>
-          )}
+          render={() => <Homepage />}
         ></Route>
         {/*Dashboards*/}
 

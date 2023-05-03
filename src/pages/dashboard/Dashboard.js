@@ -22,10 +22,19 @@ import {
 import OrderActivity from "../../components/partials/order-activity/OrderActivity";
 import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
+import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
 
 const Homepage = () => {
   const [sm, updateSm] = useState(false);
-  const { address } = useAccount();
+  const { address, isConnected } = useAccount();
+  const history = useHistory();
+
+  useEffect(() => {
+    if (!isConnected) {
+      history.push("/marketplace/buy");
+    }
+  }, [history, isConnected]);
   return (
     <React.Fragment>
       <Head title="Dashboard"></Head>
