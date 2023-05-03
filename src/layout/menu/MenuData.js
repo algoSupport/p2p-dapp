@@ -87,12 +87,12 @@ const menu = [
   {
     icon: "pie-fill",
     text: "Staking",
-    link: "/pricing-table",
+    link: "/earn",
     active: false,
     subMenu: [
       {
         text: "Stake & Earn",
-        link: "/pricing-table",
+        link: "/earn",
       },
       {
         text: "Staking History",

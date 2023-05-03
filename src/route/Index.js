@@ -81,7 +81,7 @@ import ProductList from "../pages/pre-built/products/ProductList";
 import ProductDetails from "../pages/pre-built/products/ProductDetails";
 import InvoiceList from "../pages/pre-built/order-invoice/InvoiceList";
 import InvoiceDetails from "../pages/pre-built/order-invoice/InvoiceDetails";
-import PricingTable from "../pages/pre-built/pricing-table/PricingTable";
+import PricingTable from "../pages/earn/Earn";
 import GalleryPreview from "../pages/pre-built/gallery/GalleryCardPreview";
 import ReactToastify from "../pages/components/misc/ReactToastify";
 
@@ -237,7 +237,7 @@ const Pages = () => {
         <Route exact path={`${process.env.PUBLIC_URL}/history-payment`} component={PaymentHistory}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/invoice-list`} component={InvoiceList}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/invoice-details/:id`} component={InvoiceDetails}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}></Route>
+        <Route exact path={`${process.env.PUBLIC_URL}/earn`} component={PricingTable}></Route>
 
         <Route exact path={`${process.env.PUBLIC_URL}/image-gallery`} component={GalleryPreview}></Route>
 
