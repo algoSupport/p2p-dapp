@@ -1,147 +1,60 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Form } from "reactstrap";
-import { UserContext } from "../../user/UserContext";
 import { useForm } from "react-hook-form";
-import { Button, Col, RSelect } from "../../../components/Component";
-import { filterStatus } from "../../user/UserData";
+import { Button, Col } from "../../../components/Component";
+import { OfferContext } from "../../user/OfferContext";
 
-const Bank = (props) => {
-  console.log({ props });
-  const { contextData } = useContext(UserContext);
+export const filterStatus = [
+  { value: "fixedPrice", label: "Fixed Price" },
+  { value: "percent", label: "Percent" },
+];
+const Payment = (props) => {
+  const { contextData } = useContext(OfferContext);
   const [data, setData] = contextData;
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    balance: "",
-    phone: "",
-    status: "Active",
-  });
-
-  //   // unselects the data on mount
-  //   useEffect(() => {
-  //     let newData;
-  //     newData = userData.map((item) => {
-  //       item.checked = false;
-  //       return item;
-  //     });
-  //     setData([...newData]);
-  //   }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // function to reset the form
-  const resetForm = () => {
-    setFormData({
-      name: "",
-      email: "",
-      balance: "",
-      phone: "",
-      status: "Active",
-    });
-  };
-
-  // submit function to add a new item
   const onFormSubmit = (submitData) => {
-    const { name, email, balance, phone } = submitData;
-    let submittedData = {
-      id: data.length + 1,
-      avatarBg: "purple",
-      name: name,
-      role: "Customer",
-      email: email,
-      balance: balance,
-      phone: phone,
-      emailStatus: "success",
-      kycStatus: "alert",
-      lastLogin: "10 Feb 2020",
-      status: formData.status,
-      country: "Bangladesh",
-    };
-    setData([submittedData, ...data]);
-    resetForm();
+    setData({
+      ...data,
+      submitData,
+    });
     props.next();
-    // setModal({ edit: false }, { add: false });
   };
 
   const { errors, register, handleSubmit } = useForm();
 
   return (
     <div className="p-2">
-      Bank
       <div className="mt-4">
         <Form className="row gy-4" noValidate onSubmit={handleSubmit(onFormSubmit)}>
           <Col md="6">
             <div className="form-group">
-              <label className="form-label">Bank</label>
-              <input
-                className="form-control"
-                type="text"
-                name="name"
-                defaultValue={formData.name}
-                placeholder="Enter name"
-                ref={register({ required: "This field is required" })}
-              />
-              {errors.name && <span className="invalid">{errors.name.message}</span>}
-            </div>
-          </Col>
-          <Col md="6">
-            <div className="form-group">
-              <label className="form-label">Email </label>
-              <input
-                className="form-control"
-                type="text"
-                name="email"
-                defaultValue={formData.email}
-                placeholder="Enter email"
-                ref={register({
-                  required: "This field is required",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "invalid email address",
-                  },
-                })}
-              />
-              {errors.email && <span className="invalid">{errors.email.message}</span>}
-            </div>
-          </Col>
-          <Col md="6">
-            <div className="form-group">
-              <label className="form-label">Balance</label>
+              <label className="form-label">Min Amount</label>
               <input
                 className="form-control"
                 type="number"
-                name="balance"
-                defaultValue={formData.balance}
-                placeholder="Balance"
+                name="minAmount"
+                defaultValue={data.minAmount}
+                placeholder="Min Amount"
                 ref={register({ required: "This field is required" })}
               />
-              {errors.balance && <span className="invalid">{errors.balance.message}</span>}
+              {errors.minAmount && <span className="invalid">{errors.minAmount.message}</span>}
             </div>
           </Col>
           <Col md="6">
             <div className="form-group">
-              <label className="form-label">Phone</label>
+              <label className="form-label">Max Amount </label>
               <input
                 className="form-control"
                 type="number"
-                name="phone"
-                defaultValue={formData.phone}
+                name="maxAmount"
+                defaultValue={data.maxAmount}
+                placeholder="Max Amount"
                 ref={register({ required: "This field is required" })}
               />
-              {errors.phone && <span className="invalid">{errors.phone.message}</span>}
+              {errors.maxAmount && <span className="invalid">{errors.maxAmount.message}</span>}
             </div>
           </Col>
-          <Col md="12">
-            <div className="form-group">
-              <label className="form-label">Status</label>
-              <div className="form-control-wrap">
-                <RSelect
-                  options={filterStatus}
-                  defaultValue={{ value: "Active", label: "Active" }}
-                  onChange={(e) => setFormData({ ...formData, status: e.value })}
-                />
-              </div>
-            </div>
-          </Col>
+
           <Col size="12">
             <ul className="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
               <li>
@@ -153,7 +66,7 @@ const Bank = (props) => {
                   }}
                   className="link link-light"
                 >
-                  Back
+                  Cancel
                 </a>
               </li>
               <li>
@@ -168,4 +81,4 @@ const Bank = (props) => {
     </div>
   );
 };
-export default Bank;
+export default Payment;

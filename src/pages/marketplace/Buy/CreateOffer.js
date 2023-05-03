@@ -13,7 +13,7 @@ import {
 
 import { Step, Steps } from "react-step-builder";
 import Price from "./Price";
-import Bank from "./Bank";
+import Payment from "./Bank";
 
 const Header = (props) => {
   return (
@@ -73,7 +73,7 @@ const CreateBuyOffer = () => {
             <div className="nk-wizard nk-wizard-simple is-alter wizard clearfix">
               <Steps config={config}>
                 <Step component={Price} />
-                <Step component={Bank} />
+                <Step component={Payment} />
                 {/* <Step component={PaymentInfo} /> */}
                 {/* <Step component={Success} />  */}
               </Steps>

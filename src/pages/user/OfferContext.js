@@ -8,7 +8,9 @@ export const OfferContextProvider = (props) => {
     token: TokenList[0].symbol,
     currency: Currencies[0].symbol,
     price: 0,
-    type: "fixed_price",
+    type: "fixedPrice",
+    minAmount: "",
+    maxAmount: "",
   });
 
   return <OfferContext.Provider value={{ contextData: [data, setData] }}>{props.children}</OfferContext.Provider>;
