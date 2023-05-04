@@ -105,24 +105,29 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                 {onHover && (
                   <ul className="nk-menu-sub">
                     <li className="nk-menu-item">
-                      <Link to="" className="nk-menu-link">
+                      <a href="https://discord.gg/cilistia" className="nk-menu-link" target="_blank" rel="noreferrer">
                         <span className="nk-menu-text">Discord</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="nk-menu-item">
-                      <Link to="" className="nk-menu-link">
+                      <a
+                        href="https://twitter.com/cilistiap2p"
+                        className="nk-menu-link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <span className="nk-menu-text">Twitter</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="nk-menu-item">
-                      <Link to="" className="nk-menu-link">
+                      <a href="https://github.com/cilistia" className="nk-menu-link" target="_blank" rel="noreferrer">
                         <span className="nk-menu-text">Github</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="nk-menu-item">
-                      <Link to="" className="nk-menu-link">
+                      <a href="https://cilistia.com" className="nk-menu-link" target="_blank" rel="noreferrer">
                         <span className="nk-menu-text">Website</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 )}
