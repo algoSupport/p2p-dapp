@@ -312,10 +312,12 @@ const SellPage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li className="nk-block-tools-opt" onClick={() => setModal({ add: true })}>
-                      <Button color="primary">
-                        <Icon name="plus"></Icon>
-                        <span>Create an offer</span>
-                      </Button>
+                      <Link to="/marketplace/create-offer">
+                        <Button color="primary">
+                          <Icon name="plus"></Icon>
+                          <span>Create an offer</span>
+                        </Button>
+                      </Link>
                     </li>
                   </ul>
                 </div>

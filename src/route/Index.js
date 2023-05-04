@@ -167,7 +167,7 @@ const Pages = () => {
 
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/marketplace/buy/create-offer`}
+          path={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
           render={() => (
             <UserContextProvider>
               <OfferContextProvider>

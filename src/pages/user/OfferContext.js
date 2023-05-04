@@ -7,7 +7,7 @@ export const OfferContextProvider = (props) => {
   const [data, setData] = useState({
     token: TokenList[0].symbol,
     currency: Currencies[0].symbol,
-    price: 0,
+    price: "",
     type: "fixedPrice",
     minAmount: "",
     maxAmount: "",

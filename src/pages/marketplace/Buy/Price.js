@@ -70,7 +70,7 @@ const Price = (props) => {
                 type="number"
                 name="price"
                 defaultValue={formData.price}
-                placeholder="Balance"
+                placeholder="Price"
                 ref={register({ required: "This field is required" })}
               />
               {errors.price && <span className="invalid">{errors.price.message}</span>}

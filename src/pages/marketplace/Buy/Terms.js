@@ -3,7 +3,7 @@ import { Alert, Form } from "reactstrap";
 import { useForm } from "react-hook-form";
 import { Button, Col, Icon } from "../../../components/Component";
 import { OfferContext } from "../../user/OfferContext";
-import CheckboxRadio from "../../components/forms/CheckboxRadio";
+import { useHistory } from "react-router-dom";
 
 export const filterStatus = [
   { value: "fixedPrice", label: "Fixed Price" },
@@ -12,16 +12,18 @@ export const filterStatus = [
 const Terms = (props) => {
   const { contextData } = useContext(OfferContext);
   const [data, setData] = contextData;
+  const history = useHistory();
 
   const onFormSubmit = (submitData) => {
+    console.log(errors);
     setData({
       ...data,
       ...submitData,
     });
-    props.next();
+    history.goBack();
   };
 
-  const { errors, setError, register, handleSubmit } = useForm();
+  const { errors, register, handleSubmit } = useForm();
 
   return (
     <div className="p-2">
@@ -35,7 +37,7 @@ const Terms = (props) => {
                 type="number"
                 name="instruction"
                 defaultValue={data.instruction}
-                placeholder="Instruction"
+                placeholder="This will be displayed to the counterparty."
                 ref={register({ required: "This field is required" })}
               />
               {errors.instruction && <span className="invalid">{errors.instruction.message}</span>}
@@ -43,13 +45,13 @@ const Terms = (props) => {
           </Col>
           <Col md="12">
             <div className="form-group">
-              <label className="form-label">Max Amount </label>
+              <label className="form-label">Auto reply(optional) </label>
               <textarea
                 className="form-control"
                 type="number"
                 name="autoReply"
                 defaultValue={data.autoReply}
-                placeholder="Max Amount"
+                placeholder="This message will be sent to the counterparty once the trade has started."
                 ref={register()}
               />
               {/* {errors.autoReply && <span className="invalid">{errors.autoReply.message}</span>} */}
@@ -70,30 +72,51 @@ const Terms = (props) => {
             <div className="form-group">
               <div className="g">
                 <div className="custom-control custom-control custom-checkbox">
-                  <input type="checkbox" className="custom-control-input" id="customCheck5" />
-                  <label className="custom-control-label" htmlFor="customCheck5">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="kyc"
+                    name="kyc"
+                    ref={register({ required: "This field is required" })}
+                  />
+                  <label className="custom-control-label" htmlFor="kyc">
                     Completed KYC
                   </label>
+                  {errors.kyc && <span className="invalid">{errors.kyc.message}</span>}
                 </div>
               </div>
             </div>
             <div className="form-group">
               <div className="g">
                 <div className="custom-control custom-control custom-checkbox">
-                  <input type="checkbox" className="custom-control-input" id="customCheck5" />
-                  <label className="custom-control-label" htmlFor="customCheck5">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="longTerm"
+                    name="longTerm"
+                    ref={register({ required: "This field is required" })}
+                  />
+                  <label className="custom-control-label" htmlFor="longTerm">
                     Long term users
                   </label>
+                  {errors.longTerm && <span className="invalid">{errors.longTerm.message}</span>}
                 </div>
               </div>
             </div>
             <div className="form-group">
               <div className="g">
                 <div className="custom-control custom-control custom-checkbox">
-                  <input type="checkbox" className="custom-control-input" id="customCheck5" />
-                  <label className="custom-control-label" htmlFor="customCheck5">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="follower"
+                    name="follower"
+                    ref={register({ required: "This field is required" })}
+                  />
+                  <label className="custom-control-label" htmlFor="follower">
                     Must be a follower
                   </label>
+                  {errors.follower && <span className="invalid">{errors.follower.message}</span>}
                 </div>
               </div>
             </div>
@@ -115,7 +138,7 @@ const Terms = (props) => {
               </li>
               <li>
                 <Button color="primary" size="md" type="submit">
-                  Proceed
+                  Submit
                 </Button>
               </li>
             </ul>

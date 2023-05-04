@@ -313,7 +313,7 @@ const BuyPage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li className="nk-block-tools-opt">
-                      <Link to="/marketplace/buy/create-offer">
+                      <Link to="/marketplace/create-offer">
                         <Button color="primary">
                           <Icon name="plus"></Icon>
                           <span>Create an offer</span>
