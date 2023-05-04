@@ -323,6 +323,10 @@ const BuyPage = () => {
               </div>
             </BlockHeadContent>
           </BlockBetween>
+          {/*<Alert className="alert-icon mt-2" color="primary">
+            <Icon name="alert-circle" />
+            <strong>Please connect your wallet to trade on Cilistia. </strong>
+                              </Alert>*/}
         </BlockHead>
 
         <Block>

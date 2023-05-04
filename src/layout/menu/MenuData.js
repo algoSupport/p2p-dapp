@@ -64,10 +64,12 @@ const menu = [
       {
         text: "Create",
         link: "/marketplace/user-details-regular/1",
+        requireConnect: true,
       },
       {
         text: "My Offers",
         link: "/marketplace/user-profile-regular",
+        requireConnect: true,
       },
     ],
   },
@@ -80,6 +82,7 @@ const menu = [
     icon: "list-fill",
     text: "History",
     link: "/history-payment",
+    requireConnect: true,
   },
   {
     heading: "Earn",

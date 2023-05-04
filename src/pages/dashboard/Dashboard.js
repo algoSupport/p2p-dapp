@@ -6,6 +6,7 @@ import AvgSubscription from "../../components/partials/default/avg-subscription/
 import RecentActivity from "../../components/partials/default/recent-activity/Activity";
 import Support from "../../components/partials/default/support-request/Support";
 import { DropdownToggle, DropdownMenu, Card, UncontrolledDropdown, DropdownItem } from "reactstrap";
+import { Alert } from "reactstrap";
 import {
   Block,
   BlockDes,

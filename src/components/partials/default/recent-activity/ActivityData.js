@@ -6,7 +6,7 @@ export const activityData = [
     img: Kieth,
     initial: "KJ",
     theme: "success",
-    name: "Kieth Jensen",
+    name: "You have no reviews yet.",
     time: "Positive",
   },
   {
