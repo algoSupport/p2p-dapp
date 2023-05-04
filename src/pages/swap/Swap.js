@@ -78,7 +78,7 @@ const SwapPage = () => {
           </BlockBetween>
         </BlockHead>
 
-        <Row className="g-gs">
+        <Row className="g-gs d-flex align-items-center justify-content-center mt-20">
           <Col md={6}>
             <Card className="card-bordered">
               <CardBody className="card-inner pt-2">
@@ -137,13 +137,6 @@ const SwapPage = () => {
                 </TabContent>
               </CardBody>
             </Card>
-          </Col>
-          <Col md={6}>
-            <Block>
-              <PreviewAltCard>
-                <SalesOverview />
-              </PreviewAltCard>
-            </Block>
           </Col>
         </Row>
       </Content>
