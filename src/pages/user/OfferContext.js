@@ -11,6 +11,8 @@ export const OfferContextProvider = (props) => {
     type: "fixedPrice",
     minAmount: "",
     maxAmount: "",
+    instruction: "",
+    autoReply: "",
   });
 
   return <OfferContext.Provider value={{ contextData: [data, setData] }}>{props.children}</OfferContext.Provider>;

@@ -13,14 +13,19 @@ const Payment = (props) => {
   const [data, setData] = contextData;
 
   const onFormSubmit = (submitData) => {
+    if (submitData.minAmount > submitData.maxAmount) {
+      setError("minAmount", { message: "Min amount should be smaller than Max amount" });
+      return;
+    }
+
     setData({
       ...data,
-      submitData,
+      ...submitData,
     });
     props.next();
   };
 
-  const { errors, register, handleSubmit } = useForm();
+  const { errors, setError, register, handleSubmit } = useForm();
 
   return (
     <div className="p-2">
@@ -66,7 +71,7 @@ const Payment = (props) => {
                   }}
                   className="link link-light"
                 >
-                  Cancel
+                  Back
                 </a>
               </li>
               <li>

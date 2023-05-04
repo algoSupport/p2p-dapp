@@ -14,6 +14,7 @@ import {
 import { Step, Steps } from "react-step-builder";
 import Price from "./Price";
 import Payment from "./Bank";
+import Terms from "./Terms";
 
 const Header = (props) => {
   return (
@@ -74,8 +75,7 @@ const CreateBuyOffer = () => {
               <Steps config={config}>
                 <Step component={Price} />
                 <Step component={Payment} />
-                {/* <Step component={PaymentInfo} /> */}
-                {/* <Step component={Success} />  */}
+                <Step component={Terms} />
               </Steps>
             </div>
           </PreviewCard>
