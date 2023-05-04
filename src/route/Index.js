@@ -100,6 +100,8 @@ import { FileManagerContextProvider } from "../pages/app/file-manager/FileManage
 import SwapPage from "../pages/swap/Swap";
 import SellPage from "../pages/marketplace/Sell";
 import { useAccount } from "wagmi";
+import CreateBuyOffer from "../pages/marketplace/Buy/CreateOffer";
+import { OfferContextProvider } from "../pages/user/OfferContext";
 
 function PrivateRoute({ children, ...rest }) {
   const { isConnected } = useAccount();
@@ -158,6 +160,19 @@ const Pages = () => {
             </UserContextProvider>
           )}
         ></Route>
+
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
+          render={() => (
+            <UserContextProvider>
+              <OfferContextProvider>
+                <CreateBuyOffer />
+              </OfferContextProvider>
+            </UserContextProvider>
+          )}
+        ></Route>
+
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/marketplace/sell`}

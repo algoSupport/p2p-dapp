@@ -58,7 +58,7 @@ const TokenSelect = ({ selectedToken, setSelectedToken, setTokenClicked, isBuy }
         </div>
       )}
       {isDropdown && (
-        <div className={styles.dropdownBody} ref={dropdownBodyRef}>
+        <div className={styles.dropdownBody} ref={dropdownBodyRef} name="token">
           {(isBuy ? Currencies : TokenList).map((token) => {
             return (
               <div
