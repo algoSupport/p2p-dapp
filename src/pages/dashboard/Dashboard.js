@@ -25,6 +25,7 @@ import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
 import { useHistory } from "react-router-dom";
 import { useEffect } from "react";
+import Trades from "../../components/dashboard/Trades";
 
 const Homepage = () => {
   const [sm, updateSm] = useState(false);
@@ -128,7 +129,7 @@ const Homepage = () => {
 
             <Col size="12">
               <Card className="card-bordered card-full">
-                <OrderActivity />
+                <Trades />
               </Card>
             </Col>
             <Col lg="6">
