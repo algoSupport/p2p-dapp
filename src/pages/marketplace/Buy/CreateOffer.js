@@ -63,7 +63,7 @@ const CreateBuyOffer = () => {
                 Create an offer
               </BlockTitle>
               <BlockDes className="text-soft">
-                <p>Create an offer to buy the assets</p>
+                <p>Create an offer to buy or sell assets on Cilistia</p>
               </BlockDes>
             </BlockHeadContent>
           </BlockBetween>

@@ -63,7 +63,7 @@ const menu = [
       },
       {
         text: "Create",
-        link: "/marketplace/user-details-regular/1",
+        link: "/marketplace/create-offer",
         requireConnect: true,
       },
       {

@@ -75,7 +75,7 @@ const Payment = (props) => {
                 </a>
               </li>
               <li>
-                <Button color="primary" size="md" type="submit">
+                <Button color="outline-primary" className="btn-dim" type="submit">
                   Proceed
                 </Button>
               </li>

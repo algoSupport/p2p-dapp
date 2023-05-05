@@ -78,7 +78,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                     </li>
                     <li className="nk-menu-item">
                       <Link
-                        to={`${process.env.PUBLIC_URL}/marketplace/user-list-regular`}
+                        to={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
                         onClick={() => setOnHover(false)}
                         className="nk-menu-link"
                       >
@@ -87,7 +87,7 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                     </li>
                     <li className="nk-menu-item">
                       <Link
-                        to={`${process.env.PUBLIC_URL}/marketplace/user-list-regular`}
+                        to={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
                         onClick={() => setOnHover(false)}
                         className="nk-menu-link"
                       >
