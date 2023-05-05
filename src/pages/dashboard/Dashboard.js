@@ -102,7 +102,7 @@ const Homepage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li>
-                      <button tag="a" className="dropdown-toggle btn btn-primary">
+                      <button tag="a" className="dropdown-toggle btn btn-dim btn-outline-primary">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
                         <Icon name="chevron-right" />

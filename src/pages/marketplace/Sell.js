@@ -313,7 +313,7 @@ const SellPage = () => {
                     </li>
                     <li className="nk-block-tools-opt" onClick={() => setModal({ add: true })}>
                       <Link to="/marketplace/create-offer">
-                        <Button color="primary">
+                        <Button color="outline-primary" className="btn-dim btn-outline">
                           <Icon name="plus"></Icon>
                           <span>Create an offer</span>
                         </Button>

@@ -2,8 +2,8 @@
 $dark-body-bg: $darker;
 $dark-body-bg-dark: darken($darker, 6%);
 $dark-body-bg-light: darken($darker, 2%);
-$dark-card-bg: #111c28;
-$dark-border-color: lighten($darker, 10%);
+$dark-card-bg: #0f172a;
+$dark-border-color: #363c60;
 $dark-border-light: $light-800;
 
 // Dark Mode
@@ -57,7 +57,7 @@ body.dark-mode {
   .icon[class*="bg-secondary-dim"],
   .user-avatar[class*="-light"],
   .icon[class*="bg-light"] {
-    color: $base-400 !important;
+    color: #a5b4fb !important;
   }
   .text-dark {
     color: $white !important;
@@ -173,7 +173,10 @@ body.dark-mode {
   .bg-outline-secondary,
   .badge-dot.bg-dark,
   .badge-dot.bg-secondary {
-    color: $light-400;
+    color: #a5b4fb !important;
+  }
+  .btn-secondary {
+    color: #a5b4fb !important;
   }
 
   .bg-outline-dark {
@@ -250,10 +253,11 @@ body.dark-mode {
     }
   }
   .btn-outline-secondary {
-    border-color: lighten($secondary, 20%);
-    color: lighten($secondary, 20%);
+    border-color: #818cf833;
+    color: #a5b4fb;
+    background: #222852;
     &:not(:disabled):not(.disabled):hover {
-      background: lighten($secondary, 20%);
+      background: #161c2f;
       color: $white;
     }
   }
@@ -278,7 +282,7 @@ body.dark-mode {
     .btn-dim.btn-#{$name} {
       color: $color;
       background-color: $background;
-      border-color: transparent;
+      border-color: #363c60;
       &:not(:disabled):not(.disabled):hover {
         color: lighten($color, 10%);
         background-color: lighten($background, 7%);
@@ -689,10 +693,10 @@ body.dark-mode {
     border-color: $dark-border-color;
   }
   .nk-menu-main .nk-menu-sub {
-    background: #101c28;
+    background: #0f172a;
   }
   .nk-menu-main .nk-menu-sub .nk-menu-item:hover > a {
-    background-color: #233a53;
+    background-color: #161c2f;
   }
   .table .table-light th,
   .page-item.disabled .page-link,
@@ -732,7 +736,7 @@ body.dark-mode {
   .link-list-opt li + li,
   .link-list-plain li,
   .link-list-plain li + li {
-    border-color: lighten($dark-card-bg, 20%) !important;
+    border-color: $sidebar-border-dark-color;
   }
   .custom-switch .custom-control-label::after {
     background-color: lighten($dark-card-bg, 50%) !important;
@@ -748,15 +752,15 @@ body.dark-mode {
   .btn-trigger:before,
   .btn-trigger.active:hover:before,
   .nk-quick-nav-icon:before {
-    background-color: #0e1721;
+    background-color: #0f172a;
   }
 
   .dropdown-menu {
-    background-color: #101c28;
-    border-color: lighten($dark-card-bg, 10%);
+    background-color: #0f172a;
+    border-color: $sidebar-border-dark-color;
     box-shadow: 0 3px 20px 1px rgba($black, 0.4);
     &-s1 {
-      border-top-color: #202b3b;
+      border-top-color: $sidebar-border-dark-color;
     }
   }
 
@@ -917,7 +921,7 @@ body.dark-mode {
   }
   .nk-header {
     border-color: $sidebar-border-dark-color !important;
-    background: #101c28 !important;
+    background: #0f172a !important;
   }
 
   .nk-aside,
@@ -1573,12 +1577,12 @@ body.dark-mode {
   .react-select__control {
     cursor: pointer !important;
     color: #8094ae !important;
-    border: 1px solid $dark-border-light !important;
+    border: 1px solid $sidebar-border-dark-color !important;
     background-color: $dark-card-bg !important;
     //padding: 0 .35rem !important;
   }
   .react-select__control:hover {
-    border-color: $dark-border-light !important;
+    border-color: #3e446a !important;
   }
   .react-select__single-value {
     color: #8094ae !important;
@@ -1592,7 +1596,7 @@ body.dark-mode {
   .react-select__control--menu-is-open,
   .react-select__control + .react-select__control--is-focused,
   .react-select__control + .react-select__control--menu-is-open {
-    border: 1px solid $dark-border-light !important;
+    border: 1px solid #363c60 !important;
     //border-color: $accent-color !important;
     cursor: pointer !important;
     box-shadow: none !important;
@@ -1601,7 +1605,7 @@ body.dark-mode {
     background-color: $dark-card-bg !important;
     border-radius: $react-select-border-radius !important;
     box-shadow: $react-select-box-shadow !important;
-    border: $react-select-border-width solid $dark-border-light !important;
+    border: $react-select-border-width solid #363c60 !important;
     font-family: $react-select-font-family !important;
     font-size: $react-select-font-size !important;
     font-weight: $react-select-font-weight !important;

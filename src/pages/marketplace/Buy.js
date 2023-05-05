@@ -314,7 +314,7 @@ const BuyPage = () => {
                     </li>
                     <li className="nk-block-tools-opt">
                       <Link to="/marketplace/create-offer">
-                        <Button color="primary">
+                        <Button color="outline-primary" className="btn-dim btn-outline">
                           <Icon name="plus"></Icon>
                           <span>Create an offer</span>
                         </Button>

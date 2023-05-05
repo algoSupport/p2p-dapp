@@ -8,7 +8,7 @@ import { Button } from "../../Component";
 const orderActivityData = [
   {
     id: 1,
-    icon: "sign-btc bg-btc-dim icon-circle",
+    icon: "sign-eth bg-eth-dim icon-circle",
     symbol: "WBTC",
     total: "0.0000",
     value: "$0.00",
