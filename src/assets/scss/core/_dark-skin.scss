@@ -9,7 +9,7 @@ $dark-border-light: $light-800;
 // Dark Mode
 body.dark-mode {
   background: $dark-body-bg !important;
-  color: $base-300;
+  color: #8094ae;
   &.bg-lighter,
   &.bg-light {
     background: $dark-body-bg-light !important;
@@ -51,7 +51,7 @@ body.dark-mode {
   .text-base,
   .text-body,
   .link-text {
-    color: $base-300 !important;
+    color: #8094ae !important;
   }
   .text-secondary,
   .icon[class*="bg-secondary-dim"],

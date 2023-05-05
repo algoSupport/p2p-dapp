@@ -104,7 +104,7 @@ const Trades = () => {
 
         <DataTableItem></DataTableItem>
       </DataTableBody>
-      <div className="text-gray fs-6 py-2 px-4">You have no recent trades on Cilistia.</div>
+      <div className="text-base fs-6 py-2 px-4">You have no recent trades on Cilistia.</div>
     </React.Fragment>
   );
 };

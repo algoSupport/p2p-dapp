@@ -54,7 +54,7 @@ const ColorsPage = ({ ...props }) => {
               <div className="w-80px flex-fill p-2 bg-primary-dim text-primary">primary</div>
               <div className="w-80px flex-fill p-2 bg-secondary-dim text-secondary">secondary</div>
               <div className="w-80px flex-fill p-2 bg-dark-dim text-dark">dark</div>
-              <div className="w-80px flex-fill p-2 bg-gray-dim text-gray">gray</div>
+              <div className="w-80px flex-fill p-2 bg-gray-dim text-base">gray</div>
               <div className="w-80px flex-fill p-2 bg-success-dim text-success">success</div>
               <div className="w-80px flex-fill p-2 bg-danger-dim text-danger">danger</div>
               <div className="w-80px flex-fill p-2 bg-warning-dim text-warning">warning</div>
