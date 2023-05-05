@@ -349,7 +349,7 @@ const BuyPage = () => {
                       <span className="d-none d-md-block">
                         <Button
                           disabled={actionText !== "" ? false : true}
-                          color="light"
+                          color="primary"
                           outline
                           className="btn-dim"
                           onClick={(e) => onActionClick(e)}
