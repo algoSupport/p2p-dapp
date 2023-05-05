@@ -41,7 +41,7 @@ const Trades = () => {
         <div className="card-title-group">
           <CardTitle>
             <h6 className="title">
-              <span className="me-2">Wallets</span>{" "}
+              <span className="me-2">Recent Trades</span>{" "}
               {/* <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
                 View all
               </Link> */}
@@ -94,14 +94,17 @@ const Trades = () => {
           <DataTableRow size="sm">
             <span>Amount</span>
           </DataTableRow>
-          <DataTableRow size="xl">
-            <span>Value</span>
+          <DataTableRow size="sm">
+            <span>Status</span>
+          </DataTableRow>
+          <DataTableRow size="sm">
+            <span>Rating</span>
           </DataTableRow>
         </DataTableHead>
 
         <DataTableItem></DataTableItem>
       </DataTableBody>
-      <div className="text-gray fs-6 py-2 px-4">You don't have any deposit history</div>
+      <div className="text-gray fs-6 py-2 px-4">You don't have any trades on Cilistia yet.</div>
     </React.Fragment>
   );
 };
