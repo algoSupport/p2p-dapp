@@ -17,7 +17,7 @@ const SalesOverview = () => {
           <span className="amount">$0.00</span>
         </div>
       </div>
-      <div className="nk-sales-ck large pt-4">
+      <div className="nk-sales-ck pt-4">
         <LineChart />
       </div>
     </React.Fragment>

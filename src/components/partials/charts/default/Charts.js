@@ -89,7 +89,7 @@ export const LineChart = () => {
         scales: {
           yAxes: [
             {
-              display: true,
+              display: false,
               ticks: {
                 beginAtZero: true,
                 fontSize: 11,
@@ -98,7 +98,7 @@ export const LineChart = () => {
                   return "$ " + value;
                 },
                 padding: 10,
-                min: 100,
+                min: 1,
                 stepSize: 3000,
               },
               gridLines: {
