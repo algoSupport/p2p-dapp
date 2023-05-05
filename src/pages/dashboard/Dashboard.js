@@ -7,6 +7,7 @@ import RecentActivity from "../../components/partials/default/recent-activity/Ac
 import Support from "../../components/partials/default/support-request/Support";
 import { DropdownToggle, DropdownMenu, Card, UncontrolledDropdown, DropdownItem } from "reactstrap";
 import { Alert } from "reactstrap";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import {
   Block,
   BlockDes,
@@ -102,11 +103,11 @@ const Homepage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li>
-                      <button tag="a" className="dropdown-toggle btn btn-dim btn-outline-primary">
+                      <Link to="/marketplace/buy" className="dropdown-toggle btn btn-dim btn-outline-primary">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
                         <Icon name="chevron-right" />
-                      </button>
+                      </Link>
                     </li>
                   </ul>
                 </div>
