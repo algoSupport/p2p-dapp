@@ -9,18 +9,34 @@ const orderActivityData = [
   {
     id: 1,
     icon: "sign-btc bg-btc-dim icon-circle",
-    symbol: "BTC",
-    total: "342,000",
-    value: "$30,000",
-    deposit: "3.50%",
+    symbol: "WBTC",
+    total: "0.0000",
+    value: "$0.00",
+    deposit: "9.75%",
   },
   {
     id: 2,
     icon: "sign-eth bg-eth-dim icon-circle",
-    symbol: "ETH",
-    total: "12342,000",
-    value: "$1,830",
+    symbol: "WETH",
+    total: "0.0000",
+    value: "$0.00",
     deposit: "6.50%",
+  },
+  {
+    id: 3,
+    icon: "sign-eth bg-eth-dim icon-circle",
+    symbol: "ARB",
+    total: "0.0000",
+    value: "$0.00",
+    deposit: "6.50%",
+  },
+  {
+    id: 4,
+    icon: "sign-eth bg-eth-dim icon-circle",
+    symbol: "CIL",
+    total: "0.0000",
+    value: "$0.00",
+    deposit: "70%",
   },
 ];
 
@@ -111,7 +127,7 @@ const OrderActivity = () => {
               <DataTableRow className="nk-tb-orders-type">
                 <ul className="d-flex align-center  ">
                   <li>
-                    <Icon name={item.icon}></Icon>
+                    <Icon name={item.icon} style={{ width: "25px", height: "25px" }}></Icon>
                   </li>
                   <li>
                     <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
@@ -134,10 +150,10 @@ const OrderActivity = () => {
               </DataTableRow>
 
               <DataTableRow className="text-end me-2">
-                <Button color="primary" size="sm">
+                <Button color="primary" size="sm" disabled>
                   Deposit
                 </Button>
-                <Button color="primary" size="sm" className="ms-3 btn-dim">
+                <Button color="primary" size="sm" className="ms-3 btn-dim" disabled>
                   Withdraw
                 </Button>
               </DataTableRow>

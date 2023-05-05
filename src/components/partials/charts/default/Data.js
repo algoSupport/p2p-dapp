@@ -83,10 +83,10 @@ export const salesOverview = {
     "29",
     "30",
   ],
-  dataUnit: "BTC",
+  dataUnit: "USD",
   datasets: [
     {
-      label: "Sales Overview",
+      label: "Portfolio Value",
       color: "#798bff",
       fill: true,
       backgroundColor: "rgba(101,118,255,0.25)",
@@ -99,10 +99,7 @@ export const salesOverview = {
       pointBackgroundColor: "transparent",
       pointHoverBorderColor: "#798bff",
       pointHoverBackgroundColor: "#fff",
-      data: [
-        8200, 7800, 9500, 5500, 9200, 9690, 8200, 7800, 9500, 5500, 9200, 9690, 8200, 7800, 9500, 5500, 9200, 9690,
-        8200, 7800, 9500, 5500, 9200, 9690, 8200, 7800, 9500, 5500, 9200, 9690,
-      ],
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     },
   ],
 };

@@ -14,7 +14,7 @@ const SalesOverview = () => {
       </div>
       <div className="nk-sale-data-group align-center justify-between gy-3 gx-5">
         <div className="nk-sale-data">
-          <span className="amount">$82,944.60</span>
+          <span className="amount">$0.00</span>
         </div>
       </div>
       <div className="nk-sales-ck large pt-4">
