@@ -28,8 +28,9 @@ import { bulkActionOptions, findUpper } from "../../utils/Utils";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../user/UserContext";
+import { Alert } from "reactstrap";
 
-const SellPage = () => {
+const BuyPage = () => {
   const { contextData } = useContext(UserContext);
   const [data, setData] = contextData;
 
@@ -243,7 +244,7 @@ const SellPage = () => {
 
   return (
     <React.Fragment>
-      <Head title="Sell"></Head>
+      <Head title="Buy"></Head>
       <Content>
         <BlockHead size="sm">
           <BlockBetween>
@@ -311,7 +312,7 @@ const SellPage = () => {
                         </DropdownMenu>
                       </UncontrolledDropdown>
                     </li>
-                    <li className="nk-block-tools-opt" onClick={() => setModal({ add: true })}>
+                    <li className="nk-block-tools-opt">
                       <Link to="/marketplace/create-offer">
                         <Button color="primary">
                           <Icon name="plus"></Icon>
@@ -324,6 +325,10 @@ const SellPage = () => {
               </div>
             </BlockHeadContent>
           </BlockBetween>
+          {/*<Alert className="alert-icon mt-2" color="primary">
+            <Icon name="alert-circle" />
+            <strong>Please connect your wallet to trade on Cilistia. </strong>
+                              </Alert>*/}
         </BlockHead>
 
         <Block>
@@ -599,59 +604,16 @@ const SellPage = () => {
                   <span className="sub-text">Min</span>
                 </DataTableRow>
                 <DataTableRow size="lg">
+                  <span className="sub-text">Max</span>
+                </DataTableRow>
+                <DataTableRow size="lg">
                   <span className="sub-text">Trade Volume</span>
                 </DataTableRow>
                 <DataTableRow size="lg">
-                  <span className="sub-text">Reviews</span>
+                  <span className="sub-text">Verification</span>
                 </DataTableRow>
                 <DataTableRow size="md">
                   <span className="sub-text">Status</span>
-                </DataTableRow>
-                <DataTableRow className="nk-tb-col-tools text-end">
-                  <UncontrolledDropdown>
-                    <DropdownToggle
-                      color="tranparent"
-                      className="btn btn-xs btn-outline-light btn-icon dropdown-toggle"
-                    >
-                      <Icon name="plus"></Icon>
-                    </DropdownToggle>
-                    <DropdownMenu end className="dropdown-menu-xs">
-                      <ul className="link-tidy sm no-bdr">
-                        <li>
-                          <div className="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="bl" />
-                            <label className="custom-control-label" htmlFor="bl">
-                              Balance
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="ph" />
-                            <label className="custom-control-label" htmlFor="ph">
-                              Phone
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="vri" />
-                            <label className="custom-control-label" htmlFor="vri">
-                              Verified
-                            </label>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="custom-control custom-control-sm custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="st" />
-                            <label className="custom-control-label" htmlFor="st">
-                              Status
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
                 </DataTableRow>
               </DataTableHead>
               {/*Head*/}
@@ -694,26 +656,13 @@ const SellPage = () => {
                           <span>{item.phone}</span>
                         </DataTableRow>
                         <DataTableRow size="lg">
+                          <span>{item.lastLogin}</span>
+                        </DataTableRow>
+                        <DataTableRow size="lg">
+                          <span>{item.lastLogin}</span>
+                        </DataTableRow>
+                        <DataTableRow size="lg">
                           <ul className="list-status">
-                            <li>
-                              <Icon
-                                className={`text-${
-                                  item.emailStatus === "success"
-                                    ? "success"
-                                    : item.emailStatus === "pending"
-                                    ? "info"
-                                    : "secondary"
-                                }`}
-                                name={`${
-                                  item.emailStatus === "success"
-                                    ? "check-circle"
-                                    : item.emailStatus === "alert"
-                                    ? "alert-circle"
-                                    : "alarm-alt"
-                                }`}
-                              ></Icon>{" "}
-                              <span>Email</span>
-                            </li>
                             <li>
                               <Icon
                                 className={`text-${
@@ -733,13 +682,11 @@ const SellPage = () => {
                                     : "alert-circle"
                                 }`}
                               ></Icon>{" "}
-                              <span>KYC</span>
+                              <span>Verified</span>
                             </li>
                           </ul>
                         </DataTableRow>
-                        <DataTableRow size="lg">
-                          <span>{item.lastLogin}</span>
-                        </DataTableRow>
+
                         <DataTableRow size="md">
                           <span
                             className={`tb-status text-${
@@ -748,74 +695,6 @@ const SellPage = () => {
                           >
                             {item.status}
                           </span>
-                        </DataTableRow>
-                        <DataTableRow className="nk-tb-col-tools">
-                          <ul className="nk-tb-actions gx-1">
-                            <li className="nk-tb-action-hidden" onClick={() => onEditClick(item.id)}>
-                              <TooltipComponent
-                                tag="a"
-                                containerClassName="btn btn-trigger btn-icon"
-                                id={"edit" + item.id}
-                                icon="edit-alt-fill"
-                                direction="top"
-                                text="Edit"
-                              />
-                            </li>
-                            {item.status !== "Suspend" && (
-                              <React.Fragment>
-                                <li className="nk-tb-action-hidden" onClick={() => suspendUser(item.id)}>
-                                  <TooltipComponent
-                                    tag="a"
-                                    containerClassName="btn btn-trigger btn-icon"
-                                    id={"suspend" + item.id}
-                                    icon="user-cross-fill"
-                                    direction="top"
-                                    text="Suspend"
-                                  />
-                                </li>
-                              </React.Fragment>
-                            )}
-                            <li>
-                              <UncontrolledDropdown>
-                                <DropdownToggle tag="a" className="dropdown-toggle btn btn-icon btn-trigger">
-                                  <Icon name="more-h"></Icon>
-                                </DropdownToggle>
-                                <DropdownMenu end>
-                                  <ul className="link-list-opt no-bdr">
-                                    <li onClick={() => onEditClick(item.id)}>
-                                      <DropdownItem
-                                        tag="a"
-                                        href="#edit"
-                                        onClick={(ev) => {
-                                          ev.preventDefault();
-                                        }}
-                                      >
-                                        <Icon name="edit"></Icon>
-                                        <span>Edit</span>
-                                      </DropdownItem>
-                                    </li>
-                                    {item.status !== "Suspend" && (
-                                      <React.Fragment>
-                                        <li className="divider"></li>
-                                        <li onClick={() => suspendUser(item.id)}>
-                                          <DropdownItem
-                                            tag="a"
-                                            href="#suspend"
-                                            onClick={(ev) => {
-                                              ev.preventDefault();
-                                            }}
-                                          >
-                                            <Icon name="na"></Icon>
-                                            <span>Suspend User</span>
-                                          </DropdownItem>
-                                        </li>
-                                      </React.Fragment>
-                                    )}
-                                  </ul>
-                                </DropdownMenu>
-                              </UncontrolledDropdown>
-                            </li>
-                          </ul>
                         </DataTableRow>
                       </DataTableItem>
                     );
@@ -838,121 +717,6 @@ const SellPage = () => {
             </div>
           </DataTable>
         </Block>
-        <Modal isOpen={modal.add} toggle={() => setModal({ add: false })} className="modal-dialog-centered" size="lg">
-          <ModalBody>
-            <a
-              href="#close"
-              onClick={(ev) => {
-                ev.preventDefault();
-                onFormCancel();
-              }}
-              className="close"
-            >
-              <Icon name="cross-sm"></Icon>
-            </a>
-            <div className="p-2">
-              <h5 className="title">Add User</h5>
-              <div className="mt-4">
-                <Form className="row gy-4" noValidate onSubmit={handleSubmit(onFormSubmit)}>
-                  <Col md="6">
-                    <div className="form-group">
-                      <label className="form-label">Name</label>
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="name"
-                        defaultValue={formData.name}
-                        placeholder="Enter name"
-                        ref={register({ required: "This field is required" })}
-                      />
-                      {errors.name && <span className="invalid">{errors.name.message}</span>}
-                    </div>
-                  </Col>
-                  <Col md="6">
-                    <div className="form-group">
-                      <label className="form-label">Email </label>
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="email"
-                        defaultValue={formData.email}
-                        placeholder="Enter email"
-                        ref={register({
-                          required: "This field is required",
-                          pattern: {
-                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: "invalid email address",
-                          },
-                        })}
-                      />
-                      {errors.email && <span className="invalid">{errors.email.message}</span>}
-                    </div>
-                  </Col>
-                  <Col md="6">
-                    <div className="form-group">
-                      <label className="form-label">Balance</label>
-                      <input
-                        className="form-control"
-                        type="number"
-                        name="balance"
-                        defaultValue={formData.balance}
-                        placeholder="Balance"
-                        ref={register({ required: "This field is required" })}
-                      />
-                      {errors.balance && <span className="invalid">{errors.balance.message}</span>}
-                    </div>
-                  </Col>
-                  <Col md="6">
-                    <div className="form-group">
-                      <label className="form-label">Phone</label>
-                      <input
-                        className="form-control"
-                        type="number"
-                        name="phone"
-                        defaultValue={formData.phone}
-                        ref={register({ required: "This field is required" })}
-                      />
-                      {errors.phone && <span className="invalid">{errors.phone.message}</span>}
-                    </div>
-                  </Col>
-                  <Col md="12">
-                    <div className="form-group">
-                      <label className="form-label">Status</label>
-                      <div className="form-control-wrap">
-                        <RSelect
-                          options={filterStatus}
-                          defaultValue={{ value: "Active", label: "Active" }}
-                          onChange={(e) => setFormData({ ...formData, status: e.value })}
-                        />
-                      </div>
-                    </div>
-                  </Col>
-                  <Col size="12">
-                    <ul className="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
-                      <li>
-                        <Button color="primary" size="md" type="submit">
-                          Add User
-                        </Button>
-                      </li>
-                      <li>
-                        <a
-                          href="#cancel"
-                          onClick={(ev) => {
-                            ev.preventDefault();
-                            onFormCancel();
-                          }}
-                          className="link link-light"
-                        >
-                          Cancel
-                        </a>
-                      </li>
-                    </ul>
-                  </Col>
-                </Form>
-              </div>
-            </div>
-          </ModalBody>
-        </Modal>
 
         <Modal isOpen={modal.edit} toggle={() => setModal({ edit: false })} className="modal-dialog-centered" size="lg">
           <ModalBody>
@@ -1077,4 +841,4 @@ const SellPage = () => {
     </React.Fragment>
   );
 };
-export default SellPage;
+export default BuyPage;
