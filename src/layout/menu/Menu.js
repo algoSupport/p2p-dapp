@@ -174,7 +174,7 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
                 style={{
                   color:
                     currentUrl === process.env.PUBLIC_URL + link || (sub && currentUrl.includes(text.toLowerCase()))
-                      ? "#6576fe"
+                      ? "#fff"
                       : "",
                 }}
               />
