@@ -7,7 +7,7 @@ const AvgSubscription = () => {
   return (
     <React.Fragment>
       {" "}
-      <div className="card-title-group align-start mb-2">
+      <div className="card-title-group align-start">
         <CardTitle>
           <h6 className="title">Trade Volume</h6>
         </CardTitle>

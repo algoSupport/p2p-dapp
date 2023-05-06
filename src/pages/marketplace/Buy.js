@@ -615,37 +615,35 @@ const BuyPage = () => {
                 <DataTableRow size="md">
                   <span className="sub-text">Status</span>
                 </DataTableRow>
+                <DataTableRow size="md">
+                  <span className="sub-text"></span>
+                </DataTableRow>
               </DataTableHead>
+
               {/*Head*/}
               {currentItems.length > 0
                 ? currentItems.map((item) => {
                     return (
                       <DataTableItem key={item.id}>
                         <DataTableRow>
-                          <Link to={`${process.env.PUBLIC_URL}/user-details-regular/${item.id}`}>
-                            <div className="user-card">
-                              <UserAvatar
-                                theme={item.avatarBg}
-                                text={findUpper(item.name)}
-                                image={item.image}
-                              ></UserAvatar>
-                              <div className="user-info">
-                                <span className="tb-lead">
-                                  {item.name}{" "}
-                                  <span
-                                    className={`dot dot-${
-                                      item.status === "Active"
-                                        ? "success"
-                                        : item.status === "Pending"
-                                        ? "warning"
-                                        : "danger"
-                                    } d-md-none ms-1`}
-                                  ></span>
-                                </span>
-                                <span>{item.email}</span>
-                              </div>
+                          <div className="user-card">
+                            <UserAvatar
+                              theme={item.avatarBg}
+                              text={findUpper(item.name)}
+                              image={item.image}
+                            ></UserAvatar>
+                            <div className="user-info">
+                              <span className="tb-lead">
+                                {item.name}{" "}
+                                <span
+                                  className={`dot dot-${
+                                    item.status === "Online" ? "success" : item.status === "Away" ? "warning" : "danger"
+                                  } d-md-none ms-1`}
+                                ></span>
+                              </span>
+                              <span>{item.email}</span>
                             </div>
-                          </Link>
+                          </div>
                         </DataTableRow>
                         <DataTableRow size="mb">
                           <span className="tb-amount">
@@ -690,10 +688,15 @@ const BuyPage = () => {
                         <DataTableRow size="md">
                           <span
                             className={`tb-status text-${
-                              item.status === "Active" ? "success" : item.status === "Pending" ? "warning" : "danger"
+                              item.status === "Online" ? "success" : item.status === "Away" ? "warning" : "danger"
                             }`}
                           >
                             {item.status}
+                          </span>
+                        </DataTableRow>
+                        <DataTableRow>
+                          <span>
+                            <button className="btn btn-primary btn-sm w-100 center">Buy</button>
                           </span>
                         </DataTableRow>
                       </DataTableItem>

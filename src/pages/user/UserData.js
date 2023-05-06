@@ -13,10 +13,9 @@ export const userData = [
     checked: false,
     balance: "35,040.34",
     phone: "$500",
-
     kycStatus: "success",
-    lastLogin: "10 Feb 2020",
-    status: "Active",
+    lastLogin: "$35,040.34",
+    status: "Online",
     address: "2337 Kildeer Drive",
     state: "Kentucky",
     country: "Canada",
@@ -38,7 +37,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "07 Feb 2020",
-    status: "Pending",
+    status: "Away",
     country: "United States",
     designation: "UI/UX Designer",
     projects: "213",
@@ -57,7 +56,7 @@ export const userData = [
 
     kycStatus: "success",
     lastLogin: "04 Feb 2020",
-    status: "Active",
+    status: "Online",
     country: "England",
     designation: "UI/UX Designer",
     projects: "213",
@@ -76,7 +75,7 @@ export const userData = [
 
     kycStatus: "alert",
     lastLogin: "01 Feb 2020",
-    status: "Suspend",
+    status: "Offline",
     country: "United States",
     designation: "UI/UX Designer",
     projects: "213",
@@ -96,7 +95,7 @@ export const userData = [
 
     kycStatus: "error",
     lastLogin: "31 Jan 2020",
-    status: "Active",
+    status: "Online",
     country: "Bangladesh",
     designation: "UI/UX Designer",
     projects: "213",
@@ -117,7 +116,7 @@ export const userData = [
 
     kycStatus: "warning",
     lastLogin: "18 Jan 2020",
-    status: "Inactive",
+    status: "Offline",
     country: "India",
     designation: "UI/UX Designer",
     projects: "213",
@@ -137,7 +136,7 @@ export const userData = [
 
     kycStatus: "success",
     lastLogin: "15 Jan 2020",
-    status: "Active",
+    status: "Online",
     country: "China",
     designation: "UI/UX Designer",
     projects: "213",
@@ -157,7 +156,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "08 Jan 2020",
-    status: "Active",
+    status: "Online",
     country: "India",
     designation: "UI/UX Designer",
     projects: "213",
@@ -178,7 +177,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "02 Jan 2020",
-    status: "Pending",
+    status: "Away",
     country: "Vietnam",
     designation: "UI/UX Designer",
     projects: "213",
@@ -198,7 +197,7 @@ export const userData = [
 
     kycStatus: "success",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "United States",
     designation: "UI/UX Designer",
     projects: "213",
@@ -218,7 +217,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "Canada",
     designation: "Web Developer",
     projects: "213",
@@ -238,7 +237,7 @@ export const userData = [
 
     kycStatus: "success",
     lastLogin: "25 Dec 2019",
-    status: "Pending",
+    status: "Away",
     country: "United States",
     designation: "UI/UX Designer",
     projects: "213",
@@ -258,7 +257,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "Russia",
     designation: "Web Developer",
     projects: "213",
@@ -278,7 +277,7 @@ export const userData = [
 
     kycStatus: "rejected",
     lastLogin: "25 Dec 2019",
-    status: "Suspend",
+    status: "Offline",
     country: "South Korea",
     designation: "Accountant",
     projects: "213",
@@ -299,7 +298,7 @@ export const userData = [
 
     kycStatus: "pending",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "Russia",
     designation: "Web Developer",
     projects: "213",
@@ -319,7 +318,7 @@ export const userData = [
 
     kycStatus: "rejected",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "Saudi Arabia",
     designation: "Lecturer",
     projects: "213",
@@ -339,7 +338,7 @@ export const userData = [
 
     kycStatus: "rejected",
     lastLogin: "25 Dec 2019",
-    status: "Pending",
+    status: "Away",
     country: "Latvia",
     designation: "Accountant",
     projects: "213",
@@ -360,7 +359,7 @@ export const userData = [
 
     kycStatus: "rejected",
     lastLogin: "25 Dec 2019",
-    status: "Suspend",
+    status: "Offline",
     country: "Ireland",
     designation: "Web Developer",
     projects: "213",
@@ -380,7 +379,7 @@ export const userData = [
 
     kycStatus: "success",
     lastLogin: "25 Dec 2019",
-    status: "Active",
+    status: "Online",
     country: "Latvia",
     designation: "Accountant",
     projects: "213",
@@ -400,7 +399,7 @@ export const userData = [
 
     kycStatus: "rejected",
     lastLogin: "25 Dec 2019",
-    status: "Suspend",
+    status: "Offline",
     country: "Ireland",
     designation: "Web Developer",
     projects: "213",
@@ -427,9 +426,9 @@ export const notes = [
 ];
 
 export const filterStatus = [
-  { value: "Active", label: "Active" },
-  { value: "Pending", label: "Pending" },
-  { value: "Suspend", label: "Suspend" },
+  { value: "Online", label: "Online" },
+  { value: "Away", label: "Away" },
+  { value: "Offline", label: "Offline" },
 ];
 
 export const filterRole = [
