@@ -253,11 +253,11 @@ body.dark-mode {
     }
   }
   .btn-outline-secondary {
-    border-color: #818cf833;
+    border-color: #233049;
     color: #a5b4fb;
-    background: #222852;
+    background: #1d273b;
     &:not(:disabled):not(.disabled):hover {
-      background: #161c2f;
+      background: #1d273b;
       color: $white;
     }
   }
