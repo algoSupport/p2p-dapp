@@ -11,7 +11,7 @@ export const userData = [
     displayName: "Marcus",
     role: "Customer",
     checked: false,
-    balance: "35,040.34",
+    balance: "$29,003.22",
     phone: "$500",
     kycStatus: "success",
     lastLogin: "$35,040.34",
