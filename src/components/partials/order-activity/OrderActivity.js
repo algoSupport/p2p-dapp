@@ -13,7 +13,7 @@ import UserAvatar from "../../user/UserAvatar";
 const orderActivityData = [
   {
     id: 1,
-    img: BTC,
+    img: ARB,
     symbol: "WBTC",
     total: "0.0000",
     value: "$0.00",
@@ -21,7 +21,7 @@ const orderActivityData = [
   },
   {
     id: 2,
-    img: ETH,
+    img: ARB,
     symbol: "WETH",
     total: "0.0000",
     value: "$0.00",
@@ -37,11 +37,11 @@ const orderActivityData = [
   },
   {
     id: 4,
-    img: CIL,
+    img: ARB,
     symbol: "CIL",
     total: "0.0000",
     value: "$0.00",
-    deposit: "70%",
+    deposit: "27.93%",
   },
 ];
 
@@ -132,7 +132,7 @@ const OrderActivity = () => {
               <DataTableRow className="nk-tb-orders-type">
                 <ul className="d-flex align-center  ">
                   <li>
-                    <UserAvatar image={item.img}></UserAvatar>
+                    <UserAvatar image={item.img} style={{ width: "25px", height: "25px" }}></UserAvatar>
                   </li>
                   <li>
                     <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
