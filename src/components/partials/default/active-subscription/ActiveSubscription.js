@@ -16,7 +16,7 @@ const ActiveSubscription = () => {
             iconClass="card-hint"
             direction="left"
             id="Tooltip-2"
-            text="Total successful trades."
+            text="Total successful trades"
           />
         </div>
       </div>

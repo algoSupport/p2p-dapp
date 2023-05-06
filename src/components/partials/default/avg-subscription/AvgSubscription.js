@@ -17,7 +17,7 @@ const AvgSubscription = () => {
             iconClass="card-hint"
             direction="left"
             id="Tooltip-3"
-            text="Daily Avg. subscription"
+            text="Daily trade volume"
           />
         </div>
       </div>
