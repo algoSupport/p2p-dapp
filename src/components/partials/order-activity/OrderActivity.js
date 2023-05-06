@@ -132,7 +132,7 @@ const OrderActivity = () => {
               <DataTableRow className="nk-tb-orders-type">
                 <ul className="d-flex align-center  ">
                   <li>
-                    <img src={item.img} style={{ width: "25px", height: "25px" }} alt="network"></img>
+                    <img src={item.img} style={{ width: "20px", height: "20px" }} alt="network"></img>
                   </li>
                   <li>
                     <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
