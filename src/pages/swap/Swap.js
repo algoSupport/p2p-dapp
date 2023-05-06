@@ -67,7 +67,7 @@ const SwapPage = () => {
             <BlockHeadContent>
               <ul className="nk-block-tools g-3">
                 <li>
-                  <button tag="a" className="dropdown-toggle btn btn-outline-primary btn-dim" disabled>
+                  <button tag="a" className="dropdown-toggle btn btn-primary" disabled>
                     <Icon name="list-fill" />
                     <span>History</span>
                     <Icon name="chevron-right" />

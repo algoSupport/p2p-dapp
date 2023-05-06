@@ -145,7 +145,7 @@ const Faq = ({ ...props }) => {
                   </div>
                 </BlockContent>
                 <BlockContent className="flex-shrink-0">
-                  <Button color="white" outline className="btn-outline-primary btn-dim">
+                  <Button color="white" outline className="btn-primary">
                     Get Support Now
                   </Button>
                 </BlockContent>

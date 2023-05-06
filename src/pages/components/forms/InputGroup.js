@@ -429,7 +429,7 @@ const InputGroup = () => {
                 <div className="form-control-wrap">
                   <div className="input-group">
                     <UncontrolledButtonDropdown className="input-group-prepend">
-                      <DropdownToggle tag="button" className="btn btn-outline-primary btn-dim dropdown-toggle">
+                      <DropdownToggle tag="button" className="btn btn-primary dropdown-toggle">
                         <span>Dropdown</span>
                         <Icon name="chevron-down" className="mx-n1"></Icon>
                       </DropdownToggle>
@@ -463,7 +463,7 @@ const InputGroup = () => {
                   <div className="input-group">
                     <input type="text" className="form-control" />
                     <UncontrolledButtonDropdown className="input-group-append">
-                      <DropdownToggle tag="button" className="btn btn-outline-primary btn-dim dropdown-toggle">
+                      <DropdownToggle tag="button" className="btn btn-primary dropdown-toggle">
                         <span>Dropdown</span>
                         <Icon name="chevron-down" className="mx-n1"></Icon>
                       </DropdownToggle>
@@ -498,7 +498,7 @@ const InputGroup = () => {
     <div className="input-group">
         <input type="text" className="form-control" />
         <UncontrolledButtonDropdown className="input-group-append">
-        <DropdownToggle tag="button" className="btn btn-outline-primary btn-dim dropdown-toggle">
+        <DropdownToggle tag="button" className="btn btn-primary dropdown-toggle">
             <span>Dropdown</span>
             <Icon name="chevron-down" className="mx-n1"></Icon>
         </DropdownToggle>
@@ -545,7 +545,7 @@ const InputGroup = () => {
                       </Button>
                       <DropdownToggle
                         tag="button"
-                        className="btn btn-icon btn-outline-primary btn-dim dropdown-toggle dropdown-toggle-split"
+                        className="btn btn-icon btn-primary dropdown-toggle dropdown-toggle-split"
                       >
                         <Icon name="chevron-down"></Icon>
                       </DropdownToggle>
@@ -584,7 +584,7 @@ const InputGroup = () => {
                       </Button>
                       <DropdownToggle
                         tag="button"
-                        className="btn btn-icon btn-outline-primary btn-dim dropdown-toggle dropdown-toggle-split"
+                        className="btn btn-icon btn-primary dropdown-toggle dropdown-toggle-split"
                       >
                         <Icon name="chevron-down"></Icon>
                       </DropdownToggle>
@@ -622,7 +622,7 @@ const InputGroup = () => {
             <Button outline color="primary" className="btn-dim">
                 Action
             </Button>
-            <DropdownToggle tag="button" className="btn btn-icon btn-outline-primary btn-dim dropdown-toggle dropdown-toggle-split">
+            <DropdownToggle tag="button" className="btn btn-icon btn-primary dropdown-toggle dropdown-toggle-split">
                 <Icon name="chevron-down"></Icon>
             </DropdownToggle>
             <DropdownMenu>

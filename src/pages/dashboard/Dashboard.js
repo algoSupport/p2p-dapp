@@ -103,7 +103,7 @@ const Homepage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li>
-                      <Link to="/marketplace/buy" className="dropdown-toggle btn btn-dim btn-outline-primary">
+                      <Link to="/marketplace/buy" className="btn btn-primary">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
                         <Icon name="chevron-right" />
