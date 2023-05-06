@@ -28,20 +28,6 @@ const Faq = ({ ...props }) => {
               <BlockTitle tag="h2" className="fw-normal">
                 Frequently Asked Questions
               </BlockTitle>
-              <BlockDes>
-                <p className="lead">
-                  Got a question? Can't find the answer you're looking for? Don't worry, drop us a line on our{" "}
-                  <a
-                    href="#contact"
-                    onClick={(ev) => {
-                      ev.preventDefault();
-                    }}
-                  >
-                    contact page
-                  </a>
-                  .
-                </p>
-              </BlockDes>
             </BlockHeadContent>
           </BlockHead>
           <Block>
@@ -137,17 +123,17 @@ const Faq = ({ ...props }) => {
                 </div>
                 <BlockContent>
                   <div className="nk-block-content-head px-lg-4">
-                    <h5>We’re here to help you!</h5>
+                    <h5>Couldn't find what you were looking for?</h5>
                     <p className="text-soft">
-                      Ask a question or file a support ticket, manage request, report an issues. Our support team will
-                      get back to you by email.
+                      Join our discord to get support from the Cilistia team. You may open a ticket with your query and
+                      wait for one of our team members to assist you.
                     </p>
                   </div>
                 </BlockContent>
                 <BlockContent className="flex-shrink-0">
-                  <Button color="white" outline className="btn-primary">
-                    Get Support Now
-                  </Button>
+                  <a href="https://discord.gg/cilistia" className="btn btn-primary" target="_blank" rel="noreferrer">
+                    Join Discord
+                  </a>
                 </BlockContent>
               </div>
             </PreviewCard>
