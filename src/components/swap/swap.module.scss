@@ -28,12 +28,12 @@
     align-items: center;
     padding: 5px 8px;
     border-radius: 5px;
-    color: #fff;
+    color: #6576ff;
     font-weight: 500;
     font-size: 14px;
     column-gap: 3px;
     width: 100%;
-    border: 1px solid #1c2a4b;
+    border: 1px solid #2d3875;
   }
   .selectedItem {
     width: 100%;
@@ -46,7 +46,7 @@
     padding: 5px 8px;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #1c2a4b;
+    border: 1px solid #2d3875;
     color: #fff;
   }
 }
@@ -59,7 +59,7 @@
   width: 100%;
   border-radius: 5px;
   top: 40px;
-  border: 1px solid #1c2a4b;
+  border: 1px solid #2d3875;
 
   .item {
     display: flex;
