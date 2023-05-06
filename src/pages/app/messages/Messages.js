@@ -96,16 +96,8 @@ const AppMessages = () => {
         <BlockHead size="md">
           <BlockBetween>
             <BlockHeadContent>
-              <BlockTitle page>Support Ticket</BlockTitle>
+              <BlockTitle page>Messages</BlockTitle>
             </BlockHeadContent>
-            <BlockBetween>
-              <Link to={process.env.PUBLIC_URL} className="back-to">
-                <Icon name="arrow-left"></Icon>
-                <span>
-                  <span className="d-none d-sm-inline-block">Back To </span> Dashboard
-                </span>
-              </Link>
-            </BlockBetween>
           </BlockBetween>
         </BlockHead>
         <div className="nk-msg nk-msg-boxed">
