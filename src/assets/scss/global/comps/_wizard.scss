@@ -78,7 +78,7 @@
           &.done,
           &.current {
             &:after {
-              height: 2px;
+              height: 1px;
               background: $accent-color;
               width: 100%;
             }
