@@ -22,7 +22,7 @@ const Accordion = ({ className, variation, ...props }) => {
         <Collapse className="accordion-body" isOpen={isOpen === "1" ? true : false}>
           <div className="accordion-inner">
             <p>
-              Cilistia is a decentralized marketplace built on the Ethereum blockchain that allows users to buy and sell
+              Cilistia is a decentralized marketplace built on the Arbitrum blockchain that allows users to buy and sell
               digital assets, including cryptocurrencies, NFTs, and more.
             </p>
           </div>
