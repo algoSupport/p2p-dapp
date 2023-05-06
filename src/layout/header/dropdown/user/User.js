@@ -5,6 +5,7 @@ import { Icon } from "../../../../components/Component";
 import { LinkList, LinkItem } from "../../../../components/links/Links";
 import { useDisconnect, useAccount, useNetwork } from "wagmi";
 import { shortenAddress } from "../../../../utils/Utils";
+import ARB from "../../../../images/coins/arbitrum.png";
 
 const User = () => {
   const [open, setOpen] = useState(false);
@@ -34,8 +35,8 @@ const User = () => {
       <DropdownMenu end className="dropdown-menu-md dropdown-menu-s1">
         <div className="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
           <div className="user-card sm">
-            <div className="user-avatar">
-              <span>AB</span>
+            <div className="user-avatar" style={{ background: "transparent" }}>
+              <img src={ARB} alt="network"></img>
             </div>
             <div className="user-info">
               {/* Display network here */}
