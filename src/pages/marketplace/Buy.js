@@ -585,7 +585,7 @@ const BuyPage = () => {
                       value={onSearchText}
                       onChange={(e) => onFilterChange(e)}
                     />
-                    <Button className="search-submit btn-icon">
+                    <Button className="search-submit btn-icon me-2">
                       <Icon name="search"></Icon>
                     </Button>
                   </div>
