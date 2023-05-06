@@ -21,7 +21,7 @@
   }
 
   .dropItem {
-    background: #1e2850;
+    background: #1a2234;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     font-size: 14px;
     column-gap: 3px;
     width: 100%;
-    border: 1px solid #2d3875;
+    border: 1px solid #233049;
   }
   .selectedItem {
     width: 100%;
@@ -42,11 +42,11 @@
     align-items: center;
     column-gap: 3px;
     cursor: pointer;
-    background-color: #1e2850;
+    background-color: #1a2234;
     padding: 5px 8px;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #2d3875;
+    border: 1px solid #233049;
     color: #fff;
   }
 }
@@ -54,12 +54,12 @@
   position: absolute;
   z-index: 999;
   cursor: pointer;
-  background: #1e2850;
+  background: #1a2234;
   padding: 4px 6px;
   width: 100%;
   border-radius: 5px;
   top: 40px;
-  border: 1px solid #2d3875;
+  border: 1px solid #233049;
 
   .item {
     display: flex;
