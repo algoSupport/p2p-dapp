@@ -34,7 +34,7 @@ const Trades = () => {
         <div className="card-title-group">
           <CardTitle>
             <h6 className="title">
-              <span className="me-2">Recent Trades</span>{" "}
+              <span className="me-2">Recent Transactions</span>{" "}
             </h6>
           </CardTitle>
         </div>
@@ -86,9 +86,7 @@ const Trades = () => {
           <Spinner color="primary" />
         </div>
       ) : (
-        <div className="text-base fs-6 py-2 px-4">
-          {transactions.length === 0 && "You have no recent trades on Cilistia."}
-        </div>
+        <div className="">{transactions.length === 0 && "You have no recent transactions."}</div>
       )}
     </React.Fragment>
   );

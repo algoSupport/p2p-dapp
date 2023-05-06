@@ -46,7 +46,7 @@ const Wallets = () => {
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
                     <li>
-                      <button tag="a" className="dropdown-toggle btn btn-outline-primary btn-dim" disabled>
+                      <button tag="a" className="dropdown-toggle btn btn-outline-primary btn-dim">
                         <Icon className="d-none d-sm-inline" name="plus" />
                         <span>Add a wallet</span>
                       </button>

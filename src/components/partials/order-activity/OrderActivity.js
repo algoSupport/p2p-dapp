@@ -4,11 +4,16 @@ import { CardTitle } from "reactstrap";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Link } from "react-router-dom";
 import { Button } from "../../Component";
+import BTC from "../../../images/coins/btc.svg";
+import ETH from "../../../images/coins/eth.svg";
+import ARB from "../../../images/coins/arbitrum.png";
+import CIL from "../../../images/coins/cil.png";
+import UserAvatar from "../../user/UserAvatar";
 
 const orderActivityData = [
   {
     id: 1,
-    icon: "sign-eth bg-eth-dim icon-circle",
+    img: BTC,
     symbol: "WBTC",
     total: "0.0000",
     value: "$0.00",
@@ -16,7 +21,7 @@ const orderActivityData = [
   },
   {
     id: 2,
-    icon: "sign-eth bg-eth-dim icon-circle",
+    img: ETH,
     symbol: "WETH",
     total: "0.0000",
     value: "$0.00",
@@ -24,7 +29,7 @@ const orderActivityData = [
   },
   {
     id: 3,
-    icon: "sign-eth bg-eth-dim icon-circle",
+    img: ARB,
     symbol: "ARB",
     total: "0.0000",
     value: "$0.00",
@@ -32,7 +37,7 @@ const orderActivityData = [
   },
   {
     id: 4,
-    icon: "sign-eth bg-eth-dim icon-circle",
+    img: CIL,
     symbol: "CIL",
     total: "0.0000",
     value: "$0.00",
@@ -127,7 +132,7 @@ const OrderActivity = () => {
               <DataTableRow className="nk-tb-orders-type">
                 <ul className="d-flex align-center  ">
                   <li>
-                    <Icon name={item.icon} style={{ width: "25px", height: "25px" }}></Icon>
+                    <UserAvatar image={item.img}></UserAvatar>
                   </li>
                   <li>
                     <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
@@ -150,10 +155,10 @@ const OrderActivity = () => {
               </DataTableRow>
 
               <DataTableRow className="text-end me-2">
-                <Button color="outline-primary" size="sm" className="btn-dim" disabled>
+                <Button color="outline-primary" size="sm" className="btn-dim">
                   Deposit
                 </Button>
-                <Button color="secondary" size="sm" className="ms-3 btn-dim" disabled>
+                <Button color="secondary" size="sm" className="ms-3 btn-dim">
                   Withdraw
                 </Button>
               </DataTableRow>

@@ -8,8 +8,8 @@ const SalesOverview = () => {
     <React.Fragment>
       <div className="card-title-group align-start gx-3 mb-3">
         <div className="card-title">
-          <h6 className="title">Assets Overview</h6>
-          <p>Total value of your assets on Cilistia </p>
+          <h6 className="title">Portfolio Overview</h6>
+          <p>Total value of your assets on chain </p>
         </div>
       </div>
       <div className="nk-sale-data-group align-center justify-between gy-3 gx-5">
