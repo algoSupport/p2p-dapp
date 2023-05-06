@@ -11,13 +11,12 @@ const Error404Modern = () => {
         <BlockContent className="nk-error-ld text-center">
           <img className="nk-error-gfx" src={ErrorImage} alt="error" />
           <div className="wide-xs mx-auto">
-            <h3 className="nk-error-title">Oops! Why you’re here?</h3>
+            <h3 className="nk-error-title">Something is not right.</h3>
             <p className="nk-error-text">
-              We are very sorry for inconvenience. It looks like you’re try to access a page that either has been
-              deleted or never existed.
+              We are very sorry for inconvenience. It looks like you’re trying to access a page that is not available.
             </p>
             <Link to={`${process.env.PUBLIC_URL}/`}>
-              <Button color="primary" size="lg" className="mt-2">
+              <Button color="primary" size="md" className="mt-2">
                 Dashboard
               </Button>
             </Link>
