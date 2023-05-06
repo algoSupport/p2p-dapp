@@ -118,7 +118,7 @@ const SwapPage = () => {
                       <TokenInput token={token1} setToken={setToken1} setTokenClicked={() => setTokenClicked(1)} />
                       <TokenInput token={token2} setToken={setToken2} setTokenClicked={() => setTokenClicked(2)} />
                       <div className={styles.switch} onClick={() => onSwitch()}>
-                        <Icon name="chevron-down text-white"></Icon>
+                        <Icon name="swap-v text-white"></Icon>
                       </div>
                     </div>
                   </TabPane>
