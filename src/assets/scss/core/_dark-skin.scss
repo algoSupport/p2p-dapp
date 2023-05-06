@@ -502,7 +502,6 @@ body.dark-mode {
   .form-select,
   .popover,
   .search-wrap,
-  .form-control,
   .form-label-outlined,
   .input-mail,
   .page-link,
@@ -527,7 +526,10 @@ body.dark-mode {
   .datepicker .prev:hover,
   .datepicker .next:hover,
   .datepicker tfoot tr th:hover {
-    background: #1a2234 !important;
+    background: #1d273b !important;
+  }
+  .form-control {
+    background: #1a2234;
   }
 
   .clipboard-success-message {
@@ -1582,7 +1584,7 @@ body.dark-mode {
     //padding: 0 .35rem !important;
   }
   .react-select__control:hover {
-    border-color: #3e446a !important;
+    border-color: #233049 !important;
   }
   .react-select__single-value {
     color: #8094ae !important;
