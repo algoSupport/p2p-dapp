@@ -707,7 +707,7 @@ body.dark-mode {
   .tb-tnx-head,
   .custom-control-input[disabled] ~ .custom-control-label::before,
   .custom-control-input:disabled ~ .custom-control-label::before {
-    background-color: lighten($dark-card-bg, 11%) !important;
+    background-color: #1d273b !important;
   }
   .progress,
   .custom-control-label::before,

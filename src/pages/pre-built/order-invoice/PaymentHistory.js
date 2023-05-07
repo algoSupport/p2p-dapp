@@ -7,7 +7,6 @@ import {
   DropdownMenu,
   DropdownToggle,
   Card,
-  
   Modal,
   ModalBody,
   DropdownItem,
@@ -137,24 +136,15 @@ const PaymentHistory = () => {
 
   return (
     <React.Fragment>
-      <Head title="Payment History"></Head>
+      <Head title="Transaction History"></Head>
       <Content>
         <BlockHead size="sm">
           <BlockBetween>
             <BlockHeadContent>
-              <BlockTitle page>Payment History</BlockTitle>
+              <BlockTitle page>Transaction History</BlockTitle>
               <BlockDes className="text-soft">
-                <p>You have total 937 orders.</p>
+                <p>Your transaction history on Cilistia</p>
               </BlockDes>
-            </BlockHeadContent>
-            <BlockHeadContent>
-              <ul className="nk-block-tools g-3">
-                <li>
-                  <Button color="primary" className="btn-icon" onClick={() => setModal({ add: true })}>
-                    <Icon name="plus"></Icon>
-                  </Button>
-                </li>
-              </ul>
             </BlockHeadContent>
           </BlockBetween>
         </BlockHead>
@@ -165,7 +155,7 @@ const PaymentHistory = () => {
               <div className="card-inner">
                 <div className="card-title-group">
                   <div className="card-title">
-                    <h5 className="title">All Orders</h5>
+                    <h5 className="title">All Transactions</h5>
                   </div>
                   <div className="card-tools me-n1">
                     <ul className="btn-toolbar">
@@ -261,11 +251,11 @@ const PaymentHistory = () => {
                       <input
                         type="text"
                         className="form-control border-transparent form-focus-none"
-                        placeholder="Search by bill name"
+                        placeholder="Search for transactions"
                         value={onSearchText}
                         onChange={(e) => onFilterChange(e)}
                       />
-                      <Button className="search-submit btn-icon">
+                      <Button className="search-submit btn-icon me-2">
                         <Icon name="search"></Icon>
                       </Button>
                     </div>
@@ -281,18 +271,18 @@ const PaymentHistory = () => {
                       </th>
                       <th className="tb-tnx-info">
                         <span className="tb-tnx-desc d-none d-sm-inline-block">
-                          <span>Bill For</span>
+                          <span>From</span>
                         </span>
                         <span className="tb-tnx-date d-md-inline-block d-none">
                           <span className="d-md-none">Date</span>
                           <span className="d-none d-md-block">
-                            <span>Issue Date</span>
-                            <span>Due Date</span>
+                            <span>Date</span>
+                            <span>Asset</span>
                           </span>
                         </span>
                       </th>
                       <th className="tb-tnx-amount is-alt">
-                        <span className="tb-tnx-total">Total</span>
+                        <span className="tb-tnx-total">Amount</span>
                         <span className="tb-tnx-status d-none d-md-inline-block">Status</span>
                       </th>
                       <th className="tb-tnx-action">
@@ -300,91 +290,7 @@ const PaymentHistory = () => {
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {currentItems.length > 0
-                      ? currentItems.map((item) => {
-                          return (
-                            <tr key={item.id} className="tb-tnx-item">
-                              <td className="tb-tnx-id">
-                                <a
-                                  href="#ref"
-                                  onClick={(ev) => {
-                                    ev.preventDefault();
-                                  }}
-                                >
-                                  <span>{item.ref}</span>
-                                </a>
-                              </td>
-                              <td className="tb-tnx-info">
-                                <div className="tb-tnx-desc">
-                                  <span className="title">{item.bill}</span>
-                                </div>
-                                <div className="tb-tnx-date">
-                                  <span className="date">{item.issue}</span>
-                                  <span className="date">{item.due}</span>
-                                </div>
-                              </td>
-                              <td className="tb-tnx-amount is-alt">
-                                <div className="tb-tnx-total">
-                                  <span className="amount">${item.total}</span>
-                                </div>
-                                <div className="tb-tnx-status">
-                                  <Badge
-                                    className="badge-dot"
-                                    color={
-                                      item.status === "Paid" ? "success" : item.status === "Due" ? "warning" : "danger"
-                                    }
-                                  >
-                                    {item.status}
-                                  </Badge>
-                                </div>
-                              </td>
-                              <td className="tb-tnx-action">
-                                <UncontrolledDropdown>
-                                  <DropdownToggle
-                                    tag="a"
-                                    className="text-soft dropdown-toggle btn btn-icon btn-trigger"
-                                  >
-                                    <Icon name="more-h"></Icon>
-                                  </DropdownToggle>
-                                  <DropdownMenu end>
-                                    <ul className="link-list-plain">
-                                      <li
-                                        onClick={() => {
-                                          loadDetail(item.id);
-                                          setViewModal(true);
-                                        }}
-                                      >
-                                        <DropdownItem
-                                          tag="a"
-                                          href="#view"
-                                          onClick={(ev) => {
-                                            ev.preventDefault();
-                                          }}
-                                        >
-                                          View
-                                        </DropdownItem>
-                                      </li>
-                                      <li>
-                                        <DropdownItem
-                                          tag="a"
-                                          href="#print"
-                                          onClick={(ev) => {
-                                            ev.preventDefault();
-                                          }}
-                                        >
-                                          Print
-                                        </DropdownItem>
-                                      </li>
-                                    </ul>
-                                  </DropdownMenu>
-                                </UncontrolledDropdown>
-                              </td>
-                            </tr>
-                          );
-                        })
-                      : null}
-                  </tbody>
+                  <tbody></tbody>
                 </table>
               </div>
               <div className="card-inner">
