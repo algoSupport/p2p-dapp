@@ -5,6 +5,7 @@ import { useState } from "react";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";
+import { shortenAddress } from "../../utils/Utils";
 
 const config = {
   apiKey: process.env.ALCHEMY_ID,
@@ -27,7 +28,7 @@ const Trades = () => {
       revalidateOnFocus: false,
     }
   );
-
+  console.log({ transactions });
   return (
     <React.Fragment>
       <div className="card-inner">
@@ -41,9 +42,6 @@ const Trades = () => {
       </div>
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
-          <DataTableRow className="nk-tb-orders-type">
-            <span>Block</span>
-          </DataTableRow>
           <DataTableRow>
             <span>Asset</span>
           </DataTableRow>
@@ -63,16 +61,13 @@ const Trades = () => {
             return (
               <DataTableItem key={transaction.hash}>
                 <DataTableRow>
-                  <span>{transaction.blockNum}</span>
-                </DataTableRow>
-                <DataTableRow>
                   <span>{transaction.asset}</span>
                 </DataTableRow>
                 <DataTableRow>
                   <span>{transaction.value}</span>
                 </DataTableRow>
                 <DataTableRow>
-                  <span>{transaction.from}</span>
+                  <span>{shortenAddress(transaction.from)}</span>
                 </DataTableRow>
                 <DataTableRow>
                   <span>{transaction.to}</span>
@@ -85,8 +80,12 @@ const Trades = () => {
         <div className="d-flex justify-center py-4">
           <Spinner color="primary" />
         </div>
+      ) : transactions && transactions.transfers.length === 0 ? (
+        <div className="py-3 ms-4">
+          {transactions && transactions.transfers.length === 0 && "You have no recent transactions."}
+        </div>
       ) : (
-        <div className="">{transactions.length === 0 && "You have no recent transactions."}</div>
+        ""
       )}
     </React.Fragment>
   );
