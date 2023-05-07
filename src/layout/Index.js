@@ -11,8 +11,8 @@ const Layout = () => {
   const [mobileView, setMobileView] = useState();
   const [visibility, setVisibility] = useState(false);
   const [themeState] = useState({
-    main: "default",
-    header: "white",
+    main: "dark",
+    header: "dark",
     skin: "dark",
   });
 

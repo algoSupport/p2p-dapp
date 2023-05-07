@@ -85,6 +85,7 @@ const menu = [
     icon: "pie-fill",
     text: "Staking",
     active: "false",
+    link: "/staking",
   },
   {
     icon: "user-list-fill",
