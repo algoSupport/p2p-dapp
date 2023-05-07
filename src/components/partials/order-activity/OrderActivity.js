@@ -143,9 +143,6 @@ const OrderActivity = () => {
               <DataTableRow>
                 <div className="d-flex align-center">
                   <span className="tb-sub">{item.total}</span>
-                  <span className="tb-sub ms-1" style={{ color: "white", fontSize: "10px" }}>
-                    {item.symbol}
-                  </span>
                 </div>
               </DataTableRow>
               <DataTableRow size="sm">
