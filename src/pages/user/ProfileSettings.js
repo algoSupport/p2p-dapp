@@ -36,14 +36,14 @@ const Profile = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Name</span>
-              <span className="data-value">{userInfo.name}</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end"></div>
           </div>
           <div className="data-item" onClick={() => setModal(true)}>
             <div className="data-col">
               <span className="data-label">Display Name</span>
-              <span className="data-value">{userInfo.displayName}</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -54,7 +54,7 @@ const Profile = () => {
           <div className="data-item" onClick={() => setModal(true)}>
             <div className="data-col">
               <span className="data-label">Country</span>
-              <span className="data-value">{userInfo.country}</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -70,19 +70,9 @@ const Profile = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Language</span>
-              <span className="data-value">English (United State)</span>
+              <span className="data-value"></span>
             </div>
-            <div className="data-col data-col-end">
-              <a
-                href="#language"
-                onClick={(ev) => {
-                  ev.preventDefault();
-                }}
-                className="link link-primary"
-              >
-                Change Language
-              </a>
-            </div>
+            <div className="data-col data-col-end"></div>
           </div>
           {/* <div className="data-item">
             <div className="data-col">
@@ -104,66 +94,12 @@ const Profile = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Timezone</span>
-              <span className="data-value">Australia (GMT +11)</span>
+              <span className="data-value"></span>
             </div>
-            <div className="data-col data-col-end">
-              <a
-                href="#link"
-                onClick={(ev) => {
-                  ev.preventDefault();
-                }}
-                className="link link-primary"
-              >
-                Change
-              </a>
-            </div>
+            <div className="data-col data-col-end"></div>
           </div>
         </div>
       </Block>
-
-      <Modal isOpen={modal} className="modal-dialog-centered" size="lg" toggle={() => setModal(false)}>
-        <ModalBody>
-          <a
-            href="#dropdownitem"
-            onClick={(ev) => {
-              ev.preventDefault();
-              setModal(false);
-            }}
-            className="close"
-          >
-            <Icon name="cross-sm"></Icon>
-          </a>
-          <div className="p-2">
-            <h5 className="title">Update Profile</h5>
-            <ul className="nk-nav nav nav-tabs">
-              <li className="nav-item">
-                <a
-                  className={`nav-link ${modalTab === "1" && "active"}`}
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                    setModalTab("1");
-                  }}
-                  href="#personal"
-                >
-                  Personal
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link ${modalTab === "2" && "active"}`}
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                    setModalTab("2");
-                  }}
-                  href="#address"
-                >
-                  Address
-                </a>
-              </li>
-            </ul>
-          </div>
-        </ModalBody>
-      </Modal>
     </React.Fragment>
   );
 };

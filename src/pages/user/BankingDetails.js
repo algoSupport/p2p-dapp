@@ -39,21 +39,10 @@ const BankingDetails = () => {
 
       <Block>
         <div className="nk-data data-list data-list-s2 is-compact">
-          <div className="data-item" onClick={() => setModal(true)}>
+          <div className="data-item">
             <div className="data-col">
               <span className="data-label">Full Name</span>
-              <span className="data-value">{userInfo.name}</span>
-            </div>
-            <div className="data-col data-col-end">
-              <span className="data-more">
-                <Icon name="forward-ios"></Icon>
-              </span>
-            </div>
-          </div>
-          <div className="data-item" onClick={() => setModal(true)}>
-            <div className="data-col">
-              <span className="data-label">Display Name</span>
-              <span className="data-value">{userInfo.displayName}</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -63,8 +52,19 @@ const BankingDetails = () => {
           </div>
           <div className="data-item">
             <div className="data-col">
-              <span className="data-label">Email</span>
-              <span className="data-value">info@softnio.com</span>
+              <span className="data-label">Account Number</span>
+              <span className="data-value"></span>
+            </div>
+            <div className="data-col data-col-end">
+              <span className="data-more">
+                <Icon name="forward-ios"></Icon>
+              </span>
+            </div>
+          </div>
+          <div className="data-item">
+            <div className="data-col">
+              <span className="data-label">Bank</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more disable">
@@ -72,10 +72,10 @@ const BankingDetails = () => {
               </span>
             </div>
           </div>
-          <div className="data-item" onClick={() => setModal(true)}>
+          <div className="data-item">
             <div className="data-col">
-              <span className="data-label">Phone Number</span>
-              <span className="data-value text-soft">{userInfo.phone}</span>
+              <span className="data-label">Bank Country</span>
+              <span className="data-value text-soft"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -83,10 +83,10 @@ const BankingDetails = () => {
               </span>
             </div>
           </div>
-          <div className="data-item" onClick={() => setModal(true)}>
+          <div className="data-item">
             <div className="data-col">
-              <span className="data-label">Date of Birth</span>
-              <span className="data-value">{userInfo.dob}</span>
+              <span className="data-label">Routing Number</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -94,14 +94,10 @@ const BankingDetails = () => {
               </span>
             </div>
           </div>
-          <div className="data-item" onClick={() => setModal(true)}>
+          <div className="data-item">
             <div className="data-col">
-              <span className="data-label">Address</span>
-              <span className="data-value">
-                {userInfo.address},
-                <br />
-                {userInfo.state}, {userInfo.country}
-              </span>
+              <span className="data-label">Swift Code (If applicable)</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <span className="data-more">
@@ -117,7 +113,7 @@ const BankingDetails = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Language</span>
-              <span className="data-value">English (United State)</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <a
@@ -134,7 +130,7 @@ const BankingDetails = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Date Format</span>
-              <span className="data-value">MM/DD/YYYY</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <a
@@ -151,7 +147,7 @@ const BankingDetails = () => {
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Timezone</span>
-              <span className="data-value">Bangladesh (GMT +6)</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <a

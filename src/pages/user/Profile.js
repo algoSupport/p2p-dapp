@@ -53,21 +53,7 @@ const UserProfileLayout = () => {
                   <span>Notifications</span>
                 </Link>
               </li>
-              <li
-                className={`nav-item ${
-                  window.location.pathname === `${process.env.PUBLIC_URL}/profile/settings` ? "active" : ""
-                }`}
-              >
-                <Link
-                  to={`${process.env.PUBLIC_URL}/profile/settings`}
-                  className={`nav-link ${
-                    window.location.pathname === `${process.env.PUBLIC_URL}/profile/settings` ? "active" : ""
-                  }`}
-                >
-                  <Icon name="lock-alt-fill"></Icon>
-                  <span>Security Settings</span>
-                </Link>
-              </li>
+
               <li
                 className={`nav-item ${
                   window.location.pathname === `${process.env.PUBLIC_URL}/profile/banking` ? "active" : ""
@@ -93,7 +79,7 @@ const UserProfileLayout = () => {
                   path={`${process.env.PUBLIC_URL}/profile/notifications`}
                   render={() => <Notifications />}
                 ></Route>
-                <Route exact path={`${process.env.PUBLIC_URL}/profile/settings`} render={() => <Settings />}></Route>
+
                 <Route exact path={`${process.env.PUBLIC_URL}/profile/banking`} render={() => <Banking />}></Route>
               </Switch>
             </div>
