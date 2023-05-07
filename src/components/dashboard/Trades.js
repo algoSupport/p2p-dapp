@@ -70,7 +70,7 @@ const Trades = () => {
                   <span>{shortenAddress(transaction.from)}</span>
                 </DataTableRow>
                 <DataTableRow>
-                  <span>{transaction.to}</span>
+                  <span>{shortenAddress(transaction.to)}</span>
                 </DataTableRow>
               </DataTableItem>
             );
@@ -81,7 +81,7 @@ const Trades = () => {
           <Spinner color="primary" />
         </div>
       ) : transactions && transactions.transfers.length === 0 ? (
-        <div className="py-3 ms-4">
+        <div className="py-3 ms-4 text-center">
           {transactions && transactions.transfers.length === 0 && "You have no recent transactions."}
         </div>
       ) : (
