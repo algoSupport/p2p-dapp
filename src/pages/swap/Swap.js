@@ -7,20 +7,17 @@ import Content from "../../layout/content/Content";
 import styles from "./swap.module.scss";
 import { Currencies, TokenList } from "../../components/swap/TokenSelect";
 import Head from "../../layout/head/Head";
+import { Link } from "react-router-dom";
 import {
   BlockDes,
   BlockHead,
   BlockHeadContent,
   BlockTitle,
   Col,
-  PreviewAltCard,
-  Block,
   Row,
-  Button,
   BlockBetween,
   Icon,
 } from "../../components/Component";
-import SalesOverview from "../../components/partials/default/sales-overview/SalesOverview";
 
 const SwapPage = () => {
   const [activeTab, setActiveTab] = useState("swap");
@@ -67,11 +64,13 @@ const SwapPage = () => {
             <BlockHeadContent>
               <ul className="nk-block-tools g-3">
                 <li>
-                  <button tag="a" className="dropdown-toggle btn btn-primary" disabled>
-                    <Icon name="list-fill" />
-                    <span>History</span>
-                    <Icon name="chevron-right" />
-                  </button>
+                  <Link to="/history-payment">
+                    <button className="dropdown-toggle btn btn-primary">
+                      <Icon name="list-fill" />
+                      <span>History</span>
+                      <Icon name="chevron-right" />
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </BlockHeadContent>
