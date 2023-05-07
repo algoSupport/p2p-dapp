@@ -88,16 +88,6 @@ const menu = [
     text: "Staking",
     link: "/earn",
     active: false,
-    subMenu: [
-      {
-        text: "Stake & Earn",
-        link: "/earn",
-      },
-      {
-        text: "Staking History",
-        link: "/invoice-list",
-      },
-    ],
   },
   {
     icon: "user-list-fill",
