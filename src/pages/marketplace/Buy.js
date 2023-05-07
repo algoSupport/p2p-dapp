@@ -606,12 +606,14 @@ const BuyPage = () => {
                 <DataTableRow size="lg">
                   <span className="sub-text">Max</span>
                 </DataTableRow>
-                <DataTableRow size="lg">
-                  <span className="sub-text">Trade Volume</span>
-                </DataTableRow>
+
                 <DataTableRow size="lg">
                   <span className="sub-text">Verification</span>
                 </DataTableRow>
+                <DataTableRow size="lg">
+                  <span className="sub-text">Rating</span>
+                </DataTableRow>
+
                 <DataTableRow size="md">
                   <span className="sub-text">Status</span>
                 </DataTableRow>
@@ -656,9 +658,7 @@ const BuyPage = () => {
                         <DataTableRow size="lg">
                           <span>{item.lastLogin}</span>
                         </DataTableRow>
-                        <DataTableRow size="lg">
-                          <span>{item.lastLogin}</span>
-                        </DataTableRow>
+
                         <DataTableRow size="lg">
                           <ul className="list-status">
                             <li>
@@ -684,7 +684,27 @@ const BuyPage = () => {
                             </li>
                           </ul>
                         </DataTableRow>
-
+                        <DataTableRow>
+                          <span>
+                            <ul className="rating mt-1">
+                              <li>
+                                <Icon name="star-fill"></Icon>
+                              </li>
+                              <li>
+                                <Icon name="star-fill"></Icon>
+                              </li>
+                              <li>
+                                <Icon name="star-fill"></Icon>
+                              </li>
+                              <li>
+                                <Icon name="star-half-fill"></Icon>
+                              </li>
+                              <li>
+                                <Icon name="star"></Icon>
+                              </li>
+                            </ul>
+                          </span>
+                        </DataTableRow>
                         <DataTableRow size="md">
                           <span
                             className={`tb-status text-${
@@ -694,6 +714,7 @@ const BuyPage = () => {
                             {item.status}
                           </span>
                         </DataTableRow>
+
                         <DataTableRow>
                           <span>
                             <button className="btn btn-primary btn-sm w-100 center">Buy</button>

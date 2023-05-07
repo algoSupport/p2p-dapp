@@ -16,8 +16,7 @@ const menu = [
   {
     icon: "user-fill",
     text: "Profile",
-    link: "/profile/details",
-    active: true,
+    active: false,
     requireConnect: true,
     subMenu: [
       {
@@ -46,8 +45,7 @@ const menu = [
   {
     icon: "users-fill",
     text: "Marketplace",
-    link: "/marketplace/buy",
-    active: true,
+    active: false,
     subMenu: [
       {
         text: "Buy",
@@ -86,8 +84,7 @@ const menu = [
   {
     icon: "pie-fill",
     text: "Staking",
-    link: "/earn",
-    active: false,
+    active: "false",
   },
   {
     icon: "user-list-fill",
@@ -102,7 +99,6 @@ const menu = [
     icon: "help-fill",
     text: "FAQ",
     link: "/faq",
-    active: "false",
   },
 ];
 export default menu;
