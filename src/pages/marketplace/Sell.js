@@ -684,7 +684,7 @@ const BuyPage = () => {
                             </li>
                           </ul>
                         </DataTableRow>
-                        <DataTableRow>
+                        <DataTableRow size="lg">
                           <span>
                             <ul className="rating mt-1">
                               <li>
