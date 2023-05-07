@@ -12,14 +12,13 @@ const Terms = ({ ...props }) => {
           <BlockHead size="lg" wide="xs" className="mx-auto">
             <BlockHeadContent className="text-center">
               <BlockTitle tag="h2" className="fw-normal">
-                Terms &amp; Policy
+                Terms &amp; Conditions
               </BlockTitle>
               <BlockDes>
                 <p className="lead">
-                  We are on a mission to make the web a better place. The following terms, as well as our Policy and
-                  Terms of Service, apply to all users.
+                  We are on a mission to make the web a better place. The following Terms of Service apply to all users.
                 </p>
-                <p className="text-soft ff-italic">Last Update: Nov 12, 2019</p>
+                <p className="text-soft ff-italic">Last Update: May 07, 2023</p>
               </BlockDes>
             </BlockHeadContent>
           </BlockHead>
