@@ -42,7 +42,7 @@ const Trades = () => {
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
           <DataTableRow className="nk-tb-orders-type">
-            <span>Block Number</span>
+            <span>Block</span>
           </DataTableRow>
           <DataTableRow>
             <span>Asset</span>

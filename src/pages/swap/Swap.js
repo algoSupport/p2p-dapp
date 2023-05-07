@@ -130,6 +130,9 @@ const SwapPage = () => {
                         setTokenClicked={() => setTokenClicked(1)}
                         isBuy={true}
                       />
+                      <div className={styles.switch} onClick={() => onSwitch()}>
+                        <Icon name="swap-v text-white"></Icon>
+                      </div>
                       <TokenInput
                         token={buyToken2}
                         setToken={setBuyToken2}
