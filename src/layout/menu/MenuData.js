@@ -30,11 +30,7 @@ const menu = [
         link: "/profile/notifications",
         requireConnect: true,
       },
-      {
-        text: "Security Settings",
-        link: "/profile/settings",
-        requireConnect: true,
-      },
+
       {
         text: "Banking Details",
         link: "/profile/banking",

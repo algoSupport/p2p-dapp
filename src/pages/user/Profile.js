@@ -1,7 +1,6 @@
 import React from "react";
 import Content from "../../layout/content/Content";
 import Profile from "./ProfileSettings";
-import Settings from "./UserSettings";
 import Notifications from "./UserNotifications";
 import Banking from "./BankingDetails";
 import { Route, Switch, Link } from "react-router-dom";

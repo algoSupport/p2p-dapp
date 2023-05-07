@@ -18,9 +18,9 @@ const UserProfileNotificationPage = () => {
       <BlockHead size="sm">
         <BlockBetween>
           <BlockHeadContent>
-            <BlockTitle tag="h6">Security Alerts</BlockTitle>
+            <BlockTitle tag="h6">Alerts</BlockTitle>
             <BlockDes>
-              <p>You will get only those email notification what you want.</p>
+              <p>You will be notified via browser if you have opted in to receive notifications.</p>
             </BlockDes>
           </BlockHeadContent>
         </BlockBetween>
@@ -30,43 +30,17 @@ const UserProfileNotificationPage = () => {
         <div className="gy-3">
           <div className="g-item">
             <div className="custom-control custom-switch">
-              <InputSwitch id="custom-switch" checked label="Email me whenever encounter unusual activity" />
+              <InputSwitch id="custom-switch" checked label="Notify me when someone opens a trade" />
             </div>
           </div>
           <div className="g-item">
             <div className="custom-control custom-switch">
-              <InputSwitch id="custom-switch2" label="Email me if new browser is used to sign in" />
-            </div>
-          </div>
-        </div>
-      </BlockContent>
-
-      <BlockHead size="sm">
-        <BlockBetween>
-          <BlockHeadContent>
-            <BlockTitle tag="h6">News</BlockTitle>
-            <BlockDes>
-              <p>You will get only those email notification what you want.</p>
-            </BlockDes>
-          </BlockHeadContent>
-        </BlockBetween>
-      </BlockHead>
-
-      <BlockContent>
-        <div className="gy-3">
-          <div className="g-item">
-            <div className="custom-control custom-switch">
-              <InputSwitch id="custom-switch3" checked label="Notify me by email about sales and latest news" />
+              <InputSwitch id="custom-switch2" label="Notify me when someone sends me a message" />
             </div>
           </div>
           <div className="g-item">
             <div className="custom-control custom-switch">
-              <InputSwitch id="feature-update" label="Email me about new features and updates" />
-            </div>
-          </div>
-          <div className="g-item">
-            <div className="custom-control custom-switch">
-              <InputSwitch id="account-tips" checked label="Email me about tips on using account" />
+              <InputSwitch id="custom-switch" checked label="Notify me when someone opens a dispute" />
             </div>
           </div>
         </div>

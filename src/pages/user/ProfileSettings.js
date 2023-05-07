@@ -72,12 +72,22 @@ const Profile = () => {
               <span className="data-label">Language</span>
               <span className="data-value"></span>
             </div>
-            <div className="data-col data-col-end"></div>
+            <div className="data-col data-col-end">
+              <a
+                href="#language"
+                onClick={(ev) => {
+                  ev.preventDefault();
+                }}
+                className="link link-primary"
+              >
+                Change Language
+              </a>
+            </div>
           </div>
-          {/* <div className="data-item">
+          <div className="data-item">
             <div className="data-col">
               <span className="data-label">Date Format</span>
-              <span className="data-value">MM/DD/YYYY</span>
+              <span className="data-value"></span>
             </div>
             <div className="data-col data-col-end">
               <a
@@ -90,13 +100,23 @@ const Profile = () => {
                 Change
               </a>
             </div>
-          </div> */}
+          </div>
           <div className="data-item">
             <div className="data-col">
               <span className="data-label">Timezone</span>
               <span className="data-value"></span>
             </div>
-            <div className="data-col data-col-end"></div>
+            <div className="data-col data-col-end">
+              <a
+                href="#link"
+                onClick={(ev) => {
+                  ev.preventDefault();
+                }}
+                className="link link-primary"
+              >
+                Change
+              </a>
+            </div>
           </div>
         </div>
       </Block>
