@@ -28,7 +28,7 @@ const Trades = () => {
       revalidateOnFocus: false,
     }
   );
-  console.log({ transactions });
+
   return (
     <React.Fragment>
       <div className="card-inner">
