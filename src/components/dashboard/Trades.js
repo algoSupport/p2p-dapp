@@ -27,7 +27,7 @@ const Trades = () => {
       revalidateOnFocus: false,
     }
   );
-
+  console.log({ transactions });
   return (
     <React.Fragment>
       <div className="card-inner">
@@ -86,7 +86,9 @@ const Trades = () => {
           <Spinner color="primary" />
         </div>
       ) : (
-        <div className="">{transactions.length === 0 && "You have no recent transactions."}</div>
+        <div className="py-3 ms-4">
+          {transactions && transactions.transfers.length === 0 && "You have no recent transactions."}
+        </div>
       )}
     </React.Fragment>
   );
