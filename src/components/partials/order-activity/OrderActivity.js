@@ -110,7 +110,10 @@ const OrderActivity = () => {
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
           <DataTableRow className="nk-tb-orders-type">
-            <span>Network/Asset</span>
+            <span>Network</span>
+          </DataTableRow>
+          <DataTableRow className="nk-tb-orders-type">
+            <span>Asset</span>
           </DataTableRow>
           <DataTableRow>
             <span>Total</span>
@@ -130,14 +133,12 @@ const OrderActivity = () => {
           return (
             <DataTableItem key={item.id}>
               <DataTableRow className="nk-tb-orders-type">
-                <ul className="d-flex align-center  ">
-                  <li>
-                    <img src={item.img} style={{ width: "20px", height: "20px" }} alt="network"></img>
-                  </li>
-                  <li>
-                    <span style={{ marginLeft: "5px" }}>{item.symbol}</span>
-                  </li>
-                </ul>
+                <span>
+                  <img src={item.img} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                </span>
+              </DataTableRow>
+              <DataTableRow className="nk-tb-orders-type">
+                <span>{item.symbol}</span>
               </DataTableRow>
               <DataTableRow>
                 <div className="d-flex align-center">
