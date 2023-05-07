@@ -1,6 +1,6 @@
 import React from "react";
 import { CardTitle, Spinner } from "reactstrap";
-import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../Component";
+import { DataTableBody, DataTableHead, DataTableItem, DataTableRow, Icon } from "../Component";
 import { useState } from "react";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
@@ -61,7 +61,13 @@ const Trades = () => {
             return (
               <DataTableItem key={transaction.hash}>
                 <DataTableRow>
-                  <span>{transaction.asset}</span>
+                  <div className="d-flex align-center">
+                    <Icon
+                      name="sign-eth bg-eth-dim icon-circle"
+                      style={{ marginRight: "3px", width: "25px", height: "25px" }}
+                    ></Icon>
+                    {transaction.asset}
+                  </div>
                 </DataTableRow>
                 <DataTableRow>
                   <span>{transaction.value}</span>
