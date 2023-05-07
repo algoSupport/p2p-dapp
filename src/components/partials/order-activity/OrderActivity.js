@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Icon from "../../icon/Icon";
-import { CardTitle } from "reactstrap";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Link } from "react-router-dom";
 import { Button } from "../../Component";
@@ -9,6 +8,18 @@ import ETH from "../../../images/coins/eth.svg";
 import ARB from "../../../images/coins/arbitrum.png";
 import CIL from "../../../images/coins/cil.png";
 import UserAvatar from "../../user/UserAvatar";
+import {
+  DropdownToggle,
+  DropdownMenu,
+  Card,
+  UncontrolledDropdown,
+  DropdownItem,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  CardTitle,
+  ModalHeader,
+} from "reactstrap";
 
 const orderActivityData = [
   {
@@ -46,6 +57,8 @@ const orderActivityData = [
 ];
 
 const OrderActivity = () => {
+  const [modalDeposit, setModalDeposit] = useState(false);
+  const toggleDeposit = () => setModalDeposit(!modalDeposit);
   const [orderData, setOrderData] = useState(orderActivityData);
   const [orderActivity, setActivity] = useState("");
   // useEffect(() => {
@@ -153,9 +166,10 @@ const OrderActivity = () => {
               </DataTableRow>
 
               <DataTableRow className="text-end me-2">
-                <Button color="outline-primary" size="sm" className="btn-dim">
+                <Button color="outline-primary" size="sm" className="btn-dim" onClick={toggleDeposit}>
                   Deposit
                 </Button>
+
                 <Button color="secondary" size="sm" className="ms-3 btn-dim">
                   Withdraw
                 </Button>
@@ -164,6 +178,21 @@ const OrderActivity = () => {
           );
         })}
       </DataTableBody>
+      <Modal isOpen={modalDeposit} toggle={toggleDeposit} modalClassName="zoom">
+        <ModalHeader
+          toggle={toggleDeposit}
+          close={
+            <button className="close" onClick={toggleDeposit}>
+              <Icon name="cross" />
+            </button>
+          }
+        >
+          Deposit
+        </ModalHeader>
+        <ModalBody>
+          <p>Deposits are not yet available on this preview. Please check back later.</p>
+        </ModalBody>
+      </Modal>
     </React.Fragment>
   );
 };
