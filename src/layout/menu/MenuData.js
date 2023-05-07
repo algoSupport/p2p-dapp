@@ -17,7 +17,7 @@ const menu = [
     icon: "user-fill",
     text: "Profile",
     link: "/profile/details",
-    active: false,
+    active: true,
     requireConnect: true,
     subMenu: [
       {
@@ -47,7 +47,7 @@ const menu = [
     icon: "users-fill",
     text: "Marketplace",
     link: "/marketplace/buy",
-    active: false,
+    active: true,
     subMenu: [
       {
         text: "Buy",
@@ -62,11 +62,11 @@ const menu = [
         link: "/marketplace/create-offer",
         requireConnect: true,
       },
-      {
-        text: "My Offers",
-        link: "/marketplace/user-profile-regular",
-        requireConnect: true,
-      },
+      // {
+      // text: "My Offers",
+      // link: "/marketplace/user-profile-regular",
+      // requireConnect: true,
+      // },
     ],
   },
   {
