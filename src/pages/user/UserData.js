@@ -7,7 +7,7 @@ export const userData = [
   {
     id: 1,
     avatarBg: "purple",
-    name: "Marcus Cilistia",
+    name: "MxCilistia",
     displayName: "Marcus",
     role: "Customer",
     checked: false,
@@ -28,7 +28,7 @@ export const userData = [
     id: 2,
     avatarBg: "purple",
     image: User3,
-    name: "Ashley Lawson",
+    name: "Ashlawson",
     //dob:"10 Sept, 1990",
     role: "Investor",
     balance: "580.00",
@@ -47,7 +47,7 @@ export const userData = [
   {
     id: 3,
     avatarBg: "info",
-    name: "Joe Larson",
+    name: "V1ncent",
     //dob:"19 Jan, 1985",
     role: "Customer",
     balance: "32,000.34",
@@ -66,7 +66,7 @@ export const userData = [
   {
     id: 4,
     avatarBg: "danger",
-    name: "Jane Montgomery",
+    name: "jmitch",
     //dob:"24 April, 1985",
     role: "Subscriber",
     balance: "0.00",
@@ -85,7 +85,7 @@ export const userData = [
   {
     id: 5,
     avatarBg: "purple",
-    name: "Frances Burns",
+    name: "fburns",
     //dob:"30 May, 2000",
     role: "Manager",
     image: User,
@@ -105,7 +105,7 @@ export const userData = [
   {
     id: 6,
     avatarBg: "primary",
-    name: "Alan Butler",
+    name: "Alanbutler",
     //dob:"10 Feb, 1997",
     role: "Investor",
     image: User2,
@@ -126,7 +126,7 @@ export const userData = [
   {
     id: 7,
     avatarBg: "warning",
-    name: "Victoria Lynch",
+    name: "VicLynch",
     //dob:"02 May, 1993",
     role: "Investor",
     // email: "victoria@example.com",
@@ -146,7 +146,7 @@ export const userData = [
   {
     id: 8,
     avatarBg: "success",
-    name: "Patrick Newman",
+    name: "PNewman",
     //dob:"15 Feb, 1997",
     role: "Customer",
     // email: "patrick@example.com",
@@ -166,7 +166,7 @@ export const userData = [
   {
     id: 9,
     avatarBg: "purple",
-    name: "Jane Harris",
+    name: "JHarris",
     //dob:"28 Feb, 1985",
     role: "Customer",
     image: User4,
@@ -187,7 +187,7 @@ export const userData = [
   {
     id: 10,
     avatarBg: "purple",
-    name: "Emma Walker",
+    name: "EmmaWalker",
     //dob:"30 Dec, 1998",
     role: "Investor",
     // email: "walker@example.com",
@@ -207,7 +207,7 @@ export const userData = [
   {
     id: 11,
     avatarBg: "pink",
-    name: "Lilja Peltola",
+    name: "LiljaPeltola",
     //dob:"30 Dec, 1998",
     role: "Investor",
     // email: "lilja@example.com",
@@ -227,7 +227,7 @@ export const userData = [
   {
     id: 12,
     avatarBg: "secondary",
-    name: "Annette Hunter",
+    name: "AnneHunter",
     //dob:"30 Dec, 1998",
     role: "Investor",
     // email: "hunter@example.com",
@@ -247,7 +247,7 @@ export const userData = [
   {
     id: 13,
     avatarBg: "pink",
-    name: "Sara Koivisto",
+    name: "SKoivisto",
     //dob:"30 Dec, 1998",
     role: "Customer",
     // email: "sara@example.com",
@@ -267,7 +267,7 @@ export const userData = [
   {
     id: 14,
     avatarBg: "blue",
-    name: "Kianna Pham",
+    name: "Kianna",
     //dob:"30 Dec, 1998",
     role: "Admin",
     // email: "kiana@example.com",
@@ -287,7 +287,7 @@ export const userData = [
   {
     id: 15,
     avatarBg: "pink",
-    name: "Raymond Atkins",
+    name: "RaymondA",
     //dob:"30 Dec, 1998",
     role: "Customer",
     image: User4,
@@ -308,7 +308,7 @@ export const userData = [
   {
     id: 16,
     avatarBg: "blue",
-    name: "Amira Talley",
+    name: "AmiraT",
     //dob:"30 Dec, 1998",
     role: "Admin",
     // email: "amira@example.com",
@@ -328,7 +328,7 @@ export const userData = [
   {
     id: 17,
     avatarBg: "secondary",
-    name: "Lana Steiner",
+    name: "Lana",
     //dob:"30 Dec, 1998",
     role: "Admin",
     // email: "steinar@example.com",
@@ -348,7 +348,7 @@ export const userData = [
   {
     id: 18,
     avatarBg: "warning",
-    name: "Joshua Mcnair",
+    name: "Mcnair",
     //dob:"30 Dec, 1998",
     image: User4,
     role: "Admin",
@@ -369,7 +369,7 @@ export const userData = [
   {
     id: 19,
     avatarBg: "secondary",
-    name: "Asiya Wolff",
+    name: "Wolff",
     //dob:"30 Dec, 1998",
     role: "Customer",
     // email: "asia@example.com",
@@ -389,7 +389,7 @@ export const userData = [
   {
     id: 20,
     avatarBg: "warning",
-    name: "Fox Mccloud",
+    name: "0x33vd",
     //dob:"30 Dec, 1998",
     role: "Admin",
     // email: "fox@example.com",
