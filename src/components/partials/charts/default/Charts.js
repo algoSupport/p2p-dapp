@@ -74,12 +74,12 @@ export const LineChart = () => {
         maintainAspectRatio: false,
         tooltips: {
           enabled: true,
-          backgroundColor: "#eff6ff",
-          titleFontSize: 13,
-          titleFontColor: "#6783b8",
+          backgroundColor: "#1a2234",
+          titleFontSize: 12,
+          titleFontColor: "#8094ae",
           titleMarginBottom: 6,
-          bodyFontColor: "#9eaecf",
-          bodyFontSize: 12,
+          bodyFontColor: "#8094ae",
+          bodyFontSize: 11,
           bodySpacing: 4,
           yPadding: 10,
           xPadding: 10,
@@ -89,26 +89,17 @@ export const LineChart = () => {
         scales: {
           yAxes: [
             {
-              display: false,
               ticks: {
                 beginAtZero: true,
-                fontSize: 11,
-                fontColor: "#9eaecf",
-                callback: function (value, index, values) {
-                  return "$ " + value;
-                },
-                padding: 10,
-                min: 1,
-                stepSize: 3000,
               },
-              gridLines: {
-                tickMarkLength: 0,
-              },
+              min: 0,
+              max: 1,
+              display: false,
             },
           ],
           xAxes: [
             {
-              display: true,
+              display: false,
               ticks: {
                 fontSize: 9,
                 fontColor: "#9eaecf",
