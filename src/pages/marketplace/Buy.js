@@ -294,7 +294,7 @@ const BuyPage = () => {
                                   ev.preventDefault();
                                 }}
                               >
-                                <span>Status</span>
+                                <span>Rating</span>
                               </DropdownItem>
                             </li>
                             <li>
@@ -305,7 +305,7 @@ const BuyPage = () => {
                                   ev.preventDefault();
                                 }}
                               >
-                                <span>Rating</span>
+                                <span>Status</span>
                               </DropdownItem>
                             </li>
                           </ul>
