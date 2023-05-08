@@ -1,7 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import Content from "../../layout/content/Content";
 import Head from "../../layout/head/Head";
-import { DropdownMenu, DropdownToggle, UncontrolledDropdown, Modal, ModalBody, DropdownItem, Form } from "reactstrap";
+import {
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown,
+  Modal,
+  ModalBody,
+  ModalHeader,
+  DropdownItem,
+  Form,
+} from "reactstrap";
 import {
   Block,
   BlockBetween,
@@ -10,6 +19,8 @@ import {
   BlockHeadContent,
   BlockTitle,
   Icon,
+  Row,
+  Col,
   UserAvatar,
   PaginationComponent,
   Button,
@@ -18,10 +29,12 @@ import {
   DataTableHead,
   DataTableRow,
   DataTableItem,
+  TooltipComponent,
   RSelect,
 } from "../../components/Component";
-import { userData } from "../user/UserData";
+import { filterRole, filterStatus, userData } from "../user/UserData";
 import { bulkActionOptions, findUpper } from "../../utils/Utils";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../user/UserContext";
 import { useAccount } from "wagmi";
@@ -30,18 +43,33 @@ import { useHistory } from "react-router-dom";
 const SellPage = () => {
   const { contextData } = useContext(UserContext);
   const { isConnected } = useAccount();
+  const history = useHistory();
   const [data, setData] = contextData;
 
   const [sm, updateSm] = useState(false);
   const [tablesm, updateTableSm] = useState(false);
   const [onSearch, setonSearch] = useState(true);
   const [onSearchText, setSearchText] = useState("");
-
+  const [modal, setModal] = useState({
+    edit: false,
+    add: false,
+  });
+  const [editId, setEditedId] = useState();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    price: "",
+    min: "",
+    status: "Active",
+  });
   const [actionText, setActionText] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemPerPage, setItemPerPage] = useState(10);
   const [sort, setSortState] = useState("");
-  const history = useHistory();
+
+  const [modalSell, setModalSell] = useState(false);
+  const toggleSell = () => setModalSell(!modalSell);
+
   // Sorting data
   const sortFunc = (params) => {
     let defaultData = data;
@@ -89,6 +117,118 @@ const SellPage = () => {
     setSearchText(e.target.value);
   };
 
+  // function to change the selected property of an item
+  const onSelectChange = (e, id) => {
+    let newData = data;
+    let index = newData.findIndex((item) => item.id === id);
+    newData[index].checked = e.currentTarget.checked;
+    setData([...newData]);
+  };
+
+  // function to reset the form
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      price: "",
+      min: "",
+      status: "Active",
+    });
+  };
+
+  // function to close the form modal
+  const onFormCancel = () => {
+    setModal({ edit: false, add: false });
+    resetForm();
+  };
+
+  // submit function to add a new item
+  const onFormSubmit = (submitData) => {
+    const { name, email, price, min } = submitData;
+    let submittedData = {
+      id: data.length + 1,
+      avatarBg: "purple",
+      name: name,
+      role: "Customer",
+      email: email,
+      price: price,
+      min: min,
+      emailStatus: "success",
+      kycStatus: "alert",
+      max: "10 Feb 2020",
+      status: formData.status,
+      country: "Bangladesh",
+    };
+    setData([submittedData, ...data]);
+    resetForm();
+    setModal({ edit: false }, { add: false });
+  };
+
+  // submit function to update a new item
+  const onEditSubmit = (submitData) => {
+    const { name, email, min } = submitData;
+    let submittedData;
+    let newitems = data;
+    newitems.forEach((item) => {
+      if (item.id === editId) {
+        submittedData = {
+          id: item.id,
+          avatarBg: item.avatarBg,
+          name: name,
+          image: item.image,
+          role: item.role,
+          email: email,
+          price: formData.price,
+          min: "+" + min,
+          emailStatus: item.emailStatus,
+          kycStatus: item.kycStatus,
+          max: item.max,
+          status: formData.status,
+          country: item.country,
+        };
+      }
+    });
+    let index = newitems.findIndex((item) => item.id === editId);
+    newitems[index] = submittedData;
+    setModal({ edit: false });
+    resetForm();
+  };
+
+  // function that loads the want to editted data
+  const onEditClick = (id) => {
+    data.forEach((item) => {
+      if (item.id === id) {
+        setFormData({
+          name: item.name,
+          email: item.email,
+          status: item.status,
+          min: item.min,
+          price: item.price,
+        });
+        setModal({ edit: true }, { add: false });
+        setEditedId(id);
+      }
+    });
+  };
+
+  // function to change to suspend property for an item
+  const suspendUser = (id) => {
+    let newData = data;
+    let index = newData.findIndex((item) => item.id === id);
+    newData[index].status = "Suspend";
+    setData([...newData]);
+  };
+
+  // function to change the check property of an item
+  const selectorCheck = (e) => {
+    let newData;
+    newData = data.map((item) => {
+      item.checked = e.currentTarget.checked;
+      return item;
+    });
+    setData([...newData]);
+  };
+
   // function which fires on applying selected action
   const onActionClick = (e) => {
     if (actionText === "suspend") {
@@ -114,6 +254,8 @@ const SellPage = () => {
 
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const { errors, register, handleSubmit } = useForm();
 
   const onCreateOffer = (e) => {
     e.preventDefault();
@@ -192,7 +334,7 @@ const SellPage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li className="nk-block-tools-opt">
-                      <a href="/marketplace/buy" onClick={(e) => onCreateOffer(e)}>
+                      <a href="/marketplace/Sell" onClick={(e) => onCreateOffer(e)}>
                         <Button color="primary" disabled={!isConnected}>
                           <Icon name="plus"></Icon>
                           <span>Create an offer</span>
@@ -509,7 +651,11 @@ const SellPage = () => {
 
                         <DataTableRow>
                           <span>
-                            <button className="btn btn-primary btn-sm w-100 center" disabled={!isConnected}>
+                            <button
+                              className="btn btn-primary btn-sm w-100 center"
+                              disabled={!isConnected}
+                              onClick={toggleSell}
+                            >
                               Sell
                             </button>
                           </span>
@@ -535,6 +681,21 @@ const SellPage = () => {
             </div>
           </DataTable>
         </Block>
+        <Modal isOpen={modalSell} toggle={toggleSell} modalClassName="zoom">
+          <ModalHeader
+            toggle={toggleSell}
+            close={
+              <button className="close" onClick={toggleSell}>
+                <Icon name="cross" />
+              </button>
+            }
+          >
+            Sell
+          </ModalHeader>
+          <ModalBody>
+            <p>Selling is not yet available. This is just a preview of the updated UI.</p>
+          </ModalBody>
+        </Modal>
       </Content>
     </React.Fragment>
   );

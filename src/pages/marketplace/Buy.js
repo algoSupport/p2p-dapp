@@ -1,7 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import Content from "../../layout/content/Content";
 import Head from "../../layout/head/Head";
-import { DropdownMenu, DropdownToggle, UncontrolledDropdown, Modal, ModalBody, DropdownItem, Form } from "reactstrap";
+import {
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown,
+  Modal,
+  ModalBody,
+  ModalHeader,
+  DropdownItem,
+  Form,
+} from "reactstrap";
 import {
   Block,
   BlockBetween,
@@ -28,7 +37,6 @@ import { bulkActionOptions, findUpper } from "../../utils/Utils";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../user/UserContext";
-import { Alert } from "reactstrap";
 import { useAccount } from "wagmi";
 import { useHistory } from "react-router-dom";
 
@@ -58,6 +66,9 @@ const BuyPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemPerPage, setItemPerPage] = useState(10);
   const [sort, setSortState] = useState("");
+
+  const [modalBuy, setModalBuy] = useState(false);
+  const toggleBuy = () => setModalBuy(!modalBuy);
 
   // Sorting data
   const sortFunc = (params) => {
@@ -640,7 +651,11 @@ const BuyPage = () => {
 
                         <DataTableRow>
                           <span>
-                            <button className="btn btn-primary btn-sm w-100 center" disabled={!isConnected}>
+                            <button
+                              className="btn btn-primary btn-sm w-100 center"
+                              disabled={!isConnected}
+                              onClick={toggleBuy}
+                            >
                               Buy
                             </button>
                           </span>
@@ -666,6 +681,21 @@ const BuyPage = () => {
             </div>
           </DataTable>
         </Block>
+        <Modal isOpen={modalBuy} toggle={toggleBuy} modalClassName="zoom">
+          <ModalHeader
+            toggle={toggleBuy}
+            close={
+              <button className="close" onClick={toggleBuy}>
+                <Icon name="cross" />
+              </button>
+            }
+          >
+            Buy
+          </ModalHeader>
+          <ModalBody>
+            <p>Buying is not yet available. This is just a preview of the updated UI.</p>
+          </ModalBody>
+        </Modal>
       </Content>
     </React.Fragment>
   );
