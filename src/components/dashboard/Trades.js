@@ -5,6 +5,7 @@ import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
+import { useNetwork } from "wagmi";
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
@@ -14,9 +15,9 @@ const alchemy = new Alchemy(config);
 
 const Trades = () => {
   const { address } = useAccount();
-
+  const { chain } = useNetwork();
   const { data: transactions, isLoading } = useSWR(
-    `transactions/${address}`,
+    `${chain.chainId}/transactions/${address}`,
     async () =>
       alchemy.core.getAssetTransfers({
         fromBlock: "0x0",
