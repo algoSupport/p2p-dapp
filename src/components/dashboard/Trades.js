@@ -49,13 +49,13 @@ const Trades = () => {
           <DataTableRow>
             <span>Asset</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>Amount</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>From</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>To</span>
           </DataTableRow>
         </DataTableHead>
