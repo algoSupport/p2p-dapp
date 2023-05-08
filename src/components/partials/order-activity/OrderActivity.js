@@ -1,77 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Icon from "../../icon/Icon";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
-import { Link } from "react-router-dom";
 import { Button } from "../../Component";
 import BTC from "../../../images/coins/btc.svg";
 import ETH from "../../../images/coins/eth.svg";
 import ARB from "../../../images/coins/arbitrum.png";
 import CIL from "../../../images/coins/cil.png";
-import UserAvatar from "../../user/UserAvatar";
-import {
-  DropdownToggle,
-  DropdownMenu,
-  Card,
-  UncontrolledDropdown,
-  DropdownItem,
-  Modal,
-  ModalBody,
-  ModalFooter,
-  CardTitle,
-  ModalHeader,
-} from "reactstrap";
-
-const orderActivityData = [
-  {
-    id: 1,
-    img: ARB,
-    symbol: "WBTC",
-    total: "0.0000",
-    value: "$0.00",
-    deposit: "9.75%",
-  },
-  {
-    id: 2,
-    img: ARB,
-    symbol: "WETH",
-    total: "0.0000",
-    value: "$0.00",
-    deposit: "6.50%",
-  },
-  {
-    id: 3,
-    img: ARB,
-    symbol: "ARB",
-    total: "0.0000",
-    value: "$0.00",
-    deposit: "6.50%",
-  },
-  {
-    id: 4,
-    img: ARB,
-    symbol: "CIL",
-    total: "0.0000",
-    value: "$0.00",
-    deposit: "27.93%",
-  },
-];
+import { Modal, ModalBody, CardTitle, ModalHeader, Spinner } from "reactstrap";
+import useSWR from "swr";
+import { useAccount } from "wagmi";
+import Moralis from "moralis";
+import { EvmChain } from "@moralisweb3/common-evm-utils";
+import { formatUnits } from "ethers/lib/utils.js";
 
 const OrderActivity = () => {
+  const chain = EvmChain.ARBITRUM;
   const [modalDeposit, setModalDeposit] = useState(false);
   const toggleDeposit = () => setModalDeposit(!modalDeposit);
-  const [orderData, setOrderData] = useState(orderActivityData);
-  const [orderActivity, setActivity] = useState("");
-  // useEffect(() => {
-  //   let data;
-  //   if (orderActivity === "Buy") {
-  //     data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Buy");
-  //   } else if (orderActivity === "Sell") {
-  //     data = orderActivityData.filter((item) => item.desc.split(" ")[0] === "Sell");
-  //   } else {
-  //     data = orderActivityData;
-  //   }
-  //   setOrderData(data);
-  // }, [orderActivity]);
+  const { address } = useAccount();
+
+  const { data: assets, isLoading } = useSWR(
+    `assets/${address}`,
+    async () =>
+      Moralis.EvmApi.token.getWalletTokenBalances({
+        address,
+        chain,
+      }),
+    {
+      revalidateOnFocus: false,
+    }
+  );
+
   return (
     <React.Fragment>
       <div className="card-inner">
@@ -84,40 +43,6 @@ const OrderActivity = () => {
               </Link> */}
             </h6>
           </CardTitle>
-          {/* <div className="card-tools">
-            <ul className="card-tools-nav">
-              <li className={orderActivity === "Buy" ? "active" : ""} onClick={() => setActivity("Buy")}>
-                <a
-                  href="#buy"
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                  }}
-                >
-                  <span>Buy</span>
-                </a>
-              </li>
-              <li className={orderActivity === "Sell" ? "active" : ""} onClick={() => setActivity("Sell")}>
-                <a
-                  href="#sell"
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                  }}
-                >
-                  <span>Sell</span>
-                </a>
-              </li>
-              <li className={orderActivity === "" ? "active" : ""} onClick={() => setActivity("")}>
-                <a
-                  href="#all"
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                  }}
-                >
-                  <span>All</span>
-                </a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
@@ -129,55 +54,63 @@ const OrderActivity = () => {
             <span>Asset</span>
           </DataTableRow>
           <DataTableRow>
-            <span>Total</span>
+            <span>Balance</span>
           </DataTableRow>
-          <DataTableRow size="sm">
-            <span>Value</span>
-          </DataTableRow>
-          <DataTableRow size="xl">
+
+          {/* <DataTableRow size="xl">
             <span>Deposit</span>
             <span className="ms-1" style={{ color: "white", fontSize: "10px" }}>
               APR
             </span>
-          </DataTableRow>
+          </DataTableRow> */}
           <DataTableRow size=""></DataTableRow>
         </DataTableHead>
-        {orderData.map((item) => {
-          return (
-            <DataTableItem key={item.id}>
-              <DataTableRow className="nk-tb-orders-type">
-                <span>
-                  <img src={item.img} style={{ width: "20px", height: "20px" }} alt="network"></img>
-                </span>
-              </DataTableRow>
-              <DataTableRow className="nk-tb-orders-type">
-                <span>{item.symbol}</span>
-              </DataTableRow>
-              <DataTableRow>
-                <div className="d-flex align-center">
-                  <span className="tb-sub">{item.total}</span>
-                </div>
-              </DataTableRow>
-              <DataTableRow size="sm">
-                <span className="tb-sub">{item.value}</span>
-              </DataTableRow>
-              <DataTableRow size="xl">
-                <span className="tb-sub">{item.deposit}</span>
-              </DataTableRow>
+        {!isLoading &&
+          assets &&
+          assets.jsonResponse
+            .filter((asset) => !asset.possible_spam || asset.symbol === "CIL")
+            .map((asset) => {
+              return (
+                <DataTableItem key={asset.token_address}>
+                  <DataTableRow className="nk-tb-orders-type">
+                    <span>
+                      <img
+                        src={asset.symbol === "CIL" ? CIL : ARB}
+                        style={{ width: "20px", height: "20px" }}
+                        alt="network"
+                      ></img>
+                    </span>
+                  </DataTableRow>
+                  <DataTableRow className="nk-tb-orders-type">
+                    <span>{asset.symbol}</span>
+                  </DataTableRow>
+                  <DataTableRow>
+                    <div className="d-flex align-center">
+                      <span className="tb-sub">{formatUnits(asset.balance, asset.decimal)}</span>
+                    </div>
+                  </DataTableRow>
 
-              <DataTableRow className="text-end me-2">
-                <Button color="outline-primary" size="sm" className="btn-dim" onClick={toggleDeposit}>
-                  Deposit
-                </Button>
+                  <DataTableRow className="text-end me-2">
+                    <Button color="outline-primary" size="sm" className="btn-dim" onClick={toggleDeposit}>
+                      Deposit
+                    </Button>
 
-                <Button color="secondary" size="sm" className="ms-3 btn-dim">
-                  Withdraw
-                </Button>
-              </DataTableRow>
-            </DataTableItem>
-          );
-        })}
+                    <Button color="secondary" size="sm" className="ms-3 btn-dim">
+                      Withdraw
+                    </Button>
+                  </DataTableRow>
+                </DataTableItem>
+              );
+            })}
       </DataTableBody>
+      {isLoading ? (
+        <div className="d-flex justify-center py-4">
+          <Spinner color="primary" />
+        </div>
+      ) : (
+        assets &&
+        assets.jsonResponse.length === 0 && <div className="py-3 ms-4 text-center">{"You have no assets."}</div>
+      )}
       <Modal isOpen={modalDeposit} toggle={toggleDeposit} modalClassName="zoom">
         <ModalHeader
           toggle={toggleDeposit}

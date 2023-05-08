@@ -1,14 +1,13 @@
 import React from "react";
 import { CardTitle, Spinner } from "reactstrap";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow, Icon } from "../Component";
-import { useState } from "react";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
 
 const config = {
-  apiKey: process.env.ALCHEMY_ID,
+  apiKey: process.env.REACT_APP_ALCHEMY_ID,
   network: Network.ARB_GOERLI,
 };
 const alchemy = new Alchemy(config);
@@ -87,9 +86,7 @@ const Trades = () => {
           <Spinner color="primary" />
         </div>
       ) : transactions && transactions.transfers.length === 0 ? (
-        <div className="py-3 ms-4 text-center">
-          {transactions && transactions.transfers.length === 0 && "You have no recent transactions."}
-        </div>
+        <div className="py-3 ms-4 text-center">"You have no recent transactions.</div>
       ) : (
         ""
       )}
