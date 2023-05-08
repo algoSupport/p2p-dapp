@@ -236,21 +236,24 @@ const PanelItem = ({ icon, link, text, subPanel, index, data, setMenuData, sideb
 };
 
 const MenuSub = ({ icon, link, text, sub, sidebarToggle, mobileView, ...props }) => {
+  const { isConnected } = useAccount();
   return (
     <ul className="nk-menu-sub" style={props.style}>
-      {sub.map((item) => (
-        <MenuItem
-          link={item.link}
-          icon={item.icon}
-          text={item.text}
-          sub={item.subMenu}
-          badge={item.badge}
-          key={item.text}
-          newTab={item.newTab}
-          sidebarToggle={sidebarToggle}
-          mobileView={mobileView}
-        />
-      ))}
+      {sub
+        .filter((item) => (item.requireConnect ? isConnected : true))
+        .map((item) => (
+          <MenuItem
+            link={item.link}
+            icon={item.icon}
+            text={item.text}
+            sub={item.subMenu}
+            badge={item.badge}
+            key={item.text}
+            newTab={item.newTab}
+            sidebarToggle={sidebarToggle}
+            mobileView={mobileView}
+          />
+        ))}
     </ul>
   );
 };

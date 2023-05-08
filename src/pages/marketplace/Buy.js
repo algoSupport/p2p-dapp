@@ -29,9 +29,13 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../user/UserContext";
 import { Alert } from "reactstrap";
+import { useAccount } from "wagmi";
+import { useHistory } from "react-router-dom";
 
 const BuyPage = () => {
   const { contextData } = useContext(UserContext);
+  const { isConnected } = useAccount();
+  const history = useHistory();
   const [data, setData] = contextData;
 
   const [sm, updateSm] = useState(false);
@@ -242,6 +246,12 @@ const BuyPage = () => {
 
   const { errors, register, handleSubmit } = useForm();
 
+  const onCreateOffer = (e) => {
+    e.preventDefault();
+    if (isConnected) {
+      history.push("/marketplace/create-offer");
+    }
+  };
   return (
     <React.Fragment>
       <Head title="Buy"></Head>
@@ -313,12 +323,12 @@ const BuyPage = () => {
                       </UncontrolledDropdown>
                     </li>
                     <li className="nk-block-tools-opt">
-                      <Link to="/marketplace/create-offer">
-                        <Button color="primary">
+                      <a href="/marketplace/buy" onClick={(e) => onCreateOffer(e)}>
+                        <Button color="primary" disabled={!isConnected}>
                           <Icon name="plus"></Icon>
                           <span>Create an offer</span>
                         </Button>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

@@ -23,7 +23,7 @@ const OrderActivity = () => {
   const { chain: currentChain } = useNetwork();
 
   const { data: assets, isLoading } = useSWR(
-    `${currentChain.chainId}/assets/${address}`,
+    `${currentChain?.chainId}/assets/${address}`,
     async () =>
       Moralis.EvmApi.token.getWalletTokenBalances({
         address,
@@ -34,7 +34,7 @@ const OrderActivity = () => {
     }
   );
   const { data: nativeAsset, isLoading: isNativeLoading } = useSWR(
-    `${currentChain.chainId}/native_assets/${address}`,
+    `${currentChain?.chainId}/native_assets/${address}`,
     async () =>
       Moralis.EvmApi.balance.getNativeBalance({
         chain,

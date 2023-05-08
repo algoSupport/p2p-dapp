@@ -18,7 +18,7 @@ const Trades = () => {
   const { address } = useAccount();
   const { chain } = useNetwork();
   const { data: transactions, isLoading } = useSWR(
-    `${chain.chainId}/transactions/${address}`,
+    `${chain?.chainId}/transactions/${address}`,
     async () =>
       alchemy.core.getAssetTransfers({
         fromBlock: "0x0",

@@ -161,7 +161,16 @@ const Pages = () => {
           )}
         ></Route>
 
-        <Route
+        <PrivateRoute path={`${process.env.PUBLIC_URL}/marketplace/create-offer`}>
+          {" "}
+          <UserContextProvider>
+            <OfferContextProvider>
+              <CreateBuyOffer />
+            </OfferContextProvider>
+          </UserContextProvider>
+        </PrivateRoute>
+
+        {/* <Route
           exact
           path={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
           render={() => (
@@ -171,7 +180,7 @@ const Pages = () => {
               </OfferContextProvider>
             </UserContextProvider>
           )}
-        ></Route>
+        ></Route> */}
 
         <Route
           exact
