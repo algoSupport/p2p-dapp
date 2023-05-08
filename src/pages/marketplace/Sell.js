@@ -509,7 +509,9 @@ const SellPage = () => {
 
                         <DataTableRow>
                           <span>
-                            <button className="btn btn-primary btn-sm w-100 center">Sell</button>
+                            <button className="btn btn-primary btn-sm w-100 center" disabled={!isConnected}>
+                              Sell
+                            </button>
                           </span>
                         </DataTableRow>
                       </DataTableItem>
