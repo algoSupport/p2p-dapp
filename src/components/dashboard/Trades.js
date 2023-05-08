@@ -18,7 +18,7 @@ import ARB from "../../images/coins/arbitrum.png";
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
-  network: Network.ETH_GOERLI,
+  network: Network.ARB_GOERLI,
 };
 const itemPerPage = 10;
 

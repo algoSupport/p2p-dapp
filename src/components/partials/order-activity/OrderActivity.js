@@ -37,7 +37,7 @@ const OrderActivity = () => {
     `${chain?.id}/native_assets/${address}`,
     async () =>
       Moralis.EvmApi.balance.getNativeBalance({
-        chain: chain.id,
+        chain: 1,
         address,
       }),
     {
@@ -85,11 +85,11 @@ const OrderActivity = () => {
               <DataTableItem>
                 <DataTableRow className="nk-tb-orders-type">
                   <span>
-                    <img src={ARB} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                    <img src={ETH} style={{ width: "20px", height: "20px" }} alt="network"></img>
                   </span>
                 </DataTableRow>
                 <DataTableRow className="nk-tb-orders-type">
-                  <span>ARB</span>
+                  <span>ETH</span>
                 </DataTableRow>
                 <DataTableRow>
                   <div className="d-flex align-center">
