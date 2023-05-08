@@ -138,8 +138,11 @@ export const bytesToMegaBytes = (bytes) => {
 };
 
 export const bulkActionOptions = [
-  { value: "suspend", label: "Suspend User" },
-  { value: "delete", label: "Delete User" },
+  { value: "WBTC", label: "WBTC" },
+  { value: "WETH", label: "WETH" },
+  { value: "USDT", label: "USDT" },
+  { value: "USDC", label: "USDC" },
+  { value: "ARB", label: "ARB" },
 ];
 
 export const monthNames = [
