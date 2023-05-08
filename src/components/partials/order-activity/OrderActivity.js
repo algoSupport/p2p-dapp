@@ -118,7 +118,7 @@ const OrderActivity = () => {
                         <span>
                           <img
                             src={asset.logo ? asset.logo : asset.symbol === "CIL" ? CIL : ARB}
-                            style={{ width: "20px", height: "20px" }}
+                            style={{ width: "25px", height: "25px", marginLeft: "-2px" }}
                             alt="network"
                           ></img>
                         </span>
