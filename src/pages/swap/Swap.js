@@ -64,7 +64,7 @@ const SwapPage = () => {
             <BlockHeadContent>
               <ul className="nk-block-tools g-3">
                 <li>
-                  <Link to="/history-payment">
+                  <Link to="/transactions">
                     <button className="dropdown-toggle btn btn-primary">
                       <Icon name="list-fill" />
                       <span>History</span>

@@ -85,15 +85,6 @@ const Header = ({ fixed, theme, className, sidebarToggle, setVisibility, ...prop
                         <span className="nk-menu-text">Create</span>
                       </Link>
                     </li>
-                    <li className="nk-menu-item">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/marketplace/create-offer`}
-                        onClick={() => setOnHover(false)}
-                        className="nk-menu-link"
-                      >
-                        <span className="nk-menu-text">My Offers</span>
-                      </Link>
-                    </li>
                   </ul>
                 )}
               </li>

@@ -245,7 +245,7 @@ const Pages = () => {
             </ProductContextProvider>
           )}
         ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/history-payment`} component={PaymentHistory}></Route>
+        <Route exact path={`${process.env.PUBLIC_URL}/transactions`} component={PaymentHistory}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/invoice-list`} component={InvoiceList}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/invoice-details/:id`} component={InvoiceDetails}></Route>
         <Route exact path={`${process.env.PUBLIC_URL}/earn`} component={PricingTable}></Route>

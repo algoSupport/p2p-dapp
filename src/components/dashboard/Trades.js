@@ -6,6 +6,7 @@ import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
 import { useNetwork } from "wagmi";
+import ARB from "../../images/coins/arbitrum.png";
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
@@ -43,15 +44,18 @@ const Trades = () => {
       <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
         <DataTableHead>
           <DataTableRow>
+            <span>Network</span>
+          </DataTableRow>
+          <DataTableRow>
             <span>Asset</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>Amount</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>From</span>
           </DataTableRow>
-          <DataTableRow size="sm">
+          <DataTableRow>
             <span>To</span>
           </DataTableRow>
         </DataTableHead>
@@ -62,13 +66,15 @@ const Trades = () => {
               <DataTableItem key={transaction.hash}>
                 <DataTableRow>
                   <div className="d-flex align-center">
-                    <Icon
-                      name="sign-eth bg-eth-dim icon-circle"
-                      style={{ marginRight: "3px", width: "25px", height: "25px" }}
-                    ></Icon>
-                    {transaction.asset}
+                    <span>
+                      <img src={ARB} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                    </span>
                   </div>
                 </DataTableRow>
+                <DataTableRow>
+                  <span>{transaction.asset}</span>
+                </DataTableRow>
+
                 <DataTableRow>
                   <span>{transaction.value}</span>
                 </DataTableRow>

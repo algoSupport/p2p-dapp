@@ -46,8 +46,8 @@ const BuyPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    balance: "",
-    phone: "",
+    price: "",
+    min: "",
     status: "Active",
   });
   const [actionText, setActionText] = useState("");
@@ -115,8 +115,8 @@ const BuyPage = () => {
     setFormData({
       name: "",
       email: "",
-      balance: "",
-      phone: "",
+      price: "",
+      min: "",
       status: "Active",
     });
   };
@@ -129,18 +129,18 @@ const BuyPage = () => {
 
   // submit function to add a new item
   const onFormSubmit = (submitData) => {
-    const { name, email, balance, phone } = submitData;
+    const { name, email, price, min } = submitData;
     let submittedData = {
       id: data.length + 1,
       avatarBg: "purple",
       name: name,
       role: "Customer",
       email: email,
-      balance: balance,
-      phone: phone,
+      price: price,
+      min: min,
       emailStatus: "success",
       kycStatus: "alert",
-      lastLogin: "10 Feb 2020",
+      max: "10 Feb 2020",
       status: formData.status,
       country: "Bangladesh",
     };
@@ -151,7 +151,7 @@ const BuyPage = () => {
 
   // submit function to update a new item
   const onEditSubmit = (submitData) => {
-    const { name, email, phone } = submitData;
+    const { name, email, min } = submitData;
     let submittedData;
     let newitems = data;
     newitems.forEach((item) => {
@@ -163,11 +163,11 @@ const BuyPage = () => {
           image: item.image,
           role: item.role,
           email: email,
-          balance: formData.balance,
-          phone: "+" + phone,
+          price: formData.price,
+          min: "+" + min,
           emailStatus: item.emailStatus,
           kycStatus: item.kycStatus,
-          lastLogin: item.lastLogin,
+          max: item.max,
           status: formData.status,
           country: item.country,
         };
@@ -187,8 +187,8 @@ const BuyPage = () => {
           name: item.name,
           email: item.email,
           status: item.status,
-          phone: item.phone,
-          balance: item.balance,
+          min: item.min,
+          price: item.price,
         });
         setModal({ edit: true }, { add: false });
         setEditedId(id);
@@ -562,14 +562,14 @@ const BuyPage = () => {
                         </DataTableRow>
                         <DataTableRow size="mb">
                           <span className="tb-amount">
-                            {item.balance} <span className="currency">USD</span>
+                            {item.price} <span className="currency">USD</span>
                           </span>
                         </DataTableRow>
                         <DataTableRow size="md">
-                          <span>{item.phone}</span>
+                          <span>{item.min}</span>
                         </DataTableRow>
                         <DataTableRow size="lg">
-                          <span>{item.lastLogin}</span>
+                          <span>{item.max}</span>
                         </DataTableRow>
 
                         <DataTableRow size="lg">

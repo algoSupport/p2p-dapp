@@ -22,18 +22,15 @@ const menu = [
       {
         text: "Details",
         link: "/profile/details",
-        requireConnect: true,
       },
       {
         text: "Notifications",
         link: "/profile/notifications",
-        requireConnect: true,
       },
 
       {
         text: "Banking Details",
         link: "/profile/banking",
-        requireConnect: true,
       },
     ],
   },
@@ -58,7 +55,6 @@ const menu = [
       {
         text: "Create",
         link: "/marketplace/create-offer",
-        requireConnect: true,
       },
       // {
       // text: "My Offers",
@@ -71,11 +67,12 @@ const menu = [
     icon: "repeat-fill",
     text: "Express",
     link: "/swap",
+    requireConnect: true,
   },
   {
     icon: "list-fill",
     text: "History",
-    link: "/history-payment",
+    link: "/transactions",
     requireConnect: true,
   },
   {
