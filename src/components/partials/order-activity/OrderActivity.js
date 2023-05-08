@@ -16,28 +16,28 @@ import { useNetwork } from "wagmi";
 // const { EvmChain } = require("@moralisweb3/common-evm-utils");
 
 const OrderActivity = () => {
-  const chain = EvmChain.ARBITRUM;
   const [modalDeposit, setModalDeposit] = useState(false);
   const toggleDeposit = () => setModalDeposit(!modalDeposit);
   const { address } = useAccount();
-  const { chain: currentChain } = useNetwork();
+  const { chain } = useNetwork();
 
   const { data: assets, isLoading } = useSWR(
-    `${currentChain?.chainId}/assets/${address}`,
+    `${chain?.id}/assets/${address}`,
     async () =>
       Moralis.EvmApi.token.getWalletTokenBalances({
         address,
-        chain,
+        chain: chain.id,
       }),
     {
       revalidateOnFocus: false,
     }
   );
+
   const { data: nativeAsset, isLoading: isNativeLoading } = useSWR(
-    `${currentChain?.chainId}/native_assets/${address}`,
+    `${chain?.id}/native_assets/${address}`,
     async () =>
       Moralis.EvmApi.balance.getNativeBalance({
-        chain,
+        chain: chain.id,
         address,
       }),
     {
