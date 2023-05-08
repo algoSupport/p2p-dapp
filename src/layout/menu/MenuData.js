@@ -72,7 +72,7 @@ const menu = [
   {
     icon: "list-fill",
     text: "History",
-    link: "/history-payment",
+    link: "/transactions",
     requireConnect: true,
   },
   {
