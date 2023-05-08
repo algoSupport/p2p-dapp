@@ -87,7 +87,7 @@ const Trades = () => {
           <Spinner color="primary" />
         </div>
       ) : transactions && transactions.transfers.length === 0 ? (
-        <div className="py-3 ms-4 text-center">"You have no recent transactions.</div>
+        <div className="py-3 ms-4 text-center">You have no recent transactions.</div>
       ) : (
         ""
       )}
