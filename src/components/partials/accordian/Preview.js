@@ -116,7 +116,7 @@ const Accordion = ({ className, variation, ...props }) => {
       </div>
       <div className="accordion-item">
         <div className={[`accordion-head${isOpen !== "8" ? " collapsed" : ""}`]} onClick={() => toggleCollapse("8")}>
-          <h6 className="title">What other currencies can I trade on the Cilistia marketplace?</h6>
+          <h6 className="title">Is Cilistia decentralized?</h6>
           <span className="accordion-icon"></span>
         </div>
         <Collapse className="accordion-body" isOpen={isOpen === "8" ? true : false}>
@@ -130,7 +130,7 @@ const Accordion = ({ className, variation, ...props }) => {
       </div>
       <div className="accordion-item">
         <div className={[`accordion-head${isOpen !== "9" ? " collapsed" : ""}`]} onClick={() => toggleCollapse("9")}>
-          <h6 className="title">What other currencies can I trade on the Cilistia marketplace?</h6>
+          <h6 className="title">What is the governance vote used for?</h6>
           <span className="accordion-icon"></span>
         </div>
         <Collapse className="accordion-body" isOpen={isOpen === "9" ? true : false}>
