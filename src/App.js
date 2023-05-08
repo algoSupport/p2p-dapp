@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { RedirectAs404 } from "./utils/Utils";
 
@@ -25,10 +25,11 @@ import { arbitrumGoerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import merge from "lodash.merge";
+import Moralis from "moralis";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_ID }), publicProvider()]
 );
 const { connectors } = getDefaultWallets({
   appName: "Cilistia",
@@ -42,6 +43,14 @@ const wagmiClient = createClient({
 });
 
 const App = () => {
+  useEffect(() => {
+    if (!Moralis.Core.isStarted) {
+      Moralis.start({
+        apiKey: process.env.REACT_APP_MORALIS_API_KEY,
+        // ...and any other configuration
+      });
+    }
+  }, []);
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider

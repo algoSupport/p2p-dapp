@@ -1,17 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Content from "../../layout/content/Content";
 import Head from "../../layout/head/Head";
-import {
-  DropdownToggle,
-  DropdownMenu,
-  Card,
-  UncontrolledDropdown,
-  DropdownItem,
-  Modal,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-} from "reactstrap";
+import { Card, Modal, ModalBody, ModalHeader } from "reactstrap";
 import {
   Block,
   BlockDes,
@@ -32,6 +22,7 @@ const Wallets = () => {
   const [modalZoom, setModalZoom] = useState(false);
   const toggleZoom = () => setModalZoom(!modalZoom);
   const [sm, updateSm] = useState(false);
+
   return (
     <React.Fragment>
       <Head title="Wallets" />
