@@ -58,7 +58,10 @@ const Trades = () => {
           </CardTitle>
         </div>
       </div>
-      <DataTableBody className="border-top is-compact border-bottom" compact>
+      <DataTableBody
+        className={`border-top is-compact  ${currentItems.length === 0 ? "border-0" : "border-bottom"}`}
+        compact
+      >
         <DataTableHead>
           <DataTableRow>
             <span>Network</span>
