@@ -116,7 +116,7 @@ const OrderActivity = () => {
                 </DataTableRow>
 
                 <DataTableRow className="text-end me-2">
-                  <Button color="outline-primary" size="sm" className="btn-dim" onClick={toggleDeposit}>
+                  <Button color="primary" size="sm" onClick={toggleDeposit}>
                     Deposit
                   </Button>
 
@@ -151,7 +151,7 @@ const OrderActivity = () => {
                       </DataTableRow>
 
                       <DataTableRow className="text-end me-2">
-                        <Button color="outline-primary" size="sm" className="btn-dim" onClick={toggleDeposit}>
+                        <Button color="primary" size="sm" onClick={toggleDeposit}>
                           Deposit
                         </Button>
 
