@@ -6,11 +6,9 @@ import {
   Accordian,
   Block,
   BlockContent,
-  BlockDes,
   BlockHead,
   BlockHeadContent,
   BlockTitle,
-  Button,
   PreviewCard,
 } from "../../components/Component";
 

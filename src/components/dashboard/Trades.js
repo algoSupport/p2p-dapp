@@ -1,6 +1,6 @@
 import React from "react";
 import { CardTitle, Spinner } from "reactstrap";
-import { DataTableBody, DataTableHead, DataTableItem, DataTableRow, Icon } from "../Component";
+import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../Component";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";

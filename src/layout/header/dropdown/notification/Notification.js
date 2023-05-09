@@ -5,7 +5,7 @@ import Icon from "../../../../components/icon/Icon";
 import data from "./NotificationData";
 
 const NotificationItem = (props) => {
-  const { icon, iconStyle, text, time, id } = props;
+  const { icon, iconStyle, text, id } = props;
   return (
     <div className="nk-notification-item" key={id} id={id}>
       <div className="nk-notification-icon">
