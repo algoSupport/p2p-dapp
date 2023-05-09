@@ -114,7 +114,11 @@ const Trades = () => {
             })}
         </DataTableBody>
         <div className="card-inner">
-          {currentItems.length > 0 ? (
+          {isLoading ? (
+            <div className="d-flex justify-center ">
+              <Spinner color="primary" />
+            </div>
+          ) : currentItems.length > 0 ? (
             <PaginationComponent
               itemPerPage={itemPerPage}
               totalItems={transactions && transactions.length}
@@ -123,20 +127,11 @@ const Trades = () => {
             />
           ) : (
             <div className="text-center">
-              <span className="text-silent">No data found</span>
+              <span className="text-silent">You have no recent transactions.</span>
             </div>
           )}
         </div>
       </DataTable>
-      {isLoading ? (
-        <div className="d-flex justify-center py-4">
-          <Spinner color="primary" />
-        </div>
-      ) : transactions && transactions.length === 0 ? (
-        <div className="py-3 ms-4 text-center">You have no recent transactions.</div>
-      ) : (
-        ""
-      )}
     </React.Fragment>
   );
 };
