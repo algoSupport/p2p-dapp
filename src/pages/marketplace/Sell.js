@@ -10,6 +10,7 @@ import {
   ModalHeader,
   DropdownItem,
   Form,
+  Alert,
 } from "reactstrap";
 import {
   Block,
@@ -346,10 +347,10 @@ const SellPage = () => {
               </div>
             </BlockHeadContent>
           </BlockBetween>
-          {/*<Alert className="alert-icon mt-2" color="primary">
+          <Alert className="alert-icon mt-2" color="primary" hidden={!!isConnected}>
             <Icon name="alert-circle" />
-            <strong>Please connect your wallet to trade on Cilistia. </strong>
-                              </Alert>*/}
+            <strong>Please connect your wallet to experience the full preview of Cilistia. </strong>
+          </Alert>
         </BlockHead>
 
         <Block>

@@ -10,6 +10,7 @@ import {
   ModalHeader,
   DropdownItem,
   Form,
+  Alert,
 } from "reactstrap";
 import {
   Block,
@@ -277,6 +278,7 @@ const BuyPage = () => {
                 <p>Buy Crypto currency safely and securely</p>
               </BlockDes>
             </BlockHeadContent>
+
             <BlockHeadContent>
               <div className="toggle-wrap nk-block-tools-toggle">
                 <Button
@@ -346,10 +348,10 @@ const BuyPage = () => {
               </div>
             </BlockHeadContent>
           </BlockBetween>
-          {/*<Alert className="alert-icon mt-2" color="primary">
+          <Alert className="alert-icon mt-2" color="primary" hidden={!!isConnected}>
             <Icon name="alert-circle" />
-            <strong>Please connect your wallet to trade on Cilistia. </strong>
-                              </Alert>*/}
+            <strong>Please connect your wallet to experience the full preview of Cilistia. </strong>
+          </Alert>
         </BlockHead>
 
         <Block>
