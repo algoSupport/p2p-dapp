@@ -61,7 +61,7 @@ const Terms = (props) => {
             <div className="form-group">
               <label className="form-label">Requirements </label>
 
-              <Alert className="alert-icon" color="warning">
+              <Alert className="alert-icon" color="primary">
                 <Icon name="alert-circle" />
                 Adding requirements will reduce the exposure of your Ad.
               </Alert>
@@ -71,16 +71,10 @@ const Terms = (props) => {
           <Col md="12">
             <div className="form-group">
               <div className="g">
-                <div className="custom-control custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    className="custom-control-input"
-                    id="kyc"
-                    name="kyc"
-                    ref={register({ required: "This field is required" })}
-                  />
+                <div className="custom-control custom-checkbox custom-control-sm">
+                  <input type="checkbox" className="custom-control-input" id="kyc" name="kyc" size="sm" />
                   <label className="custom-control-label" htmlFor="kyc">
-                    Completed KYC
+                    Verified users only
                   </label>
                   {errors.kyc && <span className="invalid">{errors.kyc.message}</span>}
                 </div>
@@ -88,14 +82,8 @@ const Terms = (props) => {
             </div>
             <div className="form-group">
               <div className="g">
-                <div className="custom-control custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    className="custom-control-input"
-                    id="longTerm"
-                    name="longTerm"
-                    ref={register({ required: "This field is required" })}
-                  />
+                <div className="custom-control custom-checkbox custom-control-sm">
+                  <input type="checkbox" className="custom-control-input" id="longTerm" name="longTerm" />
                   <label className="custom-control-label" htmlFor="longTerm">
                     Long term users
                   </label>
@@ -105,14 +93,8 @@ const Terms = (props) => {
             </div>
             <div className="form-group">
               <div className="g">
-                <div className="custom-control custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    className="custom-control-input"
-                    id="follower"
-                    name="follower"
-                    ref={register({ required: "This field is required" })}
-                  />
+                <div className="custom-control custom-checkbox custom-control-sm">
+                  <input type="checkbox" className="custom-control-input" id="follower" name="follower" />
                   <label className="custom-control-label" htmlFor="follower">
                     Must be a follower
                   </label>

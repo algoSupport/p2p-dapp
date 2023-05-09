@@ -80,7 +80,7 @@ const Price = (props) => {
           <Col size="12">
             <ul className="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
               <li>
-                <Button color="outline-primary" className="btn-dim" type="submit">
+                <Button color="primary" type="submit">
                   Proceed
                 </Button>
               </li>
