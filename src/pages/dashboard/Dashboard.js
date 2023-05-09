@@ -6,7 +6,6 @@ import AvgSubscription from "../../components/partials/default/avg-subscription/
 import RecentActivity from "../../components/partials/default/recent-activity/Activity";
 import Support from "../../components/partials/default/support-request/Support";
 import { DropdownToggle, DropdownMenu, Card, UncontrolledDropdown, DropdownItem } from "reactstrap";
-import { Alert } from "reactstrap";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import {
   Block,
@@ -15,13 +14,11 @@ import {
   BlockHeadContent,
   BlockTitle,
   Icon,
-  Button,
   Row,
   Col,
   PreviewAltCard,
   BlockBetween,
 } from "../../components/Component";
-import OrderActivity from "../../components/partials/order-activity/OrderActivity";
 import { useAccount } from "wagmi";
 import { shortenAddress } from "../../utils/Utils";
 import { useHistory } from "react-router-dom";
@@ -29,7 +26,7 @@ import { useEffect } from "react";
 import Trades from "../../components/dashboard/Trades";
 
 const Homepage = () => {
-  const [sm, updateSm] = useState(false);
+  const [sm] = useState(false);
   const { address, isConnected } = useAccount();
   const history = useHistory();
 
