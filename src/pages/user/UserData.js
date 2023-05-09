@@ -163,7 +163,7 @@ export const userData = [
     checked: false,
     min: "$50.00",
 
-    kycStatus: "pending",
+    kycStatus: "success",
     max: "$2950.00",
     status: "Online",
     country: "India",
@@ -185,7 +185,7 @@ export const userData = [
     checked: false,
     min: "$500.00",
 
-    kycStatus: "pending",
+    kycStatus: "success",
     max: "$50,000.00",
     status: "Away",
     country: "Vietnam",

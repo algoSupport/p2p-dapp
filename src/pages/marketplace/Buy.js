@@ -597,7 +597,11 @@ const BuyPage = () => {
                           <span>{item.max}</span>
                         </DataTableRow>
                         <DataTableRow size="lg">
-                          <span>{item.avg}</span>
+                          <ul className="list-status">
+                            <li>
+                              <Icon name="alarm-alt text-info"></Icon> <span>{item.avg}</span>
+                            </li>
+                          </ul>
                         </DataTableRow>
 
                         <DataTableRow size="lg">
