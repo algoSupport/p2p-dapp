@@ -528,7 +528,7 @@ const BuyPage = () => {
                 </div>
               </div>
             </div>
-            <DataTableBody>
+            <DataTableBody className="text-center">
               <DataTableHead>
                 <DataTableRow>
                   <span className="sub-text">User</span>
@@ -542,7 +542,9 @@ const BuyPage = () => {
                 <DataTableRow size="lg">
                   <span className="sub-text">Max</span>
                 </DataTableRow>
-
+                <DataTableRow size="lg">
+                  <span className="sub-text">AVG. Trade</span>
+                </DataTableRow>
                 <DataTableRow size="lg">
                   <span className="sub-text">Verification</span>
                 </DataTableRow>
@@ -593,6 +595,9 @@ const BuyPage = () => {
                         </DataTableRow>
                         <DataTableRow size="lg">
                           <span>{item.max}</span>
+                        </DataTableRow>
+                        <DataTableRow size="lg">
+                          <span>{item.avg}</span>
                         </DataTableRow>
 
                         <DataTableRow size="lg">

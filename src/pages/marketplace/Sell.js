@@ -527,7 +527,7 @@ const SellPage = () => {
                 </div>
               </div>
             </div>
-            <DataTableBody>
+            <DataTableBody className="text-center">
               <DataTableHead>
                 <DataTableRow>
                   <span className="sub-text">User</span>
@@ -540,6 +540,9 @@ const SellPage = () => {
                 </DataTableRow>
                 <DataTableRow size="lg">
                   <span className="sub-text">Max</span>
+                </DataTableRow>
+                <DataTableRow size="lg">
+                  <span className="sub-text">AVG. Trade</span>
                 </DataTableRow>
 
                 <DataTableRow size="lg">
@@ -587,11 +590,14 @@ const SellPage = () => {
                             {item.price} <span className="currency">USD</span>
                           </span>
                         </DataTableRow>
-                        <DataTableRow size="md">
+                        <DataTableRow size="lg">
                           <span>{item.min}</span>
                         </DataTableRow>
                         <DataTableRow size="lg">
                           <span>{item.max}</span>
+                        </DataTableRow>
+                        <DataTableRow size="lg">
+                          <span>{item.avg}</span>
                         </DataTableRow>
 
                         <DataTableRow size="lg">
