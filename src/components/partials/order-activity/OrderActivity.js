@@ -20,6 +20,8 @@ const config = {
 
 const alchemy = new Alchemy(config);
 
+const SUPPORTED_TOKENS = ["WBTC", "ETH", "WETH", "ARB", "USDC", "USDT"];
+
 const OrderActivity = () => {
   const [modalDeposit, setModalDeposit] = useState(false);
   const toggleDeposit = () => setModalDeposit(!modalDeposit);
@@ -135,7 +137,7 @@ const OrderActivity = () => {
             )}
             {assets &&
               assets
-                // .filter((asset) => !asset.possible_spam || asset.symbol === "CIL")
+                .filter((asset) => SUPPORTED_TOKENS.includes(asset.symbol) || asset.symbol === "CIL")
                 .map((asset) => {
                   return (
                     <DataTableItem key={asset.token_address}>
