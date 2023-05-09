@@ -3,7 +3,7 @@ import Icon from "../../icon/Icon";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Button } from "../../Component";
 //import BTC from "../../../images/coins/btc.svg";
-//import ETH from "../../../images/coins/eth.svg";
+import ETH from "../../../images/coins/eth.svg";
 import ARB from "../../../images/coins/arbitrum.png";
 import CIL from "../../../images/coins/cil.png";
 import { Modal, ModalBody, CardTitle, ModalHeader, Spinner } from "reactstrap";
