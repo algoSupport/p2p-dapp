@@ -12,7 +12,7 @@ import useSWR from "swr";
 import { useAccount } from "wagmi";
 import { formatEther } from "ethers/lib/utils.js";
 import { useNetwork } from "wagmi";
-import { Alchemy, Network } from "alchemy-sdk";
+import { Alchemy, BigNumber, Network } from "alchemy-sdk";
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
@@ -33,11 +33,11 @@ const OrderActivity = () => {
     `${chain?.id}/assets/${address}`,
     async () => {
       const balances = await alchemy.core.getTokenBalances(address);
-
       // Remove tokens with zero balance
       const nonZeroBalances = balances.tokenBalances.filter((token) => {
-        return token.tokenBalance !== "0";
+        return !BigNumber.from(token.tokenBalance).isZero();
       });
+
       const data = [];
       for (let token of nonZeroBalances) {
         // Get balance of token
