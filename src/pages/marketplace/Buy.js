@@ -528,7 +528,7 @@ const BuyPage = () => {
                 </div>
               </div>
             </div>
-            <DataTableBody className="text-center">
+            <DataTableBody>
               <DataTableHead>
                 <DataTableRow>
                   <span className="sub-text">User</span>
