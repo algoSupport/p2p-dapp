@@ -10,6 +10,7 @@ import {
   ModalHeader,
   DropdownItem,
   Alert,
+  Pagination,
 } from "reactstrap";
 import {
   Block,
@@ -545,14 +546,16 @@ const SellPage = () => {
                   })
                 : null}
             </DataTableBody>
-            <div className="card-inner">
+            <div className="card-inner p-2">
               {currentItems.length > 0 ? (
-                <PaginationComponent
-                  itemPerPage={itemPerPage}
-                  totalItems={data.length}
-                  paginate={paginate}
-                  currentPage={currentPage}
-                />
+                <Pagination size="sm">
+                  <PaginationComponent
+                    itemPerPage={itemPerPage}
+                    totalItems={data.length}
+                    paginate={paginate}
+                    currentPage={currentPage}
+                  />
+                </Pagination>
               ) : (
                 <div className="text-center">
                   <span className="text-silent">No data found</span>
