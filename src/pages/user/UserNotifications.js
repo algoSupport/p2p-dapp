@@ -40,7 +40,7 @@ const UserProfileNotificationPage = () => {
           </div>
           <div className="g-item">
             <div className="custom-control custom-switch">
-              <InputSwitch id="custom-switch" checked label="Notify me when someone opens a dispute" />
+              <InputSwitch id="custom-switch3" checked label="Notify me when someone opens a dispute" />
             </div>
           </div>
         </div>
