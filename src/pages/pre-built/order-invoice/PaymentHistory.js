@@ -12,6 +12,7 @@ import {
   DropdownItem,
   Form,
   Badge,
+  Pagination,
 } from "reactstrap";
 import {
   Button,
@@ -295,15 +296,16 @@ const PaymentHistory = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="card-inner">
+              <div className="card-inner p-2">
                 {currentItems.length > 0 ? (
-                  <PaginationComponent
-                    noDown
-                    itemPerPage={itemPerPage}
-                    totalItems={data.length}
-                    paginate={paginate}
-                    currentPage={currentPage}
-                  />
+                  <Pagination size="sm">
+                    <PaginationComponent
+                      itemPerPage={itemPerPage}
+                      totalItems={data.length}
+                      paginate={paginate}
+                      currentPage={currentPage}
+                    />
+                  </Pagination>
                 ) : (
                   <div className="text-center">
                     <span className="text-silent">No data found</span>
