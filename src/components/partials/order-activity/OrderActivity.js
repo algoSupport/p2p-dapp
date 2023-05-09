@@ -9,11 +9,16 @@ import CIL from "../../../images/coins/cil.png";
 import { Modal, ModalBody, CardTitle, ModalHeader, Spinner } from "reactstrap";
 import useSWR from "swr";
 import { useAccount } from "wagmi";
-import Moralis from "moralis";
-import { EvmChain } from "@moralisweb3/common-evm-utils";
-import { formatEther, formatUnits } from "ethers/lib/utils.js";
+import { formatEther } from "ethers/lib/utils.js";
 import { useNetwork } from "wagmi";
-// const { EvmChain } = require("@moralisweb3/common-evm-utils");
+import { Alchemy, Network } from "alchemy-sdk";
+
+const config = {
+  apiKey: process.env.REACT_APP_ALCHEMY_ID,
+  network: process.env.REACT_APP_IS_PRODUCTION ? Network.ARB_MAINNET : Network.ARB_GOERLI,
+};
+
+const alchemy = new Alchemy(config);
 
 const OrderActivity = () => {
   const [modalDeposit, setModalDeposit] = useState(false);
@@ -23,11 +28,35 @@ const OrderActivity = () => {
 
   const { data: assets, isLoading } = useSWR(
     `${chain?.id}/assets/${address}`,
-    async () =>
-      Moralis.EvmApi.token.getWalletTokenBalances({
-        address,
-        chain: chain.id,
-      }),
+    async () => {
+      const balances = await alchemy.core.getTokenBalances(address);
+
+      // Remove tokens with zero balance
+      const nonZeroBalances = balances.tokenBalances.filter((token) => {
+        return token.tokenBalance !== "0";
+      });
+      const data = [];
+      for (let token of nonZeroBalances) {
+        // Get balance of token
+        let balance = token.tokenBalance;
+
+        // Get metadata of token
+        const metadata = await alchemy.core.getTokenMetadata(token.contractAddress);
+
+        // Compute token balance in human-readable format
+        balance = balance / Math.pow(10, metadata.decimals);
+        balance = balance.toFixed(2);
+
+        // Print name, balance, and symbol of token
+        data.push({
+          balance,
+          symbol: metadata.symbol,
+          name: metadata.name,
+          logo: metadata.logo,
+        });
+      }
+      return data;
+    },
     {
       revalidateOnFocus: false,
     }
@@ -35,11 +64,7 @@ const OrderActivity = () => {
 
   const { data: nativeAsset, isLoading: isNativeLoading } = useSWR(
     `${chain?.id}/native_assets/${address}`,
-    async () =>
-      Moralis.EvmApi.balance.getNativeBalance({
-        chain: 1,
-        address,
-      }),
+    async () => alchemy.core.getBalance(address, "latest"),
     {
       revalidateOnFocus: false,
     }
@@ -93,7 +118,7 @@ const OrderActivity = () => {
                 </DataTableRow>
                 <DataTableRow>
                   <div className="d-flex align-center">
-                    <span className="tb-sub">{formatEther(nativeAsset.jsonResponse.balance)}</span>
+                    <span className="tb-sub">{Number(formatEther(nativeAsset)).toFixed(2)}</span>
                   </div>
                 </DataTableRow>
 
@@ -109,8 +134,8 @@ const OrderActivity = () => {
               </DataTableItem>
             )}
             {assets &&
-              assets.jsonResponse
-                .filter((asset) => !asset.possible_spam || asset.symbol === "CIL")
+              assets
+                // .filter((asset) => !asset.possible_spam || asset.symbol === "CIL")
                 .map((asset) => {
                   return (
                     <DataTableItem key={asset.token_address}>
@@ -128,7 +153,7 @@ const OrderActivity = () => {
                       </DataTableRow>
                       <DataTableRow>
                         <div className="d-flex align-center">
-                          <span className="tb-sub">{formatUnits(asset.balance, asset.decimal)}</span>
+                          <span className="tb-sub">{asset.balance}</span>
                         </div>
                       </DataTableRow>
 

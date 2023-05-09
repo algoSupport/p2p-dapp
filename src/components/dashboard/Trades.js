@@ -16,11 +16,12 @@ import { shortenAddress } from "../../utils/Utils";
 import { useNetwork } from "wagmi";
 import ARB from "../../images/coins/arbitrum.png";
 
+const itemPerPage = 10;
+
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
-  network: Network.ARB_GOERLI,
+  network: process.env.REACT_APP_IS_PRODUCTION ? Network.ARB_MAINNET : Network.ARB_GOERLI,
 };
-const itemPerPage = 10;
 
 const alchemy = new Alchemy(config);
 
