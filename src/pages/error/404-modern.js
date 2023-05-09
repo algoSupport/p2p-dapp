@@ -11,7 +11,7 @@ const Error404Modern = () => {
         <BlockContent className="nk-error-ld text-center">
           <img className="nk-error-gfx" src={ErrorImage} alt="error" />
           <div className="wide-xs mx-auto">
-            <h3 className="nk-error-title">Something is not right.</h3>
+            <h3 className="nk-error-title">Oops!</h3>
             <p className="nk-error-text">
               We are very sorry for inconvenience. It looks like you’re trying to access a page that is not available.
             </p>
