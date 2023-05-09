@@ -83,7 +83,7 @@ const Trades = () => {
                 <DataTableRow>
                   <div className="d-flex align-center">
                     <span>
-                      <img src={ARB} style={{ width: "25px", height: "25px" }} alt="network"></img>
+                      <img src={ARB} style={{ width: "20px", height: "20px" }} alt="network"></img>
                     </span>
                   </div>
                 </DataTableRow>
