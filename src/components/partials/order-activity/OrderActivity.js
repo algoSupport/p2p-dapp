@@ -45,7 +45,7 @@ const OrderActivity = () => {
 
         // Compute token balance in human-readable format
         balance = balance / Math.pow(10, metadata.decimals);
-        balance = balance.toFixed(2);
+        balance = balance.toFixed(3);
 
         // Print name, balance, and symbol of token
         data.push({
@@ -118,7 +118,7 @@ const OrderActivity = () => {
                 </DataTableRow>
                 <DataTableRow>
                   <div className="d-flex align-center">
-                    <span className="tb-sub">{Number(formatEther(nativeAsset)).toFixed(2)}</span>
+                    <span className="tb-sub">{Number(formatEther(nativeAsset)).toFixed(4)}</span>
                   </div>
                 </DataTableRow>
 
