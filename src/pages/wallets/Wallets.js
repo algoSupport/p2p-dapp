@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Content from "../../layout/content/Content";
 import Head from "../../layout/head/Head";
 import { Card, Modal, ModalBody, ModalHeader } from "reactstrap";

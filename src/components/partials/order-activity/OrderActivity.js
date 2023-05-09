@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Icon from "../../icon/Icon";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Button } from "../../Component";
-import BTC from "../../../images/coins/btc.svg";
-import ETH from "../../../images/coins/eth.svg";
+//import BTC from "../../../images/coins/btc.svg";
+//import ETH from "../../../images/coins/eth.svg";
 import ARB from "../../../images/coins/arbitrum.png";
 import CIL from "../../../images/coins/cil.png";
 import { Modal, ModalBody, CardTitle, ModalHeader, Spinner } from "reactstrap";
@@ -79,9 +79,6 @@ const OrderActivity = () => {
           <CardTitle>
             <h6 className="title">
               <span className="me-2">Wallets</span>{" "}
-              {/* <Link to={`${process.env.PUBLIC_URL}/history-payment`} className="link d-none d-sm-inline">
-                View all
-              </Link> */}
             </h6>
           </CardTitle>
         </div>
@@ -97,13 +94,6 @@ const OrderActivity = () => {
           <DataTableRow>
             <span>Balance</span>
           </DataTableRow>
-
-          {/* <DataTableRow size="xl">
-            <span>Deposit</span>
-            <span className="ms-1" style={{ color: "white", fontSize: "10px" }}>
-              APR
-            </span>
-          </DataTableRow> */}
           <DataTableRow size=""></DataTableRow>
         </DataTableHead>
         {!isLoading && !isNativeLoading && (

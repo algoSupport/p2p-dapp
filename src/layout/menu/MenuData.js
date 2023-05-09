@@ -55,13 +55,7 @@ const menu = [
       {
         text: "Create",
         link: "/marketplace/create-offer",
-        requireConnect: true,
       },
-      // {
-      // text: "My Offers",
-      // link: "/marketplace/user-profile-regular",
-      // requireConnect: true,
-      // },
     ],
   },
   {

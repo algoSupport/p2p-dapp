@@ -1,31 +1,10 @@
 import React, { useState } from "react";
 import Head from "../../layout/head/Head";
-import DatePicker from "react-datepicker";
-import { Modal, ModalBody } from "reactstrap";
-import { Block, Icon, Row, Col, Button, RSelect } from "../../components/Component";
-import { countryOptions, userData } from "./UserData";
-import { getDateStructured } from "../../utils/Utils";
+import { Block, Icon } from "../../components/Component";
+import {} from "../../utils/Utils";
 
 const Profile = () => {
-  const [modalTab, setModalTab] = useState("1");
-  const [userInfo, setUserInfo] = useState(userData[0]);
-  const [formData, setFormData] = useState({
-    displayName: "Marcus",
-    state: "Australia",
-  });
-  const [modal, setModal] = useState(false);
-
-  const onInputChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const submitForm = () => {
-    let submitData = {
-      ...formData,
-    };
-    setUserInfo(submitData);
-    setModal(false);
-  };
+  const [setModal] = useState(false);
 
   return (
     <React.Fragment>

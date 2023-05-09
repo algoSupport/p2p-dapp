@@ -16,7 +16,7 @@ const UserProfileLayout = () => {
             <BlockTitle page tag="h3">
               My Profile
             </BlockTitle>
-            <BlockDes>Profile, security and notification settings</BlockDes>
+            <BlockDes>Update your profile, notification settings and banking details</BlockDes>
           </BlockHeadContent>
         </BlockHead>
         <Block>

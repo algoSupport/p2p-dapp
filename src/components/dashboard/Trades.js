@@ -6,7 +6,6 @@ import {
   DataTableHead,
   DataTableItem,
   DataTableRow,
-  Icon,
   PaginationComponent,
 } from "../Component";
 import useSWR from "swr";

@@ -1,4 +1,3 @@
-import User from "../../images/avatar/b-sm.jpg";
 import User2 from "../../images/avatar/c-sm.jpg";
 import User3 from "../../images/avatar/a-sm.jpg";
 import User4 from "../../images/avatar/d-sm.jpg";
@@ -9,12 +8,13 @@ export const userData = [
     avatarBg: "purple",
     name: "MxCilistia",
     displayName: "Marcus",
+    avg: "5 Min",
     role: "Customer",
     checked: false,
     price: "$28,954.11",
     min: "$500.00",
     kycStatus: "success",
-    max: "$300,000.00",
+    max: "$15,000.00",
     status: "Online",
     address: "2337 Kildeer Drive",
     state: "Kentucky",
@@ -28,6 +28,7 @@ export const userData = [
     id: 2,
     avatarBg: "purple",
     image: User3,
+    avg: "10 Min",
     name: "Ashlawson",
     //dob:"10 Sept, 1990",
     role: "Investor",
@@ -48,6 +49,7 @@ export const userData = [
     id: 3,
     avatarBg: "info",
     name: "V1ncent",
+    avg: "5 Min",
     role: "Customer",
     checked: false,
     price: "$28,954.11",
@@ -67,13 +69,14 @@ export const userData = [
     id: 4,
     avatarBg: "warning",
     name: "JMitch",
+    avg: "1 Hour",
     displayName: "jmitch",
     role: "Customer",
     checked: false,
     price: "$28,954.11",
     min: "$500",
     kycStatus: "success",
-    max: "$300,000.00",
+    max: "$10,000.00",
     status: "Online",
     address: "2337 Kildeer Drive",
     state: "Kentucky",
@@ -87,6 +90,7 @@ export const userData = [
     id: 5,
     avatarBg: "danger",
     name: "FBurns",
+    avg: "5 Min",
     displayName: "Fburns",
     role: "Customer",
     checked: false,
@@ -106,6 +110,7 @@ export const userData = [
   {
     id: 6,
     avatarBg: "primary",
+    avg: "10 Min",
     name: "Alanbutler",
     //dob:"10 Feb, 1997",
     role: "Investor",
@@ -127,6 +132,7 @@ export const userData = [
   {
     id: 7,
     avatarBg: "warning",
+    avg: "24 Hours",
     name: "VicLynch",
     //dob:"02 May, 1993",
     role: "Investor",
@@ -136,7 +142,7 @@ export const userData = [
     min: "$1000.00",
 
     kycStatus: "success",
-    max: "$500,000.00",
+    max: "$50,000.00",
     status: "Online",
     country: "China",
     designation: "UI/UX Designer",
@@ -147,6 +153,7 @@ export const userData = [
   {
     id: 8,
     avatarBg: "success",
+    avg: "2 Hours",
     name: "PNewman",
     //dob:"15 Feb, 1997",
     role: "Customer",
@@ -155,7 +162,7 @@ export const userData = [
     checked: false,
     min: "$50.00",
 
-    kycStatus: "pending",
+    kycStatus: "success",
     max: "$2950.00",
     status: "Online",
     country: "India",
@@ -167,6 +174,7 @@ export const userData = [
   {
     id: 9,
     avatarBg: "purple",
+    avg: "55 Min",
     name: "JHarris",
     //dob:"28 Feb, 1985",
     role: "Customer",
@@ -176,7 +184,7 @@ export const userData = [
     checked: false,
     min: "$500.00",
 
-    kycStatus: "pending",
+    kycStatus: "success",
     max: "$50,000.00",
     status: "Away",
     country: "Vietnam",
@@ -188,6 +196,7 @@ export const userData = [
   {
     id: 10,
     avatarBg: "purple",
+    avg: "1 Hour",
     name: "EmmaWalker",
     //dob:"30 Dec, 1998",
     role: "Investor",
