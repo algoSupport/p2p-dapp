@@ -1686,9 +1686,9 @@ body.dark-mode {
 
     &.active .page-link {
       z-index: 3;
-      color: $dark-card-bg !important;
-      background-color: $pagination-active-bg !important;
-      border-color: $pagination-active-border-color !important;
+      color: #fff !important;
+      background-color: #283159 !important;
+      border-color: #343f7b !important;
     }
 
     &.disabled .page-link {
