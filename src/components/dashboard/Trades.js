@@ -20,7 +20,7 @@ const itemPerPage = 10;
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
-  network: process.env.REACT_APP_IS_PRODUCTION ? Network.ARB_MAINNET : Network.ARB_GOERLI,
+  network: process.env.REACT_APP_IS_PRODUCTION === "true" ? Network.ETH_MAINNET : Network.ETH_GOERLI,
 };
 
 const alchemy = new Alchemy(config);
@@ -47,6 +47,7 @@ const Trades = () => {
       revalidateOnFocus: false,
     }
   );
+  console.log({ transactions });
 
   useEffect(() => {
     if (transactions) {

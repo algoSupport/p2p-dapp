@@ -15,7 +15,7 @@ import { Alchemy, Network } from "alchemy-sdk";
 
 const config = {
   apiKey: process.env.REACT_APP_ALCHEMY_ID,
-  network: process.env.REACT_APP_IS_PRODUCTION ? Network.ARB_MAINNET : Network.ARB_GOERLI,
+  network: process.env.REACT_APP_IS_PRODUCTION === "true" ? Network.ARB_MAINNET : Network.ARB_GOERLI,
 };
 
 const alchemy = new Alchemy(config);
