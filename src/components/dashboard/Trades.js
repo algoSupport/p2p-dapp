@@ -67,7 +67,7 @@ const Trades = () => {
         </div>
       </div>
       <DataTable>
-        <DataTableBody className="border-top is-compact" bodyclass="nk-tb-orders" compact>
+        <DataTableBody className="border-top is-compact" compact>
           <DataTableHead>
             <DataTableRow>
               <span>Network</span>
@@ -92,7 +92,7 @@ const Trades = () => {
                   <DataTableRow>
                     <div className="d-flex align-center">
                       <span>
-                        <img src={ARB} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                        <img src={ARB} style={{ width: "25px", height: "25px" }} alt="network"></img>
                       </span>
                     </div>
                   </DataTableRow>

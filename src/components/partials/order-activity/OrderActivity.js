@@ -3,6 +3,7 @@ import Icon from "../../icon/Icon";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow } from "../../table/DataTable";
 import { Button } from "../../Component";
 //import BTC from "../../../images/coins/btc.svg";
+import BTC from "../../../images/coins/btc.svg";
 import ETH from "../../../images/coins/eth.svg";
 import ARB from "../../../images/coins/arbitrum.png";
 import CIL from "../../../images/coins/cil.png";
@@ -102,7 +103,7 @@ const OrderActivity = () => {
               <DataTableItem>
                 <DataTableRow className="nk-tb-orders-type">
                   <span>
-                    <img src={ETH} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                    <img src={ARB} style={{ width: "25px", height: "25px" }} alt="network"></img>
                   </span>
                 </DataTableRow>
                 <DataTableRow className="nk-tb-orders-type">
