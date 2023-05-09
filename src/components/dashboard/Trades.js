@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CardTitle, Spinner } from "reactstrap";
-import {
-  DataTable,
-  DataTableBody,
-  DataTableHead,
-  DataTableItem,
-  DataTableRow,
-  PaginationComponent,
-} from "../Component";
+import { DataTableBody, DataTableHead, DataTableItem, DataTableRow, PaginationComponent } from "../Component";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
 import { useAccount } from "wagmi";
@@ -46,7 +39,6 @@ const Trades = () => {
       revalidateOnFocus: false,
     }
   );
-  console.log({ transactions });
 
   useEffect(() => {
     if (transactions) {
@@ -66,72 +58,70 @@ const Trades = () => {
           </CardTitle>
         </div>
       </div>
-      <DataTable>
-        <DataTableBody className="border-top is-compact" compact>
-          <DataTableHead>
-            <DataTableRow>
-              <span>Network</span>
-            </DataTableRow>
-            <DataTableRow>
-              <span>Asset</span>
-            </DataTableRow>
-            <DataTableRow>
-              <span>Amount</span>
-            </DataTableRow>
-            <DataTableRow>
-              <span>From</span>
-            </DataTableRow>
-            <DataTableRow>
-              <span>To</span>
-            </DataTableRow>
-          </DataTableHead>
-          {!isLoading &&
-            currentItems.map((transaction) => {
-              return (
-                <DataTableItem key={`${transaction.uniqueId}_${transaction.hash}`}>
-                  <DataTableRow>
-                    <div className="d-flex align-center">
-                      <span>
-                        <img src={ARB} style={{ width: "25px", height: "25px" }} alt="network"></img>
-                      </span>
-                    </div>
-                  </DataTableRow>
-                  <DataTableRow>
-                    <span>{transaction.asset}</span>
-                  </DataTableRow>
+      <DataTableBody className="border-top is-compact" compact>
+        <DataTableHead>
+          <DataTableRow>
+            <span>Network</span>
+          </DataTableRow>
+          <DataTableRow>
+            <span>Asset</span>
+          </DataTableRow>
+          <DataTableRow>
+            <span>Amount</span>
+          </DataTableRow>
+          <DataTableRow>
+            <span>From</span>
+          </DataTableRow>
+          <DataTableRow>
+            <span>To</span>
+          </DataTableRow>
+        </DataTableHead>
+        {!isLoading &&
+          currentItems.map((transaction) => {
+            return (
+              <DataTableItem key={`${transaction.uniqueId}_${transaction.hash}`}>
+                <DataTableRow>
+                  <div className="d-flex align-center">
+                    <span>
+                      <img src={ARB} style={{ width: "25px", height: "25px" }} alt="network"></img>
+                    </span>
+                  </div>
+                </DataTableRow>
+                <DataTableRow>
+                  <span>{transaction.asset}</span>
+                </DataTableRow>
 
-                  <DataTableRow>
-                    <span>{transaction.value}</span>
-                  </DataTableRow>
-                  <DataTableRow>
-                    <span>{shortenAddress(transaction.from)}</span>
-                  </DataTableRow>
-                  <DataTableRow>
-                    <span>{shortenAddress(transaction.to)}</span>
-                  </DataTableRow>
-                </DataTableItem>
-              );
-            })}
-        </DataTableBody>
-        <div className="card-inner">
-          {isLoading ? (
-            <div className="d-flex justify-center ">
-              <Spinner color="primary" />
-            </div>
-          ) : currentItems.length > 0 ? (
-            <PaginationComponent
-              itemPerPage={itemPerPage}
-              totalItems={transactions && transactions.length}
-              paginate={paginate}
-              currentPage={currentPage}
-            />
-          ) : (
-            <div className="text-center">
-              <span className="text-silent">You have no recent transactions.</span>
-            </div>
-          )}
-        </div>
-      </DataTable>
+                <DataTableRow>
+                  <span>{transaction.value}</span>
+                </DataTableRow>
+                <DataTableRow>
+                  <span>{shortenAddress(transaction.from)}</span>
+                </DataTableRow>
+                <DataTableRow>
+                  <span>{shortenAddress(transaction.to)}</span>
+                </DataTableRow>
+              </DataTableItem>
+            );
+          })}
+      </DataTableBody>
+      <div className="card-inner">
+        {isLoading ? (
+          <div className="d-flex justify-center ">
+            <Spinner color="primary" />
+          </div>
+        ) : currentItems.length > 0 ? (
+          <PaginationComponent
+            itemPerPage={itemPerPage}
+            totalItems={transactions && transactions.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
+        ) : (
+          <div className="text-center">
+            <span className="text-silent">You have no recent transactions.</span>
+          </div>
+        )}
+      </div>
     </React.Fragment>
   );
 };
