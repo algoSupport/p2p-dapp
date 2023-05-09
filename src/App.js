@@ -25,7 +25,6 @@ import { arbitrumGoerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import merge from "lodash.merge";
-import Moralis from "moralis";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
@@ -43,14 +42,6 @@ const wagmiClient = createClient({
 });
 
 const App = () => {
-  useEffect(() => {
-    if (!Moralis.Core.isStarted) {
-      Moralis.start({
-        apiKey: process.env.REACT_APP_MORALIS_API_KEY,
-        // ...and any other configuration
-      });
-    }
-  }, []);
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider

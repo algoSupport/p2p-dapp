@@ -9,37 +9,64 @@ import CIL from "../../../images/coins/cil.png";
 import { Modal, ModalBody, CardTitle, ModalHeader, Spinner } from "reactstrap";
 import useSWR from "swr";
 import { useAccount } from "wagmi";
-import Moralis from "moralis";
-import { EvmChain } from "@moralisweb3/common-evm-utils";
-import { formatEther, formatUnits } from "ethers/lib/utils.js";
+import { formatEther } from "ethers/lib/utils.js";
 import { useNetwork } from "wagmi";
-// const { EvmChain } = require("@moralisweb3/common-evm-utils");
+import { Alchemy, Network } from "alchemy-sdk";
+
+const config = {
+  apiKey: process.env.REACT_APP_ALCHEMY_ID,
+  network: process.env.REACT_APP_IS_PRODUCTION === "true" ? Network.ARB_MAINNET : Network.ARB_GOERLI,
+};
+
+const alchemy = new Alchemy(config);
+
+const SUPPORTED_TOKENS = ["WBTC", "ETH", "WETH", "ARB", "USDC", "USDT", "CIL"];
 
 const OrderActivity = () => {
-  const chain = EvmChain.ARBITRUM;
   const [modalDeposit, setModalDeposit] = useState(false);
   const toggleDeposit = () => setModalDeposit(!modalDeposit);
   const { address } = useAccount();
-  const { chain: currentChain } = useNetwork();
+  const { chain } = useNetwork();
 
   const { data: assets, isLoading } = useSWR(
-    `${currentChain?.chainId}/assets/${address}`,
-    async () =>
-      Moralis.EvmApi.token.getWalletTokenBalances({
-        address,
-        chain,
-      }),
+    `${chain?.id}/assets/${address}`,
+    async () => {
+      const balances = await alchemy.core.getTokenBalances(address);
+
+      // Remove tokens with zero balance
+      const nonZeroBalances = balances.tokenBalances.filter((token) => {
+        return token.tokenBalance !== "0";
+      });
+      const data = [];
+      for (let token of nonZeroBalances) {
+        // Get balance of token
+        let balance = token.tokenBalance;
+
+        // Get metadata of token
+        const metadata = await alchemy.core.getTokenMetadata(token.contractAddress);
+
+        // Compute token balance in human-readable format
+        balance = balance / Math.pow(10, metadata.decimals);
+        balance = balance.toFixed(3);
+
+        // Print name, balance, and symbol of token
+        data.push({
+          balance,
+          symbol: metadata.symbol,
+          name: metadata.name,
+          logo: metadata.logo,
+        });
+      }
+      return data;
+    },
     {
       revalidateOnFocus: false,
     }
   );
+
   const { data: nativeAsset, isLoading: isNativeLoading } = useSWR(
-    `${currentChain?.chainId}/native_assets/${address}`,
-    async () =>
-      Moralis.EvmApi.balance.getNativeBalance({
-        chain,
-        address,
-      }),
+    `${chain?.id}/native_assets/${address}`,
+    async () => alchemy.core.getBalance(address, "latest"),
     {
       revalidateOnFocus: false,
     }
@@ -75,15 +102,15 @@ const OrderActivity = () => {
               <DataTableItem>
                 <DataTableRow className="nk-tb-orders-type">
                   <span>
-                    <img src={ARB} style={{ width: "20px", height: "20px" }} alt="network"></img>
+                    <img src={ETH} style={{ width: "20px", height: "20px" }} alt="network"></img>
                   </span>
                 </DataTableRow>
                 <DataTableRow className="nk-tb-orders-type">
-                  <span>ARB</span>
+                  <span>ETH</span>
                 </DataTableRow>
                 <DataTableRow>
                   <div className="d-flex align-center">
-                    <span className="tb-sub">{formatEther(nativeAsset.jsonResponse.balance)}</span>
+                    <span className="tb-sub">{Number(formatEther(nativeAsset)).toFixed(4)}</span>
                   </div>
                 </DataTableRow>
 
@@ -99,8 +126,8 @@ const OrderActivity = () => {
               </DataTableItem>
             )}
             {assets &&
-              assets.jsonResponse
-                .filter((asset) => !asset.possible_spam || asset.symbol === "CIL")
+              assets
+                .filter((asset) => SUPPORTED_TOKENS.includes(asset.symbol))
                 .map((asset) => {
                   return (
                     <DataTableItem key={asset.token_address}>
@@ -118,7 +145,7 @@ const OrderActivity = () => {
                       </DataTableRow>
                       <DataTableRow>
                         <div className="d-flex align-center">
-                          <span className="tb-sub">{formatUnits(asset.balance, asset.decimal)}</span>
+                          <span className="tb-sub">{asset.balance}</span>
                         </div>
                       </DataTableRow>
 
