@@ -55,7 +55,6 @@ const menu = [
       {
         text: "Create",
         link: "/marketplace/create-offer",
-        requireConnect: true,
       },
     ],
   },
