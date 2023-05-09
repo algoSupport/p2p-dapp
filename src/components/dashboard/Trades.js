@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CardTitle, Spinner } from "reactstrap";
+import { CardTitle, Spinner, Pagination } from "reactstrap";
 import { DataTableBody, DataTableHead, DataTableItem, DataTableRow, PaginationComponent } from "../Component";
 import useSWR from "swr";
 import { Alchemy, Network } from "alchemy-sdk";
@@ -58,7 +58,7 @@ const Trades = () => {
           </CardTitle>
         </div>
       </div>
-      <DataTableBody className="border-top is-compact" compact>
+      <DataTableBody className="border-top is-compact border-bottom" compact>
         <DataTableHead>
           <DataTableRow>
             <span>Network</span>
@@ -104,20 +104,22 @@ const Trades = () => {
             );
           })}
       </DataTableBody>
-      <div className="card-inner">
+      <div className="card is-compact p-2" compact>
         {isLoading ? (
-          <div className="d-flex justify-center ">
+          <div className="d-flex justify-center">
             <Spinner color="primary" />
           </div>
         ) : currentItems.length > 0 ? (
-          <PaginationComponent
-            itemPerPage={itemPerPage}
-            totalItems={transactions && transactions.length}
-            paginate={paginate}
-            currentPage={currentPage}
-          />
+          <Pagination size="sm">
+            <PaginationComponent
+              itemPerPage={itemPerPage}
+              totalItems={transactions && transactions.length}
+              paginate={paginate}
+              currentPage={currentPage}
+            />
+          </Pagination>
         ) : (
-          <div className="text-center">
+          <div className="text-center" style={{ borderTop: "none" }}>
             <span className="text-silent">You have no recent transactions.</span>
           </div>
         )}
