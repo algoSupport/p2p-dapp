@@ -71,6 +71,17 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   let history = useHistory();
+
+  const mainMenuToggle = (e) => {
+    var parentSiblings = e.target.parentNode.parentNode.parentNode.childNodes;
+
+    for (var j = 0; j < parentSiblings.length; j++) {
+      parentSiblings[j].classList.remove("active");
+      if (typeof parentSiblings[j].childNodes[1] !== "undefined") {
+        parentSiblings[j].childNodes[1].style.height = 0;
+      }
+    }
+  };
   const menuToggle = (e) => {
     e.preventDefault();
     var self = e.target.closest(".nk-menu-toggle");
@@ -165,7 +176,7 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
         <NavLink
           to={`${process.env.PUBLIC_URL + link}`}
           className={`nk-menu-link${sub ? " nk-menu-toggle" : ""}`}
-          onClick={sub ? menuToggle : null}
+          onClick={sub ? menuToggle : mainMenuToggle}
         >
           {icon ? (
             <span className="nk-menu-icon">
