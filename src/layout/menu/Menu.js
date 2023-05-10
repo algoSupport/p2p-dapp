@@ -73,7 +73,8 @@ const MenuItem = ({ icon, link, text, sub, newTab, child, sidebarToggle, badge, 
   let history = useHistory();
 
   const mainMenuToggle = (e) => {
-    var parentSiblings = e.target.parentNode.parentNode.parentNode.childNodes;
+    var self = e.target.closest(".nk-menu-item");
+    var parentSiblings = self.parentNode.childNodes;
 
     for (var j = 0; j < parentSiblings.length; j++) {
       parentSiblings[j].classList.remove("active");
