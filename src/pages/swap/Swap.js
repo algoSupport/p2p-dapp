@@ -8,6 +8,7 @@ import styles from "./swap.module.scss";
 import { Currencies, TokenList } from "../../components/swap/TokenSelect";
 import Head from "../../layout/head/Head";
 import { Link } from "react-router-dom";
+import { useAccount } from "wagmi";
 import {
   BlockDes,
   BlockHead,
@@ -23,6 +24,8 @@ const SwapPage = () => {
   const [activeTab, setActiveTab] = useState("swap");
   const [token1, setToken1] = useState(TokenList[0]);
   const [token2, setToken2] = useState();
+
+  const { isConnected } = useAccount();
 
   const [buyToken1, setBuyToken1] = useState(Currencies[0]);
   const [buyToken2, setBuyToken2] = useState();
@@ -64,10 +67,10 @@ const SwapPage = () => {
             <BlockHeadContent>
               <ul className="nk-block-tools g-3">
                 <li>
-                  <Link to="/transactions">
+                  <Link to="/marketplace/buy">
                     <button className="dropdown-toggle btn btn-primary">
-                      <Icon name="list-fill" />
-                      <span>History</span>
+                      <Icon name="users-fill" />
+                      <span>Marketplace</span>
                       <Icon name="chevron-right" />
                     </button>
                   </Link>
@@ -140,6 +143,9 @@ const SwapPage = () => {
                     </div>
                   </TabPane>
                 </TabContent>
+                <button className="btn btn-primary btn-block mt-2" disabled>
+                  Swap
+                </button>
               </CardBody>
             </Card>
           </Col>
