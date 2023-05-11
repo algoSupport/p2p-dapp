@@ -1047,7 +1047,7 @@ export const svgData = [
           x="13"
           y="16"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1056,7 +1056,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1064,7 +1064,7 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1072,15 +1072,15 @@ export const svgData = [
         ></path>
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M47 70.15S61.89 62.49 61.89 51V37.6L47 31.85 32.11 37.6V51C32.11 62.49 47 70.15 47 70.15z"
         ></path>
         <path
-          fill="#6576ff"
-          stroke="#6576ff"
+          fill="#6466f1"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1088,7 +1088,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1109,14 +1109,14 @@ export const svgData = [
           cy="17"
           r="14"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <circle cx="23" cy="17" r="10.5" fill="#e3e7fe"></circle>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M28.46 20.47l-4.41-4.41a3.4 3.4 0 00.26-1.31A3.34 3.34 0 1021 18.1a3.41 3.41 0 001.31-.27l1.44 1.45a.33.33 0 00.23.09h.79v.79a.32.32 0 00.09.23.27.27 0 00.23.08h.79v.79a.31.31 0 00.09.22.29.29 0 00.22.09h.79v.79a.3.3 0 00.09.24.32.32 0 00.21.08l1.21-.14a.3.3 0 00.27-.33l-.13-1.48z"
         ></path>
         <path
@@ -1137,7 +1137,7 @@ export const svgData = [
           x="12"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1146,7 +1146,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1238,7 +1238,7 @@ export const svgData = [
           x="9"
           y="21"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1280,13 +1280,13 @@ export const svgData = [
         <rect width="15" height="8" x="16" y="31" fill="#c4cefe" rx="1" ry="1"></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M76.79 72.87L32.22 86.73a6 6 0 01-7.47-4L17 57.71a6 6 0 014-7.51l44.52-13.86a6 6 0 017.48 4l7.73 25.06a6 6 0 01-3.94 7.47z"
         ></path>
-        <path fill="#6576ff" d="M75.27 47.3L19.28 64.71 17.14 57.76 73.12 40.35 75.27 47.3z"></path>
+        <path fill="#6466f1" d="M75.27 47.3L19.28 64.71 17.14 57.76 73.12 40.35 75.27 47.3z"></path>
         <path
           fill="#c4cefe"
           d="M30 77.65l-1.9-6.79a1 1 0 01.69-1.23l4.59-1.3a1 1 0 011.23.7l1.9 6.78a1 1 0 01-.67 1.19l-4.59 1.3a1 1 0 01-1.25-.65zM41.23 74.48l-1.9-6.78a1 1 0 01.67-1.23l4.58-1.3a1 1 0 011.23.69l1.9 6.78a1 1 0 01-.71 1.24l-4.58 1.29a1 1 0 01-1.19-.69zM52.43 71.32l-1.9-6.79a1 1 0 01.69-1.23l4.59-1.3a1 1 0 011.19.7l1.9 6.78a1 1 0 01-.69 1.23L53.66 72a1 1 0 01-1.23-.68z"
@@ -1295,7 +1295,7 @@ export const svgData = [
           cx="55.46"
           cy="19.1"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1304,7 +1304,7 @@ export const svgData = [
         ></ellipse>
         <ellipse cx="55.46" cy="19.1" fill="#e3e7fe" rx="12.11" ry="12.16"></ellipse>
         <text
-          fill="#6576ff"
+          fill="#6466f1"
           fontFamily="Nunito-Black, Nunito Black"
           fontSize="16.12"
           transform="matrix(.99 0 0 1 50.7 23.72)"
@@ -1320,7 +1320,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1328,7 +1328,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1340,7 +1340,7 @@ export const svgData = [
           x="3"
           y="26.5"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1352,7 +1352,7 @@ export const svgData = [
           cy="65"
           r="4.5"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
@@ -1362,14 +1362,14 @@ export const svgData = [
           cy="65"
           r="4.5"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
         ></circle>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1423,7 +1423,7 @@ export const svgData = [
           cy="39.5"
           r="4.5"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
@@ -1433,7 +1433,7 @@ export const svgData = [
           cy="39.5"
           r="4.5"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
@@ -1448,7 +1448,7 @@ export const svgData = [
         ></path>
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1456,7 +1456,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1468,7 +1468,7 @@ export const svgData = [
           x="14"
           y="25"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1515,7 +1515,7 @@ export const svgData = [
           cy="60.5"
           r="14.5"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1523,14 +1523,14 @@ export const svgData = [
         <circle cx="73" cy="61" r="11" fill="#e3e7fe"></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M70 59v-1.48a3 3 0 016 0V59"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M68.33 59h9.34A1.3 1.3 0 0179 60.27v4.46A1.3 1.3 0 0177.67 66h-9.34A1.3 1.3 0 0167 64.73v-4.46A1.3 1.3 0 0168.33 59z"
         ></path>
         <ellipse cx="73" cy="61.74" fill="#fff" rx="1.11" ry="1.12"></ellipse>
@@ -1544,7 +1544,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1555,11 +1555,11 @@ export const svgData = [
           fill="#eff1ff"
           d="M71 37v-3.4a1.6 1.6 0 00-1.6-1.6H54.6a1.6 1.6 0 00-1.6 1.6v14.79A1.61 1.61 0 0054.61 50H69.4a1.6 1.6 0 001.6-1.6V37z"
         ></path>
-        <path fill="none" stroke="#6576ff" strokeWidth="1.5" d="M60 42L60 45"></path>
-        <path fill="none" stroke="#6576ff" strokeWidth="1.5" d="M58 46L56 46"></path>
+        <path fill="none" stroke="#6466f1" strokeWidth="1.5" d="M60 42L60 45"></path>
+        <path fill="none" stroke="#6466f1" strokeWidth="1.5" d="M58 46L56 46"></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
@@ -1567,7 +1567,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
@@ -1575,13 +1575,13 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
           d="M64 42H68V46H64z"
         ></path>
-        <path fill="none" stroke="#6576ff" strokeWidth="1.5" d="M58 42L56 42 56 44"></path>
+        <path fill="none" stroke="#6466f1" strokeWidth="1.5" d="M58 42L56 42 56 44"></path>
         <path fill="#e3e7fe" d="M76 62H46v-9h30a2 2 0 012 2v5a2 2 0 01-2 2z"></path>
         <circle
           cx="70"
@@ -1619,7 +1619,7 @@ export const svgData = [
           x="5"
           y="9"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1629,7 +1629,7 @@ export const svgData = [
         <path fill="#fff" d="M9 22H41V65H9z"></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1637,7 +1637,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1645,7 +1645,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1653,7 +1653,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1661,7 +1661,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1669,7 +1669,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1680,7 +1680,7 @@ export const svgData = [
           cy="74"
           r="3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1706,7 +1706,7 @@ export const svgData = [
           x="5"
           y="22"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1716,7 +1716,7 @@ export const svgData = [
         <path fill="#b3c2ff" d="M12 23h56a6 6 0 016 6v6H6v-6a6 6 0 016-6z"></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1728,7 +1728,7 @@ export const svgData = [
           x="15"
           y="8"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1738,7 +1738,7 @@ export const svgData = [
         <path fill="#e3e7fe" d="M22 9h56a6 6 0 016 6v6H16v-6a6 6 0 016-6z"></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1746,7 +1746,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1754,7 +1754,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1762,7 +1762,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="3"
@@ -1770,7 +1770,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="3"
@@ -1797,7 +1797,7 @@ export const svgData = [
           x="3.5"
           y="14"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1806,7 +1806,7 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1814,7 +1814,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1841,7 +1841,7 @@ export const svgData = [
           cy="70"
           r="2"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1857,7 +1857,7 @@ export const svgData = [
           x="50.5"
           y="14"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1866,7 +1866,7 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1874,7 +1874,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1901,7 +1901,7 @@ export const svgData = [
           cy="70"
           r="2"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1915,7 +1915,7 @@ export const svgData = [
           cx="45.51"
           cy="44"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1924,7 +1924,7 @@ export const svgData = [
         ></ellipse>
         <ellipse cx="45.51" cy="44" fill="#e3e7fe" rx="11.13" ry="11"></ellipse>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M46 50.92s5.5-2.77 5.5-6.92v-4.84L46 37.08l-5.5 2.08V44c0 4.15 5.5 6.92 5.5 6.92z"
         ></path>
         <path
@@ -1948,7 +1948,7 @@ export const svgData = [
           x="5"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1957,7 +1957,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -1965,7 +1965,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2007,7 +2007,7 @@ export const svgData = [
           cx="61.1"
           cy="61.11"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2016,7 +2016,7 @@ export const svgData = [
         ></ellipse>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2024,7 +2024,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2032,7 +2032,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2040,7 +2040,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2048,7 +2048,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2056,7 +2056,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2064,7 +2064,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2083,7 +2083,7 @@ export const svgData = [
           x="7"
           y="10"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2096,7 +2096,7 @@ export const svgData = [
           x="32"
           y="69"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2105,7 +2105,7 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2113,7 +2113,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2157,7 +2157,7 @@ export const svgData = [
           x="69"
           y="50"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2166,7 +2166,7 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2178,7 +2178,7 @@ export const svgData = [
           x="3"
           y="46"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2187,14 +2187,14 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M14.69 76.66L14.69 76.66"
         ></path>
-        <path fill="none" stroke="#6576ff" strokeLinecap="round" strokeLinejoin="round" d="M13.5 49.5L16.5 49.5"></path>
-        <path fill="none" stroke="#6576ff" strokeLinecap="round" strokeLinejoin="round" d="M3.5 73.5L26.5 73.5"></path>
+        <path fill="none" stroke="#6466f1" strokeLinecap="round" strokeLinejoin="round" d="M13.5 49.5L16.5 49.5"></path>
+        <path fill="none" stroke="#6466f1" strokeLinecap="round" strokeLinejoin="round" d="M3.5 73.5L26.5 73.5"></path>
       </svg>
     ),
     name: "Devices",
@@ -2205,7 +2205,7 @@ export const svgData = [
         <path fill="#fff" d="M64.77 26.89L34.1 48 4.5 26.89 32.84 7.4a2.26 2.26 0 012.53 0z"></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2213,7 +2213,7 @@ export const svgData = [
         ></path>
         <path
           fill="#c4cefe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2221,7 +2221,7 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2264,7 +2264,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2272,7 +2272,7 @@ export const svgData = [
         ></path>
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2284,7 +2284,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2366,7 +2366,7 @@ export const svgData = [
           x="15"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2375,7 +2375,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2383,7 +2383,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2458,7 +2458,7 @@ export const svgData = [
           x="14.5"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2467,7 +2467,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2475,7 +2475,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2483,7 +2483,7 @@ export const svgData = [
         ></path>
         <path
           fill="#f5f7ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2491,7 +2491,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2499,7 +2499,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2507,7 +2507,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2515,7 +2515,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2534,7 +2534,7 @@ export const svgData = [
           x="15"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2543,7 +2543,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2551,7 +2551,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2559,7 +2559,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2567,7 +2567,7 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2575,7 +2575,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2586,7 +2586,7 @@ export const svgData = [
           cy="54.98"
           r="2.02"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2604,7 +2604,7 @@ export const svgData = [
           x="15"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2613,7 +2613,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2621,14 +2621,14 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M60 16L60 31 75 31.07"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M57.16 60.13c-.77 0-1.53 0-2.28.08l-.82.07c-.28-.31-.55-.63-.81-1a32.06 32.06 0 01-4.11-6.94 28.83 28.83 0 00.67-3.72 16.59 16.59 0 00-.49-7.29c-.29-.78-1-1.72-1.94-1.25s-1.3 2.12-1.38 3.2a11 11 0 00.12 2.63 20.88 20.88 0 00.61 2.51c.23.76.49 1.51.77 2.25-.18.59-.37 1.16-.56 1.72-.46 1.28-1 2.49-1.43 3.65l-.74 1.7c-.77 1.78-1.59 3.52-2.52 5.26a27.25 27.25 0 00-5.72 2.85 12.36 12.36 0 00-2.26 2A4.33 4.33 0 0033 70.24a1.62 1.62 0 00.59 1.39 2.36 2.36 0 002 .27c2.19-.48 3.86-2.48 5.29-4.15a46.09 46.09 0 003.27-4.41 47.26 47.26 0 016.51-1.63c1.06-.18 2.15-.34 3.26-.44a15.74 15.74 0 002.54 2.07 11.65 11.65 0 002.28 1.16 15.78 15.78 0 002.45.65 7 7 0 001.3.07c1 0 2.4-.44 2.49-1.71a1.93 1.93 0 00-.2-1C64 61 61.33 60.55 60.1 60.34a17 17 0 00-2.94-.21zm-16 4.68c-.47.75-.91 1.44-1.33 2-1 1.48-2.2 3.25-3.9 3.91a3 3 0 01-1.2.22c-.4 0-.79-.21-.77-.69a2 2 0 01.3-.89 5 5 0 01.7-1 11.3 11.3 0 012.08-1.79 24.17 24.17 0 014.4-2.33c-.08.25-.17.41-.26.57zM47 45.76a9.07 9.07 0 01-.07-2.38 6.73 6.73 0 01.22-1.12c.1-.3.29-1 .61-1.13.51-.15.67 1 .73 1.36a15.91 15.91 0 01-.36 5.87c-.06.3-.13.59-.21.88-.12-.36-.24-.73-.35-1.09a19.24 19.24 0 01-.57-2.39zm3.55 15A46.66 46.66 0 0045 62a14.87 14.87 0 001.38-2.39 29.68 29.68 0 002.42-5.92 28.69 28.69 0 003.87 6.15l.43.51c-.88.13-1.74.25-2.58.39zM63.7 63.4c-.07.41-.89.65-1.27.71a6.84 6.84 0 01-3.43-.37 10 10 0 01-2.15-1.06 12.35 12.35 0 01-1.9-1.51c.73 0 1.47-.07 2.21-.06a18.42 18.42 0 012.23.15 7.6 7.6 0 014 1.63c.24.18.31.35.28.49z"
         ></path>
       </svg>
@@ -2644,7 +2644,7 @@ export const svgData = [
           x="15"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2653,7 +2653,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2661,7 +2661,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2720,7 +2720,7 @@ export const svgData = [
           x="14.5"
           y="5"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2729,7 +2729,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2737,22 +2737,22 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M59.5 16L59.5 31 74.5 31.07"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M38.29 24.84c-.27-.79-.53-1.53-.79-2.23L34.66 24c.25.66.5 1.37.75 2.11zM36.64 20.41c-.32-.79-.64-1.51-.94-2.16L33 19.87c.28.61.58 1.28.88 2zM38.94 41.52c.1.74.2 1.49.28 2.27l3.06-.45c-.09-.81-.19-1.59-.3-2.36zM42.92 52.82c0-.8-.05-1.59-.08-2.37l-3.08.18c0 .75.07 1.51.08 2.29zM39.45 46.06q.11 1.13.18 2.28l3.07-.27q-.08-1.2-.18-2.37zM39.65 29.36c-.21-.79-.43-1.54-.65-2.27l-2.91 1.13c.21.7.41 1.42.62 2.17zM31 16.08s.4.63 1 1.82l2.65-1.77C34 14.75 33.49 14 33.47 14zM38.22 37c.13.73.26 1.48.39 2.24l3-.63c-.12-.8-.26-1.58-.4-2.34zM40.76 34c-.17-.8-.34-1.57-.52-2.32l-3 .93c.17.72.34 1.45.5 2.21zM56 16.08l-1.24-1-1.24-1s-.48.75-1.19 2.13L55 17.9c.6-1.19 1-1.81 1-1.82zM44.08 52.82l3.08.1c0-.78 0-1.54.08-2.29l-3.08-.18c-.04.78-.06 1.55-.08 2.37zM44.3 48.07l3.07.27q.08-1.16.18-2.28l-3.07-.36q-.1 1.17-.18 2.37zM54 19.87l-2.7-1.62c-.3.65-.62 1.37-.94 2.16l2.79 1.49c.3-.75.6-1.43.85-2.03zM48.06 41.52L45 41c-.1.77-.2 1.56-.29 2.36l3.05.45c.1-.81.24-1.55.3-2.29zM52.34 24l-2.84-1.39c-.26.7-.52 1.44-.79 2.22l2.88 1.25c.25-.74.5-1.45.75-2.08zM45.77 36.29c-.14.76-.28 1.54-.4 2.34l3 .63c.13-.76.26-1.51.39-2.24zM40.73 63.77a.74.74 0 00-.65.81v12.61a.74.74 0 00.65.81h4.05a.75.75 0 00.66-.81V64.58a.75.75 0 00-.66-.81h-.24v2.9a1.8 1.8 0 11-3.57 0v-2.9zm1.13 9.85a1.18 1.18 0 011-1.31h.69c.55 0 1 .58 1 1.31v1.17c0 .73-.44 1.31-1 1.31h-.69a1.18 1.18 0 01-1-1.31z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M42.76 67.57a1.39 1.39 0 001.34-1.43v-4.73a1.34 1.34 0 10-2.68 0v4.73a1.39 1.39 0 001.34 1.43z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M43.42 54.76h3.1v2.13a8.6 8.6 0 01-.18 10.18v-3.75A1.31 1.31 0 0045.09 62h-.44v-1.48a1.89 1.89 0 10-3.78 0V62h-.45a1.31 1.31 0 00-1.26 1.34v3.77a8.55 8.55 0 01.05-10.46V54.8h3.1zM50.91 28.22L48 27.09c-.22.72-.44 1.48-.65 2.27l2.94 1c.21-.72.41-1.44.62-2.14zM49.73 32.58l-3-.93c-.18.75-.35 1.52-.52 2.32l3 .82c.18-.79.35-1.49.52-2.21z"
         ></path>
       </svg>
@@ -2764,7 +2764,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2772,7 +2772,7 @@ export const svgData = [
         ></path>
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2780,7 +2780,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2788,7 +2788,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2796,7 +2796,7 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2804,7 +2804,7 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2851,7 +2851,7 @@ export const svgData = [
           d="M35 69L51 69"
         ></path>
         <text
-          fill="#6576ff"
+          fill="#6466f1"
           fontFamily="Nunito-Black, Nunito Black"
           fontSize="9.31"
           transform="matrix(.99 0 0 1 34.54 43.18)"
@@ -2871,7 +2871,7 @@ export const svgData = [
           x="5"
           y="10"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2884,7 +2884,7 @@ export const svgData = [
           x="15"
           y="20"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2897,9 +2897,9 @@ export const svgData = [
           d="M47.4 52.58s-10.17 10.18-15.77 3.58c-4.88-5.76-5.13-11.09-1.41-14.81s11.53-3.87 15.92 1.19 10 10.79 12.49 12.35 11.83 2.75 13.62-5.36-5.13-9.3-7.59-9.67c-.69-.1-2.27 1-4.39 2.29-5.34 3.27-12.87 10.43-12.87 10.43z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           fillRule="evenodd"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2926,7 +2926,7 @@ export const svgData = [
           x="23.5"
           y="3"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2939,7 +2939,7 @@ export const svgData = [
           x="34.5"
           y="65"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2950,19 +2950,19 @@ export const svgData = [
           cy="71"
           r="16"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <circle cx="23.5" cy="71" r="12" fill="#e3e7fe"></circle>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M18.44 70h10.12A1.45 1.45 0 0130 71.44v5.09A1.45 1.45 0 0128.56 78H18.44A1.45 1.45 0 0117 76.53v-5.09A1.45 1.45 0 0118.44 70z"
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -2970,11 +2970,11 @@ export const svgData = [
         ></path>
         <circle cx="23.5" cy="73.23" r="1.5" fill="#fff"></circle>
         <path fill="#fff" d="M22.5 74.23h2v1.24a.76.76 0 01-.76.76h-.47a.76.76 0 01-.76-.76v-1.24h-.01z"></path>
-        <g fill="none" stroke="#6576ff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
+        <g fill="none" stroke="#6466f1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
           <path d="M48.5 69.5v5M50.5 70.79l-4 2.52M50.5 73.31l-4-2.52M57.17 69.5v5M59.17 70.79l-4 2.52M59.17 73.31l-4-2.52M65.83 69.5v5M67.83 70.79l-4 2.52M67.83 73.31l-4-2.52M74.5 69.5v5M76.5 70.79l-4 2.52M76.5 73.31l-4-2.52"></path>
         </g>
         <path fill="#fff" d="M30.5 36h34v5h-34zM30.5 43.75h34v5h-34z"></path>
-        <path fill="#6576ff" d="M30.5 50.5h34v7h-34z"></path>
+        <path fill="#6466f1" d="M30.5 50.5h34v7h-34z"></path>
         <path
           fill="none"
           stroke="#fff"
@@ -2996,7 +2996,7 @@ export const svgData = [
           x="5"
           y="7"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3009,7 +3009,7 @@ export const svgData = [
           x="25"
           y="27"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3022,14 +3022,14 @@ export const svgData = [
           x="15"
           y="17"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           rx="7"
           ry="7"
         ></rect>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M15 29L75 29"></path>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M15 29L75 29"></path>
         <circle cx="53" cy="23" r="2" fill="#c4cefe"></circle>
         <circle cx="60" cy="23" r="2" fill="#c4cefe"></circle>
         <circle cx="67" cy="23" r="2" fill="#c4cefe"></circle>
@@ -3039,7 +3039,7 @@ export const svgData = [
           x="22"
           y="39"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3051,14 +3051,14 @@ export const svgData = [
           cy="45.81"
           r="2"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3066,7 +3066,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3121,7 +3121,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3129,7 +3129,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3140,7 +3140,7 @@ export const svgData = [
           cy="21"
           r="13.5"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3188,7 +3188,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3196,7 +3196,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3211,7 +3211,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3219,7 +3219,7 @@ export const svgData = [
         ></path>
         <path
           fill="#eff1ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3231,7 +3231,7 @@ export const svgData = [
           x="15"
           y="15"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3267,7 +3267,7 @@ export const svgData = [
         <circle cx="38" cy="66" r="0.5" fill="#c4cefe" stroke="#c4cefe" strokeMiterlimit="10"></circle>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3275,7 +3275,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3283,7 +3283,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3291,7 +3291,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3310,7 +3310,7 @@ export const svgData = [
           x="5"
           y="8"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3323,7 +3323,7 @@ export const svgData = [
           x="15"
           y="16"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3336,7 +3336,7 @@ export const svgData = [
           x="35"
           y="74"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3345,7 +3345,7 @@ export const svgData = [
         ></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3353,7 +3353,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3362,7 +3362,7 @@ export const svgData = [
         <rect width="50" height="34" x="25" y="24" fill="#eff1ff" rx="3" ry="3"></rect>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3370,7 +3370,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3381,14 +3381,14 @@ export const svgData = [
           cy="45"
           r="3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3396,7 +3396,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3407,14 +3407,14 @@ export const svgData = [
           cy="37"
           r="3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3422,7 +3422,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3433,14 +3433,14 @@ export const svgData = [
           cy="41"
           r="3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3448,7 +3448,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3459,7 +3459,7 @@ export const svgData = [
           cy="37"
           r="3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3477,7 +3477,7 @@ export const svgData = [
           x="5"
           y="9"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3486,7 +3486,7 @@ export const svgData = [
         ></rect>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3494,7 +3494,7 @@ export const svgData = [
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3519,7 +3519,7 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeMiterlimit="10"
           strokeWidth="2"
@@ -3590,14 +3590,14 @@ export const svgData = [
           d="M14 70L30 70"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M67 40h9a9.59 9.59 0 008 8.32s.89 19-17 27.68c-17.88-8.72-17-27.68-17-27.68A9.59 9.59 0 0058 40z"
         ></path>
         <path fill="#fff" d="M67 72.51c-14.88-7.16-14.14-22.69-14.14-22.69A7.94 7.94 0 0059.52 43H67z"></path>
         <path fill="#fff" d="M62 61.77a11.05 11.05 0 0112 0V65H62z"></path>
         <circle cx="68.5" cy="54.5" r="3.5" fill="#fff"></circle>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M68.47 58.13a4 4 0 114-4 4 4 0 01-4 4zm0-6.92a3 3 0 103 3 3 3 0 00-3-3zm0 0M74.5 66h-13a.51.51 0 01-.5-.5v-3.4a1.46 1.46 0 01.69-1.25 12.32 12.32 0 0112.66 0A1.46 1.46 0 0175 62.1v3.41a.49.49 0 01-.5.49zM62 65h12v-2.91a.47.47 0 00-.22-.41 11.28 11.28 0 00-11.56 0 .47.47 0 00-.22.41zm.53 0"
         ></path>
       </svg>
@@ -3609,26 +3609,26 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeMiterlimit="10"
           strokeWidth="2"
           d="M63.42 87H10.58a4.08 4.08 0 01-4.08-4.08V7.08A4.08 4.08 0 0110.58 3h37.74L67.5 21.23v61.69A4.08 4.08 0 0163.42 87zM47.5 3v13.92A4 4 0 0051.38 21H66.5"
         ></path>
-        <circle cx="63.5" cy="67" r="20" fill="#6576ff"></circle>
+        <circle cx="63.5" cy="67" r="20" fill="#6466f1"></circle>
         <path
           fill="#fff"
           d="M61.87 71a6.83 6.83 0 01.39-2.55 6.71 6.71 0 011.51-2.09 11.82 11.82 0 001.44-1.61 2.92 2.92 0 00.47-1.59 2.47 2.47 0 00-.55-1.72 2 2 0 00-1.58-.6 2.22 2.22 0 00-1.61.59 2 2 0 00-.61 1.57H58.5a4.39 4.39 0 011.4-3.37 5.27 5.27 0 013.65-1.24 5.09 5.09 0 013.64 1.23 4.48 4.48 0 011.31 3.43 5.69 5.69 0 01-1.77 3.86l-1.43 1.46a4.08 4.08 0 00-.79 2.63zm-.3 3.17A1.6 1.6 0 0162 73a1.69 1.69 0 013 1.17 1.65 1.65 0 01-.44 1.17 1.67 1.67 0 01-1.26.46 1.62 1.62 0 01-1.3-.46 1.65 1.65 0 01-.43-1.17z"
         ></path>
-        <circle cx="17" cy="21.5" r="4.5" fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2"></circle>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 20L36.5 20"></path>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 24L43.5 24"></path>
-        <circle cx="17" cy="39.5" r="4.5" fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2"></circle>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 37L36.5 37"></path>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 42L43.5 42"></path>
-        <circle cx="17" cy="56.5" r="4.5" fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2"></circle>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 54L36.5 54"></path>
-        <path fill="none" stroke="#6576ff" strokeMiterlimit="10" strokeWidth="2" d="M28.5 59L43.5 59"></path>
+        <circle cx="17" cy="21.5" r="4.5" fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2"></circle>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 20L36.5 20"></path>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 24L43.5 24"></path>
+        <circle cx="17" cy="39.5" r="4.5" fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2"></circle>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 37L36.5 37"></path>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 42L43.5 42"></path>
+        <circle cx="17" cy="56.5" r="4.5" fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2"></circle>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 54L36.5 54"></path>
+        <path fill="none" stroke="#6466f1" strokeMiterlimit="10" strokeWidth="2" d="M28.5 59L43.5 59"></path>
       </svg>
     ),
     name: "Support General",
@@ -3638,16 +3638,16 @@ export const svgData = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M29 74H11a7 7 0 01-7-7V17a7 7 0 017-7h50a7 7 0 017 7v13"
         ></path>
         <path fill="#e3e7fe" d="M11 11h50a6 6 0 016 6v4H5v-4a6 6 0 016-6z"></path>
-        <circle cx="11" cy="16" r="2" fill="#6576ff"></circle>
-        <circle cx="17" cy="16" r="2" fill="#6576ff"></circle>
-        <circle cx="23" cy="16" r="2" fill="#6576ff"></circle>
+        <circle cx="11" cy="16" r="2" fill="#6466f1"></circle>
+        <circle cx="17" cy="16" r="2" fill="#6466f1"></circle>
+        <circle cx="23" cy="16" r="2" fill="#6466f1"></circle>
         <rect width="19" height="19" x="11" y="27" fill="#c4cefe" rx="1" ry="1"></rect>
         <path
           fill="#c4cefe"
@@ -3685,7 +3685,7 @@ export const svgData = [
           strokeWidth="2"
           d="M36 44L46 44"
         ></path>
-        <path fill="#6576ff" d="M4 21H68V23H4z"></path>
+        <path fill="#6466f1" d="M4 21H68V23H4z"></path>
         <rect
           width="38"
           height="24"
@@ -3701,7 +3701,7 @@ export const svgData = [
         ></rect>
         <rect width="12" height="9" x="41" y="60" fill="#c4cefe" rx="1" ry="1"></rect>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M84.74 53.51L66.48 35.25a4.31 4.31 0 00-6.09 0l-9.13 9.13a4.31 4.31 0 000 6.09l18.26 18.26a4.31 4.31 0 006.09 0l9.13-9.13a4.31 4.31 0 000-6.09zm-15-5.89L67 50.3a2.15 2.15 0 01-3 0l-4.76-4.76a2.16 2.16 0 010-3l2.67-2.67a2.16 2.16 0 013 0l4.76 4.76a2.15 2.15 0 01.05 2.99z"
         ></path>
       </svg>
@@ -3717,7 +3717,7 @@ export const svgData = [
           x="3"
           y="12.5"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3725,10 +3725,10 @@ export const svgData = [
           ry="7"
         ></rect>
         <path fill="#e3e7fe" d="M10 13.49h50a6 6 0 016 6v3.9H4v-3.9a6 6 0 016-6z"></path>
-        <path fill="#6576ff" d="M3 23.39H67V25.37H3z"></path>
+        <path fill="#6466f1" d="M3 23.39H67V25.37H3z"></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeMiterlimit="10"
           strokeWidth="2"
           d="M65.37 31.31h11.44A12.24 12.24 0 0087 42s1.12 24.31-21.63 35.5C42.62 66.31 43.75 42 43.75 42a12.23 12.23 0 0010.18-10.69z"
@@ -3739,15 +3739,15 @@ export const svgData = [
         <path fill="#010863" d="M78 65.97L74 65.97 74 64.98 77 64.98 77 62.01 78 62.01 78 65.97z"></path>
         <path fill="#010863" d="M78 46.16L77 46.16 77 43.2 74 43.2 74 42.2 78 42.2 78 46.16z"></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M70 51.12h-8v-2.26a3.74 3.74 0 013.17-3.57c2.56-.46 4.83 1.28 4.83 3.49zm-7-1h6v-1.56a2.78 2.78 0 00-2-2.63 3 3 0 00-4 2.64z"
         ></path>
         <path fill="#e5effe" d="M58 57.28v-7.15h16v7.37c0 4.62-4.65 8.26-9.86 7.17A7.63 7.63 0 0158 57.28z"></path>
-        <path fill="#6576ff" d="M59 51.12v6.7A7 7 0 0073 58v-6.88z"></path>
+        <path fill="#6466f1" d="M59 51.12v6.7A7 7 0 0073 58v-6.88z"></path>
         <ellipse cx="66" cy="55.08" fill="#fff" rx="2" ry="1.98"></ellipse>
         <path fill="#fff" d="M68.91 62.01L63.84 62.01 65.18 56.07 67.57 56.07 68.91 62.01z"></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M72 51.12H60v-2.46a5.41 5.41 0 014.06-5.14c4.13-1.14 7.94 1.54 7.94 5zm-11-1h10v-1.63A4.69 4.69 0 0067.08 44c-3.23-.6-6.08 1.58-6.08 4.33z"
         ></path>
         <rect
@@ -3756,7 +3756,7 @@ export const svgData = [
           x="13"
           y="32.3"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeMiterlimit="10"
           strokeWidth="2"
           rx="1"
@@ -3768,7 +3768,7 @@ export const svgData = [
           x="12"
           y="45.17"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeMiterlimit="10"
           strokeWidth="2"
           rx="1"
@@ -3780,7 +3780,7 @@ export const svgData = [
           x="12"
           y="57.06"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeMiterlimit="10"
           strokeWidth="2"
           rx="1"
@@ -3799,7 +3799,7 @@ export const svgData = [
           x="3"
           y="10"
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3812,7 +3812,7 @@ export const svgData = [
           x="13"
           y="24"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3858,7 +3858,7 @@ export const svgData = [
           cx="69"
           cy="61.98"
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3868,7 +3868,7 @@ export const svgData = [
         <circle cx="69" cy="62" r="7" fill="#e3e7fe"></circle>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3876,7 +3876,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3884,7 +3884,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3892,7 +3892,7 @@ export const svgData = [
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -3935,22 +3935,22 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M61.84 36.52A17.62 17.62 0 1144.23 18.9a17.61 17.61 0 0117.61 17.62"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M50.71 30.06v9a1.44 1.44 0 01-.77 1.26l-4.67 2.55a1.62 1.62 0 01-1.54 0l-4.67-2.55a1.44 1.44 0 01-.77-1.26V34a1.44 1.44 0 01.77-1.26l4.67-2.55a1.6 1.6 0 011.4-.07v1.52a1.26 1.26 0 00-1.19 0l-3.63 2a1.1 1.1 0 00-.59 1v4a1.1 1.1 0 00.59 1l3.63 2a1.26 1.26 0 001.19 0l3.62-2a1.11 1.11 0 00.6-1V29.3z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M47.92 28.54l-1.4-.76v9.55a.45.45 0 01-.25.41l-1.52.83a.5.5 0 01-.5 0l-1.52-.83a.45.45 0 01-.25-.41v-1.66a.45.45 0 01.25-.41l1.52-.83a.5.5 0 01.5 0l.38.2v-1.52l-.2-.11a.93.93 0 00-.86 0l-2.56 1.4a.79.79 0 00-.43.7v2.8a.79.79 0 00.43.7l2.56 1.4a.93.93 0 00.86 0l2.56-1.4a.81.81 0 00.43-.7v-9.36z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M52.11 30.83v8.79a1.77 1.77 0 01-1 1.55l-5.72 3.12a2 2 0 01-1.88 0l-5.72-3.12a1.76 1.76 0 01-.94-1.55v-6.24a1.76 1.76 0 01.94-1.55l5.72-3.12a2 2 0 011.88 0l1.08.59v-1.52l-.9-.5a2.4 2.4 0 00-2.24 0L36.62 31a2.07 2.07 0 00-1.12 1.83v7.38A2.07 2.07 0 0036.62 42l6.76 3.7a2.4 2.4 0 002.24 0l6.76-3.7a2.07 2.07 0 001.12-1.83V31.6z"
         ></path>
       </svg>
@@ -3980,20 +3980,20 @@ export const svgData = [
           cy="64.92"
           r="18.24"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
         ></circle>
         <path
           fill="#f3f5ff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           d="M37.5 22.5v21.39a23.66 23.66 0 0117 .1V22.5z"
         ></path>
         <path
           fill="#e3e7fe"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           d="M20.5 22.5v23l6.5 6.21a23.73 23.73 0 0110.5-7.82V22.5zM54.5 22.5V44a23.68 23.68 0 0110.32 7.86l6.68-6.37v-23z"
         ></path>
@@ -4003,7 +4003,7 @@ export const svgData = [
           x="12"
           y="14"
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
@@ -4011,15 +4011,15 @@ export const svgData = [
           ry="2"
         ></rect>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M52 58v9.62a1.56 1.56 0 01-.74 1.38l-4.72 2.73a1.55 1.55 0 01-1.56 0L40.25 69a1.55 1.55 0 01-.77-1.34v-5.47a1.55 1.55 0 01.77-1.35L45 58.11a1.56 1.56 0 011.39-.11v1.62a1.22 1.22 0 00-1.2 0l-3.67 2.12a1.2 1.2 0 00-.6 1V67a1.23 1.23 0 00.6 1l3.67 2.11a1.17 1.17 0 001.2 0L50 68.08a1.21 1.21 0 00.61-1v-9.87z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M49.22 56.4l-1.42-.82V65.8a.52.52 0 01-.25.45l-1.55.88a.52.52 0 01-.51 0L44 66.25a.52.52 0 01-.26-.45V64a.51.51 0 01.26-.44l1.53-.89a.52.52 0 01.51 0l.38.22v-1.6l-.2-.12a.88.88 0 00-.86 0l-2.6 1.5a.85.85 0 00-.43.75v3a.85.85 0 00.43.75l2.6 1.5a.83.83 0 00.86 0l2.59-1.5a.86.86 0 00.44-.75V58z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M53.45 58.85v9.41a1.9 1.9 0 01-1 1.65l-5.79 3.34a1.92 1.92 0 01-1.91 0L39 69.91a1.9 1.9 0 01-1-1.65v-6.69a1.9 1.9 0 011-1.65l5.78-3.34a1.92 1.92 0 011.91 0l1.09.63v-1.63l-.91-.53a2.28 2.28 0 00-2.26 0l-6.85 4a2.25 2.25 0 00-1.13 2v7.91a2.27 2.27 0 001.13 2l6.85 4a2.28 2.28 0 002.26 0l6.84-4a2.27 2.27 0 001.13-2v-9.28z"
         ></path>
       </svg>
@@ -4043,7 +4043,7 @@ export const svgData = [
         <path fill="#e3e7fe" d="M5 34.77H11.879999999999999V37.06H5z"></path>
         <path fill="#e3e7fe" d="M5 34.77H11.879999999999999V37.06H5z" transform="rotate(90 8.445 35.915)"></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M39.21 4.22L42.89 5.55 45.92 3.33 45.97 7.18 49.17 9.48 45.52 10.53 44.47 14.18 42.16 10.98 38.31 10.94 40.54 7.91 39.21 4.22z"
         ></path>
         <path
@@ -4056,37 +4056,37 @@ export const svgData = [
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M49.89 64.32a.77.77 0 00-1-.78 21.57 21.57 0 01-4.44.67 21.73 21.73 0 01-4.45-.67.77.77 0 00-1 .78v3a1 1 0 001 1h8.81a1 1 0 001-1zm.46-.17M58.43 20.88H30.92A2.08 2.08 0 0028.84 23v17.1a21.46 21.46 0 004.51 13.75 14.46 14.46 0 0022.65 0 21.46 21.46 0 004.51-13.75V23a2.08 2.08 0 00-2.08-2.12zM24.15 44.87c-2.71-1-4-3.51-4-7.59V27.8h4v-3.95h-5.84a2.07 2.07 0 00-2.07 2.07v11.36c0 6.93 3.16 11.15 9 12.14a26.26 26.26 0 01-1.06-4.55z"
         ></path>
         <path
-          fill="#6576ff"
-          stroke="#6576ff"
+          fill="#6466f1"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M28.5 72.92v2.16c0 .23.94.42 2.1.42h27.8c1.16 0 2.1-.19 2.1-.42v-2.16c0-.23-.94-.42-2.1-.42H30.6c-1.16 0-2.1.19-2.1.42zm2.85.12M28.5 78.92v2.16c0 .23.94.42 2.1.42h27.8c1.16 0 2.1-.19 2.1-.42v-2.16c0-.23-.94-.42-2.1-.42H30.6c-1.16 0-2.1.19-2.1.42zm2.85.12"
         ></path>
         <path
           fill="#fff"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
           d="M71.64 23.85h-5.93v3.95h4v8.84c0 3.89-1.24 6.22-4 7.23a24 24 0 01-1.06 4.33c5.81-.94 9-5 9-11.56V25.82a2 2 0 00-2-2z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M50.56 33.64v9a1.45 1.45 0 01-.72 1.26l-4.44 2.58a1.45 1.45 0 01-1.45 0l-4.43-2.56a1.44 1.44 0 01-.73-1.26v-5.12a1.44 1.44 0 01.73-1.26L44 33.72a1.43 1.43 0 011.32-.07v1.52a1.14 1.14 0 00-1.13 0l-3.44 2a1.11 1.11 0 00-.56 1v4a1.12 1.12 0 00.56 1l3.44 2a1.14 1.14 0 001.13 0l3.44-2a1.12 1.12 0 00.56-1v-9.2z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M47.92 32.11l-1.33-.76v9.53a.49.49 0 01-.24.42l-1.43.83a.51.51 0 01-.48 0L43 41.35a.49.49 0 01-.24-.42v-1.66a.49.49 0 01.24-.42l1.44-.85a.46.46 0 01.48 0l.35.21V36.7l-.19-.11a.79.79 0 00-.81 0L41.84 38a.82.82 0 00-.41.7v2.8a.81.81 0 00.41.7l2.43 1.41a.83.83 0 00.81 0l2.43-1.41a.81.81 0 00.41-.7v-7.86z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M51.89 34.41v8.82a1.78 1.78 0 01-.9 1.55l-5.42 3.13a1.79 1.79 0 01-1.79 0l-5.42-3.13a1.78 1.78 0 01-.9-1.55V37a1.78 1.78 0 01.9-1.55l5.42-3.13a1.79 1.79 0 011.79 0l1 .59v-1.56l-.86-.5a2.1 2.1 0 00-2.11 0l-6.4 3.71a2.11 2.11 0 00-1.06 1.83v7.42a2.11 2.11 0 001.06 1.83l6.42 3.7a2.1 2.1 0 002.11 0l6.42-3.7a2.11 2.11 0 001.06-1.83v-8.62z"
         ></path>
       </svg>
@@ -4104,7 +4104,7 @@ export const svgData = [
           fill="#c4cefe"
           d="M29.73 103.29L74.66 96a3.41 3.41 0 002.84-3.94L65.4 22.95a3.5 3.5 0 00-4-2.82l-44.96 7.28a3.41 3.41 0 00-2.84 3.94l12.1 69.11a3.52 3.52 0 004.03 2.83z"
         ></path>
-        <rect width="66" height="88" x="22" y="17.9" fill="#6576ff" rx="3" ry="3"></rect>
+        <rect width="66" height="88" x="22" y="17.9" fill="#6466f1" rx="3" ry="3"></rect>
         <rect width="48" height="10" x="31" y="85.9" fill="#fff" rx="1.5" ry="1.5"></rect>
         <rect width="48" height="5" x="31" y="27.9" fill="#e3e7fe" rx="1" ry="1"></rect>
         <rect width="23" height="3" x="31" y="37.9" fill="#c4cefe" rx="1" ry="1"></rect>
@@ -4147,12 +4147,12 @@ export const svgData = [
           d="M98 31H22a5.006 5.006 0 00-5 5v42a5.006 5.006 0 005 5h30v8h-7a2 2 0 00-2 2v4a2 2 0 002 2h28a2 2 0 002-2v-4a2 2 0 00-2-2h-7v-8h32a5.006 5.006 0 005-5V36a5.006 5.006 0 00-5-5zM73 93v4H45v-4zm-9-2H54v-8h10zm37-13a3 3 0 01-3 3H22a3 3 0 01-3-3V36a3 3 0 013-3h76a3 3 0 013 3z"
         ></path>
         <path
-          fill="#6576ff"
+          fill="#6466f1"
           d="M61.444 40H40.111L33 47.143V18.7a3.632 3.632 0 013.556-3.7h24.888A3.632 3.632 0 0165 18.7v17.6a3.632 3.632 0 01-3.556 3.7z"
         ></path>
         <path
           fill="none"
-          stroke="#6576ff"
+          stroke="#6466f1"
           strokeMiterlimit="10"
           strokeWidth="2"
           d="M61.444 40H40.111L33 47.143V18.7a3.632 3.632 0 013.556-3.7h24.888A3.632 3.632 0 0165 18.7v17.6a3.632 3.632 0 01-3.556 3.7z"

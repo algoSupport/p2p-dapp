@@ -204,7 +204,7 @@ export const overviewKnob = {
   datasets: [
     {
       borderColor: "transparent",
-      backgroundColor: ["#6576ff", "#d9e5f7"],
+      backgroundColor: ["#6466f1", "#d9e5f7"],
       data: [220, 80],
     },
   ],
