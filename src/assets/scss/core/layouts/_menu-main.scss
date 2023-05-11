@@ -572,7 +572,7 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
 @include media-breakpoint-up(lg) {
   .nk-menu-main {
     &.nk-menu {
-      padding: 0 1.5rem 0 2rem;
+      padding: 0 1.5rem 0 1rem;
     }
     > li {
       padding: 0;

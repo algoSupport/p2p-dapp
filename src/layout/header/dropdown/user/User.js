@@ -51,8 +51,8 @@ const User = () => {
             <LinkItem link="#" icon="swap-v" onClick={toggle}>
               Switch Networks
             </LinkItem>
-            <LinkItem link="/profile/details" icon="setting-alt" onClick={toggle}>
-              Account Settings
+            <LinkItem link="/profile/details" icon="user-fill" onClick={toggle}>
+              Profile Details
             </LinkItem>
           </LinkList>
         </div>
