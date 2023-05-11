@@ -24,7 +24,7 @@ const Wallets = () => {
   const [sm, updateSm] = useState(false);
 
   return (
-    <React.Fragment>
+    <>
       <Head title="Wallets" />
       <Content>
         <BlockHead size="sm">
@@ -94,7 +94,7 @@ const Wallets = () => {
           </Row>
         </Block>
       </Content>
-    </React.Fragment>
+    </>
   );
 };
 
