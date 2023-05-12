@@ -173,10 +173,10 @@ body.dark-mode {
   .bg-outline-secondary,
   .badge-dot.bg-dark,
   .badge-dot.bg-secondary {
-    color: #a5b4fb !important;
+    color: #5b7cc0 !important;
   }
   .btn-secondary {
-    color: #b6c5e3 !important;
+    color: #5b7cc0 !important;
   }
 
   .bg-outline-dark {
@@ -281,8 +281,8 @@ body.dark-mode {
   @each $name, $color, $background in $dim-btns {
     .btn-dim.btn-#{$name} {
       color: $color;
-      background-color: $background;
-      border-color: #233049;
+      background-color: #243049;
+      border-color: #243049;
       &:not(:disabled):not(.disabled):hover {
         color: lighten($color, 10%);
         background-color: lighten($background, 7%);
