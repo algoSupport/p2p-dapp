@@ -32,7 +32,7 @@ const Verification = () => {
 
   return (
     <React.Fragment>
-      <Head title="Buy"></Head>
+      <Head title="Verify the code"></Head>
       <div className="d-flex justify-center align-center flex-column " style={{ width: "100vw", height: "100vh" }}>
         <div style={{ width: "300px" }}>
           {/* <BlockHead size="sm">
