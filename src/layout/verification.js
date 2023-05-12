@@ -92,9 +92,8 @@ const VerifyCode = () => {
                     type={passState ? "text" : "password"}
                     id="password"
                     name="passcode"
-                    defaultValue="123456"
                     ref={register({ required: "This field is required" })}
-                    placeholder="Enter your passcode"
+                    placeholder="Enter your access code"
                     onChange={(e) => setError("")}
                     className={`form-control-lg form-control ${passState ? "is-hidden" : "is-shown"}`}
                   />
