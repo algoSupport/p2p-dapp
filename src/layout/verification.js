@@ -41,7 +41,7 @@ const VerifyCode = () => {
 
   return (
     <React.Fragment>
-      <Head title="Login" />
+      <Head title="Verify Access" />
       <PageContainer>
         <Block className="nk-block-middle nk-auth-body  wide-xs">
           <div className="brand-logo pb-4 text-center">
