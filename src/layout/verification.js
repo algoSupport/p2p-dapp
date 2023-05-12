@@ -54,7 +54,7 @@ const VerifyCode = () => {
           <PreviewCard className="card-bordered" bodyClass="card-inner-lg">
             <BlockHead>
               <BlockContent>
-                <BlockTitle tag="h4">Sign-In</BlockTitle>
+                <BlockTitle tag="h4">Verification</BlockTitle>
                 <BlockDes>
                   <p>Access Cilistia using your verification code</p>
                 </BlockDes>
