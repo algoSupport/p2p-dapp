@@ -26,6 +26,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import merge from "lodash.merge";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
