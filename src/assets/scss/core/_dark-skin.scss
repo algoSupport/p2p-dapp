@@ -173,10 +173,10 @@ body.dark-mode {
   .bg-outline-secondary,
   .badge-dot.bg-dark,
   .badge-dot.bg-secondary {
-    color: #5b7cc0 !important;
+    color: #8094ae !important;
   }
   .btn-secondary {
-    color: #5b7cc0 !important;
+    color: #8094ae !important;
   }
 
   .bg-outline-dark {
@@ -280,11 +280,11 @@ body.dark-mode {
 
   @each $name, $color, $background in $dim-btns {
     .btn-dim.btn-#{$name} {
-      color: $color;
+      color: #8094ae;
       background-color: #243049;
       border-color: #243049;
       &:not(:disabled):not(.disabled):hover {
-        color: lighten($color, 10%);
+        color: #8094ae;
         background-color: lighten($background, 7%);
         border-color: lighten($background, 7%);
       }
@@ -1687,8 +1687,8 @@ body.dark-mode {
     &.active .page-link {
       z-index: 3;
       color: #fff !important;
-      background-color: #283159 !important;
-      border-color: #343f7b !important;
+      background-color: #1a2234 !important;
+      border-color: #233049 !important;
     }
 
     &.disabled .page-link {
