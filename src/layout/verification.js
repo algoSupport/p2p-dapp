@@ -109,7 +109,6 @@ const VerifyCode = () => {
             </Form>
           </PreviewCard>
         </Block>
-        <AuthFooter />
       </PageContainer>
     </React.Fragment>
   );
