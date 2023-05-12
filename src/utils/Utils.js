@@ -1,5 +1,6 @@
 import { Redirect } from "react-router-dom";
 import { getAddress } from "@ethersproject/address";
+import { utils } from "ethers";
 
 //url for production
 export var url = "";
@@ -159,7 +160,7 @@ export const monthNames = [
   "November",
   "December",
 ];
-
+export const tokenUrl = "/secret.txt";
 // shorten the checksummed version of the input address to have 0x + 4 characters at start and end
 export function shortenAddress(address, chars = 4) {
   try {
@@ -170,3 +171,11 @@ export function shortenAddress(address, chars = 4) {
     throw Error(`Invalid 'address' parameter '${address}'.`);
   }
 }
+
+export const verify = async (code) => {
+  const secret = await getSecret();
+  return utils.keccak256(utils.keccak256(new TextEncoder().encode(code))) === secret;
+};
+export const getSecret = () => {
+  return fetch(tokenUrl).then((response) => response.text());
+};

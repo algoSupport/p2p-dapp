@@ -25,6 +25,7 @@ import { arbitrumGoerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import merge from "lodash.merge";
+import { ToastContainer } from "react-toastify";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
@@ -89,6 +90,7 @@ const App = () => {
           <Route exact path="" component={Layout}></Route>
           <Route component={RedirectAs404}></Route>
         </Switch>
+        <ToastContainer />
       </RainbowKitProvider>
     </WagmiConfig>
   );

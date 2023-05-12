@@ -5,11 +5,14 @@ import Head from "./head/Head";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import classNames from "classnames";
+import Verification from "./verification";
+import { useVerify } from "../hooks/useVerify";
 
 const Layout = () => {
   //Sidebar
   const [mobileView, setMobileView] = useState();
   const [visibility, setVisibility] = useState(false);
+  const verified = useVerify();
   const [themeState] = useState({
     main: "default",
     header: "white",
@@ -64,7 +67,9 @@ const Layout = () => {
     "mobile-menu": mobileView,
     "nk-sidebar-active": visibility && mobileView,
   });
-
+  if (!verified) {
+    return <Verification />;
+  }
   return (
     <React.Fragment>
       <Head title="Loading" />
