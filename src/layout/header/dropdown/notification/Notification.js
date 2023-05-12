@@ -22,9 +22,7 @@ const Notification = () => {
   return (
     <UncontrolledDropdown className="user-dropdown">
       <DropdownToggle tag="a" className="dropdown-toggle nk-quick-nav-icon">
-        <div className="icon-status icon-status-info">
-          <Icon name="bell" />
-        </div>
+        <Icon name="bell-fill" />
       </DropdownToggle>
       <DropdownMenu end className="dropdown-menu-xl dropdown-menu-s1">
         <div className="dropdown-head">

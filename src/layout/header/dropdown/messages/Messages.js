@@ -23,11 +23,11 @@ const Notification = () => {
   return (
     <UncontrolledDropdown className="user-dropdown">
       <DropdownToggle tag="a" className="dropdown-toggle nk-quick-nav-icon">
-        <Icon name="comments" />
+        <Icon name="inbox-fill" />
       </DropdownToggle>
       <DropdownMenu end className="dropdown-menu-xl dropdown-menu-s1">
         <div className="dropdown-head">
-          <span className="sub-title nk-dropdown-title">{data.title}</span>
+          <span className="sub-title nk-dropdown-title">Messages</span>
           <a href="#markasread" onClick={(ev) => ev.preventDefault()}>
             Mark all as read
           </a>
