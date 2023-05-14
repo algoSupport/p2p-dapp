@@ -70,11 +70,6 @@ const VerifyCode = () => {
             )}
             <Form className="is-alter" onSubmit={handleSubmit(onFormSubmit)}>
               <div className="form-group">
-                <div className="form-label-group">
-                  <label className="form-label" htmlFor="password">
-                    Code
-                  </label>
-                </div>
                 <div className="form-control-wrap">
                   <a
                     href="#password"
