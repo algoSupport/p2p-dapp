@@ -4,7 +4,7 @@ import { RedirectAs404 } from "./utils/Utils";
 
 import Layout from "./layout/Index";
 
-import Error404Classic from "./pages/error/404-classic";
+import Error404Classic from "./pages/error/404-modern";
 
 import Faq from "./pages/others/Faq";
 import Terms from "./pages/others/Terms";
@@ -61,7 +61,7 @@ const App = () => {
           <Route exact path={`${process.env.PUBLIC_URL}/auths/terms`} component={Terms}></Route>
           <Route exact path={`${process.env.PUBLIC_URL}/auths/faq`} component={Faq}></Route>
           {/*Error Pages*/}
-          <Route exact path={`${process.env.PUBLIC_URL}/errors/404-classic`} component={Error404Classic}></Route>
+          <Route exact path={`${process.env.PUBLIC_URL}/errors/404-modern`} component={Error404Classic}></Route>
 
           {/*Main Routes*/}
           <Route exact path="" component={Layout}></Route>
