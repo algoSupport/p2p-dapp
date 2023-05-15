@@ -39,6 +39,7 @@ const Price = (props) => {
               <TokenSelect selectedToken={token} setSelectedToken={setToken} setTokenClicked={() => {}} isBuy={false} />
             </div>
           </Col>
+
           <Col md="6">
             <div className="form-group">
               <label className="form-label">Currency </label>
