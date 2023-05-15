@@ -15,7 +15,7 @@ const Error404Modern = () => {
             <p className="nk-error-text">
               We are very sorry for inconvenience. It looks like you’re trying to access a page that is not available.
             </p>
-            <Link to={`${process.env.PUBLIC_URL}/`}>
+            <Link to={`${process.env.PUBLIC_URL}/dashboard`}>
               <Button color="primary" size="md" className="mt-2">
                 Dashboard
               </Button>

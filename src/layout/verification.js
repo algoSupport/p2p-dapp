@@ -17,7 +17,6 @@ import {
 } from "../components/Component";
 import LogoDark from "../images/logo-dark2x.svg";
 import Logo from "../images/logo2x.svg";
-import AuthFooter from "../pages/auth/AuthFooter";
 import { verify } from "../utils/Utils";
 import { utils } from "ethers";
 
