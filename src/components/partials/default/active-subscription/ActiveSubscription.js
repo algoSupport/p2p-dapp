@@ -22,7 +22,7 @@ const ActiveSubscription = () => {
       </div>
       <div className="align-end flex-sm-wrap g-4 flex-md-nowrap">
         <div className="nk-sale-data">
-          <span className="amount">0</span>
+          <span className="amount mb-2">0</span>
           <span className="sub-title">
             <span className="change down text-danger">
               <Icon name="arrow-long-down" />
