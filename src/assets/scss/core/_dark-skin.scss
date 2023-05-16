@@ -255,9 +255,9 @@ body.dark-mode {
   .btn-outline-secondary {
     border-color: #233049;
     color: #a5b4fb;
-    background: #1d273b;
+    background: #1c253a;
     &:not(:disabled):not(.disabled):hover {
-      background: #1d273b;
+      background: #1c253a;
       color: $white;
     }
   }
@@ -459,7 +459,7 @@ body.dark-mode {
     background: $dark-body-bg;
   }
   .accordion-item {
-    background: #1d273b !important;
+    background: #1c253a !important;
   }
   .form-file-label {
     background: $dark-body-bg !important;
@@ -480,7 +480,7 @@ body.dark-mode {
   .kanban-add-task,
   .kanban-board-header,
   .kanban-item {
-    background: #1d273b;
+    background: #1c253a;
   }
   .accordion,
   .form-clip,
@@ -526,7 +526,7 @@ body.dark-mode {
   .datepicker .prev:hover,
   .datepicker .next:hover,
   .datepicker tfoot tr th:hover {
-    background: #1d273b !important;
+    background: #1c253a !important;
   }
   .form-control {
     background: #1a2234;
@@ -698,7 +698,7 @@ body.dark-mode {
     background: #1a2234;
   }
   .nk-menu-main .nk-menu-sub .nk-menu-item:hover > a {
-    background-color: #1d273b;
+    background-color: #1c253a;
   }
   .table .table-light th,
   .page-item.disabled .page-link,
@@ -707,7 +707,7 @@ body.dark-mode {
   .tb-tnx-head,
   .custom-control-input[disabled] ~ .custom-control-label::before,
   .custom-control-input:disabled ~ .custom-control-label::before {
-    background-color: #1d273b !important;
+    background-color: #1c253a !important;
   }
   .progress,
   .custom-control-label::before,
@@ -758,7 +758,7 @@ body.dark-mode {
   }
 
   .dropdown-menu {
-    background-color: #1d273b;
+    background-color: #1c253a;
     border-color: $sidebar-border-dark-color;
     box-shadow: 0 3px 25px 1px rgba($black, 0.4);
     &-s1 {
@@ -923,7 +923,7 @@ body.dark-mode {
   }
   .nk-header {
     border-color: $sidebar-border-dark-color !important;
-    background: #1d273b !important;
+    background: #1c253a !important;
   }
 
   .nk-aside,
