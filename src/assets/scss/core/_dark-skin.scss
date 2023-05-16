@@ -1,7 +1,7 @@
 // DARK STYLE
 $dark-body-bg: $darker;
 $dark-body-bg-dark: darken($darker, 6%);
-$dark-body-bg-light: darken($darker, 2%);
+$dark-body-bg-light: #1a2234;
 $dark-card-bg: #1a2234;
 $dark-border-color: #233049;
 $dark-border-light: $light-800;
@@ -933,7 +933,7 @@ body.dark-mode {
   .nk-aside,
   .nk-sidebar,
   .nk-sidebar.is-light {
-    background: #161e2d !important;
+    background: $sidebar-bg-dark-color !important;
   }
 
   // Apps
