@@ -284,13 +284,13 @@ body.dark-mode {
 
   @each $name, $color, $background in $dim-btns {
     .btn-dim.btn-#{$name} {
-      color: #8094ae;
-      background-color: #243049;
-      border-color: #243049;
+      color: #6576ff;
+      background-color: #283159;
+      border-color: #233049;
       &:not(:disabled):not(.disabled):hover {
-        color: #8094ae;
-        background-color: lighten($background, 7%);
-        border-color: lighten($background, 7%);
+        color: #98a3ff;
+        background-color: #333f72;
+        border-color: #333f72;
       }
     }
   }
@@ -933,7 +933,7 @@ body.dark-mode {
   .nk-aside,
   .nk-sidebar,
   .nk-sidebar.is-light {
-    background: $sidebar-bg-dark-color !important;
+    background: #161e2d !important;
   }
 
   // Apps
