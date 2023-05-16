@@ -177,6 +177,10 @@ body.dark-mode {
   }
   .btn-secondary {
     color: #fff !important;
+    background: #1c253a !important;
+  }
+  .btn-secondary:hover {
+    background: #233049 !important;
   }
 
   .bg-outline-dark {
@@ -257,7 +261,7 @@ body.dark-mode {
     color: #a5b4fb;
     background: #1c253a;
     &:not(:disabled):not(.disabled):hover {
-      background: #1c253a;
+      background: #233049 !important;
       color: $white;
     }
   }
