@@ -18,6 +18,8 @@ import { publicProvider } from "wagmi/providers/public";
 import merge from "lodash.merge";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useVerify } from "./hooks/useVerify";
+import Verification from "./layout/verification";
 
 const { chains, provider } = configureChains(
   [arbitrumGoerli],
@@ -35,6 +37,11 @@ const wagmiClient = createClient({
 });
 
 const App = () => {
+  const verified = useVerify();
+
+  if (!verified) {
+    return <Verification />;
+  }
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
