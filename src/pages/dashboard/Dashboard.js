@@ -55,10 +55,54 @@ const Homepage = () => {
                 <div className="toggle-expand-content" style={{ display: sm ? "block" : "none" }}>
                   <ul className="nk-block-tools g-3">
                     <li>
+                      <UncontrolledDropdown>
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary">
+                          <Icon className="d-none d-sm-inline" name="calender-date" />
+                          <span>Last 30 days</span>
+                        </DropdownToggle>
+                        <DropdownMenu end>
+                          <ul className="link-list-opt no-bdr">
+                            <li>
+                              <DropdownItem
+                                tag="a"
+                                onClick={(ev) => {
+                                  ev.preventDefault();
+                                }}
+                                href="#!"
+                              >
+                                <span>Last 30 days</span>
+                              </DropdownItem>
+                            </li>
+                            <li>
+                              <DropdownItem
+                                tag="a"
+                                onClick={(ev) => {
+                                  ev.preventDefault();
+                                }}
+                                href="#dropdownitem"
+                              >
+                                <span>Last 6 months</span>
+                              </DropdownItem>
+                            </li>
+                            <li>
+                              <DropdownItem
+                                tag="a"
+                                onClick={(ev) => {
+                                  ev.preventDefault();
+                                }}
+                                href="#dropdownitem"
+                              >
+                                <span>Last 3 weeks</span>
+                              </DropdownItem>
+                            </li>
+                          </ul>
+                        </DropdownMenu>
+                      </UncontrolledDropdown>
+                    </li>
+                    <li>
                       <Link to="/marketplace/buy" className="btn btn-primary">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
-                        <Icon name="chevron-right" />
                       </Link>
                     </li>
                   </ul>

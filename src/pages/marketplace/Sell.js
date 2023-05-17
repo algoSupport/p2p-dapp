@@ -163,7 +163,6 @@ const SellPage = () => {
                         <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
                           <Icon name="filter-alt" className="d-none d-sm-inline"></Icon>
                           <span>Filters</span>
-                          <Icon name="chevron-right" className="dd-indc"></Icon>
                         </DropdownToggle>
                         <DropdownMenu end>
                           <ul className="link-list-opt no-bdr">
