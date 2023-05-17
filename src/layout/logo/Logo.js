@@ -9,7 +9,7 @@ const Logo = () => {
     <Link to={`${process.env.PUBLIC_URL}/dashboard`} className="logo-link">
       <img className="logo-light logo-img h-8 me-2" src={LogoLight2x} alt="logo" />
       <img className="logo-dark logo-img h-8 me-2" src={LogoDark2x} alt="logo" />
-      <Badge color="secondary" className="badge-dim">
+      <Badge color="primary" className="badge-dim">
         Testnet
       </Badge>
     </Link>

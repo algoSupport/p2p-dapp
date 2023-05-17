@@ -176,11 +176,13 @@ body.dark-mode {
     color: #8094ae !important;
   }
   .btn-secondary {
-    color: #fff !important;
-    background: #1c253a !important;
+    color: #6b80b2 !important;
+    background: #232e48 !important;
+    border: 1px solid #232e48 !important;
   }
   .btn-secondary:hover {
     background: #233049 !important;
+    color: #fff !important;
   }
 
   .bg-outline-dark {
@@ -284,13 +286,13 @@ body.dark-mode {
 
   @each $name, $color, $background in $dim-btns {
     .btn-dim.btn-#{$name} {
-      color: #6576ff;
-      background-color: #283159;
-      border-color: #233049;
+      color: $color;
+      background-color: $background;
+      border-color: $background;
       &:not(:disabled):not(.disabled):hover {
-        color: #98a3ff;
-        background-color: #333f72;
-        border-color: #333f72;
+        color: color-contrast($color);
+        background-color: $color;
+        border-color: $color;
       }
     }
   }

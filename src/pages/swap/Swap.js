@@ -71,7 +71,6 @@ const SwapPage = () => {
                     <button className="dropdown-toggle btn btn-primary">
                       <Icon name="users-fill" />
                       <span>Marketplace</span>
-                      <Icon name="chevron-right" />
                     </button>
                   </Link>
                 </li>

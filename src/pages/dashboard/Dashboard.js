@@ -56,9 +56,9 @@ const Homepage = () => {
                   <ul className="nk-block-tools g-3">
                     <li>
                       <UncontrolledDropdown>
-                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary btn-dim">
+                        <DropdownToggle tag="a" className="dropdown-toggle btn btn-secondary">
                           <Icon className="d-none d-sm-inline" name="calender-date" />
-                          <span>Last 30 Days</span>
+                          <span>Last 30 days</span>
                         </DropdownToggle>
                         <DropdownMenu end>
                           <ul className="link-list-opt no-bdr">
@@ -103,7 +103,6 @@ const Homepage = () => {
                       <Link to="/marketplace/buy" className="btn btn-primary">
                         <Icon name="users-fill" />
                         <span>Marketplace</span>
-                        <Icon name="chevron-right" />
                       </Link>
                     </li>
                   </ul>
