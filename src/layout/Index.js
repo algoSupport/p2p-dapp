@@ -5,7 +5,6 @@ import Head from "./head/Head";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import classNames from "classnames";
-import { useVerify } from "../hooks/useVerify";
 
 const Layout = () => {
   //Sidebar
