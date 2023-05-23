@@ -81,10 +81,7 @@ const BuyPage = () => {
   useEffect(() => {
     if (onSearchText !== "") {
       const filteredObject = userData.filter((item) => {
-        return (
-          item.name.toLowerCase().includes(onSearchText.toLowerCase()) ||
-          item.email.toLowerCase().includes(onSearchText.toLowerCase())
-        );
+        return item.name.toLowerCase().includes(onSearchText.toLowerCase());
       });
       setData([...filteredObject]);
     } else {
